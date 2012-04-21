@@ -4,6 +4,6 @@ describe 'home' do
 
   it "should show me the home" do
     visit "/"
-    assert page.has_content?("hello")
+    assert has_content?("hello")
   end
 end
