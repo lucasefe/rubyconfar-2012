@@ -6,3 +6,7 @@ minitest -v 2.12.1
 capybara -v 1.1.2
 minitest-matchers -v 1.2.0
 turn -v 0.9.5
+cuba-contrib -v 3.0.1
+mote -v 0.2.2
+slim -v 1.2.0
+cuba-sugar -v 0.2.4

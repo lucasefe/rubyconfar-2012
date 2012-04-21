@@ -1,9 +1,17 @@
+# encoding: utf-8
 require './shotgun'
 
-Cuba.define do
+Cuba.use Rack::MethodOverride
+Cuba.use Rack::Session::Cookie, key: "rubyconfar", secret: "jhaksfgsdkgaskjfgskdfgsk"
+Cuba.use Rack::Static, root: "public", urls: ["/javascripts", "/stylesheets", "/images"]
 
+Cuba.plugin Cuba::Render
+Cuba.plugin Shield::Helpers
+
+Cuba.settings.store(:template_engine, "slim")
+
+Cuba.define do
   on default do
-    res.write "hello world"
-    res.finish
+    res.write view("home")
   end
 end
