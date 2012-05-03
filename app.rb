@@ -12,18 +12,11 @@ Cuba.use Rack::Static,
   root: "public",
   urls: ["/javascripts", "/stylesheets", "/images"]
 
-# Cuba.use OmniAuth::Builder do
-#   provider :developer, fields: [:uid, :nickname, :name ]
-#   provider :twitter, APP_CONFIG['twitter']['consumer_key'], APP_CONFIG['twitter']['consumer_secret']
-# end
-
 Cuba.plugin Cuba::Render
 Cuba.settings.store(:template_engine, "slim")
 
 require "./models/user"
 
-require "./lib/session_helper"
-Cuba.plugin SessionHelper
 
 # routes
 require "./routes/session"
@@ -36,18 +29,26 @@ Cuba.define do
     res.write render("views/#{file}.sass")
   end
 
-  # on "auth/:provider/callback" do |provider|
-  #   @user = User.create_from(env['omniauth.auth'])
-  #   authenticate(@user)
-  #   res.redirect "/"
-  # end
-
-  on 'signout' do
-    logout(User)
-    res.redirect "/"
-  end
-
   on default do
     res.write view("home")
   end
 end
+
+# Cuba.use OmniAuth::Builder do
+#   provider :developer, fields: [:uid, :nickname, :name ]
+#   provider :twitter, APP_CONFIG['twitter']['consumer_key'], APP_CONFIG['twitter']['consumer_secret']
+# end
+
+# require "./lib/session_helper"
+# Cuba.plugin SessionHelper
+
+# on "auth/:provider/callback" do |provider|
+#   @user = User.create_from(env['omniauth.auth'])
+#   authenticate(@user)
+#   res.redirect "/"
+# end
+
+# on 'signout' do
+#   logout(User)
+#   res.redirect "/"
+# end
