@@ -2,8 +2,11 @@ require 'cuba'
 require 'cuba/contrib'
 require 'cuba/sugar'
 require "cuba/render"
+
+# templating
 require 'slim'
-require 'shield'
+require 'sass'
+require 'bourbon'
 
 require 'logger'
 require 'yaml'

@@ -10,22 +10,16 @@ Cuba.use Rack::Session::Cookie,
 
 Cuba.use Rack::Static,
   root: "public",
-  urls: ["/javascripts", "/stylesheets", "/images"]
+  urls: ["/javascripts", "/images"]
 
 Cuba.plugin Cuba::Render
 Cuba.settings.store(:template_engine, "slim")
 
-require "./models/user"
-
-# routes
-require "./routes/session"
-
 Cuba.define do
-
-  on get, extension("css") do |file|
+  on "stylesheets", extension("css") do |file|
     res.headers["Cache-Control"] = "public, max-age=29030400" if req.query_string =~ /[0-9]{10}/
     res.headers["Content-Type"] = "text/css; charset=utf-8"
-    res.write render("views/#{file}.sass")
+    res.write render("views/#{file}.sass", {}, load_paths: ["./views/stylesheets/bourbon"] )
   end
 
   on "(en|es)" do |locale|
@@ -35,7 +29,7 @@ Cuba.define do
   end
 
   on default do
-    res.redirect "/es"
+    res.redirect "/en"
   end
 end
 
@@ -57,3 +51,5 @@ end
 #   logout(User)
 #   res.redirect "/"
 # end
+
+# require "./models/user"
