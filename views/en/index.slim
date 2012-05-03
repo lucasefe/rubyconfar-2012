@@ -6,12 +6,6 @@ section#home
 
   h2 Keep me in the loop!
 
-  form action="/en/subscriptors" method='post'
-    .group
-      input type="email" value=@subscriptor.email name="subscriptor[email]" placeholder="Email"
-      - if @subscriptor.errors.has_key?(:email)
-        .error= @subscriptor.errors[:email].join(", ")
-
-    input type="submit" value="GO"
+  == partial 'subscriptors/form'
 
 section#videos

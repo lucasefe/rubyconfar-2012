@@ -20,6 +20,7 @@ Cuba.plugin Helper
 require 'cuba/contrib/text_helpers'
 Cuba.plugin Cuba::TextHelpers
 Cuba.plugin Cuba::Render
+Cuba.plugin Cuba::Sugar
 Cuba.settings.store(:template_engine, "slim")
 
 require "./models/user"
@@ -35,15 +36,12 @@ Cuba.define do
 
   on "(en|es)" do |locale|
     on "subscriptors" do
-
       on post, param(:subscriptor) do |subscriptor|
         @subscriptor = Subscriptor.new(subscriptor)
-        if @subscriptor.valid?
-          @subscriptor.save
-          flash["notice"] = "We'll keep you posted!"
-          res.redirect "/"
+        if @subscriptor.save(raise_on_save_failure: false)
+          res.write partial("subscriptors/success")
         else
-          res.write view("#{locale}/index")
+          res.write partial("subscriptors/form")
         end
       end
 

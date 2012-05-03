@@ -4,6 +4,7 @@ require 'cuba'
 require 'cuba/contrib'
 require 'cuba/sugar'
 require "cuba/render"
+require 'cuba/sugar'
 require 'slim'
 require 'sass'
 require 'logger'
