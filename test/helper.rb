@@ -1,7 +1,5 @@
 # encoding: utf-8
-require_relative '../shotgun'
-require_relative '../app'
-
+ENV['RACK_ENV'] = 'test'
 require 'minitest/matchers'
 require 'minitest/autorun'
 require 'minitest/pride'
@@ -10,13 +8,20 @@ require 'capybara'
 require 'capybara/dsl'
 require 'turn'
 
+require 'fileutils'
+FileUtils.rm("db/test.sqlite3")
+
+require_relative '../config/shotgun'
+require 'sequel'
+require 'sequel/extensions/migration'
+Sequel::Migrator.run(DB, 'db/migrations', use_transactions: true)
+
 class MiniTest::Spec
   include Capybara::DSL
 end
 
+require_relative '../app'
 Capybara.app = Cuba
-
-# Dir["test/factories/*.rb"].each { |rb| require_relative "../#{rb}" }
 
 Turn.config.format = :progress
 

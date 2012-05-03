@@ -4,13 +4,4 @@ html
     title RubyConf Argentina 2012
   
   body
-    - if current_user
-      nav
-        a href="/signout" = "Sign out"
-      | Welcome, 
-      = current_user.name
-    - else
-      nav 
-        a href="/auth/twitter" = "Sign up with twitter"
-
     == content

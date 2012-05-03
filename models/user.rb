@@ -1,12 +1,12 @@
 class User < Sequel::Model
   
-  def self.create_from(provider, attributes)
+  def self.create_from(attributes)
     attributes = attributes['info']
-    uid = attributes.delete('uid')
+    uid = attributes['uid']
     attributes.select! {|k, v| %w(nickname image name location).include?(k) }
-    User.filter(uid: uid).first.tap do
-      user ||= create uid: uid
-      user.update attributes
-    end
+    user = User.filter(uid: uid).first
+    user ||= create uid: uid
+    user.update attributes
+    user
   end
 end

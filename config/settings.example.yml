@@ -1,4 +1,9 @@
 database: 'sqlite://db/db.sqlite3'
+
+twitter:
+  access_token: "REPLACE ME"
+  access_token_secret: "REPLACE ME"
+
 twitter:
   access_token: "REPLACE ME"
   access_token_secret: "REPLACE ME"
