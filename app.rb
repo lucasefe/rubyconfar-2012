@@ -17,7 +17,6 @@ Cuba.settings.store(:template_engine, "slim")
 
 require "./models/user"
 
-
 # routes
 require "./routes/session"
 
@@ -29,8 +28,14 @@ Cuba.define do
     res.write render("views/#{file}.sass")
   end
 
+  on "(en|es)" do |locale|
+    on default do
+      res.write view("#{locale}/index")
+    end
+  end
+
   on default do
-    res.write view("home")
+    res.redirect "/es"
   end
 end
 
