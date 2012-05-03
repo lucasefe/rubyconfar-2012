@@ -1,7 +1,27 @@
 @import "bourbon"
 
+
 body 
+  
+  font-family: 'Maven Pro', sans-serif
+
+  h1 
+    font-size: 28px
+
+  h2
+    font-size: 24px
+
   #wrapper
     margin: 0 auto
     width: 760px
     height: 300px
+
+    #flashes
+      .message
+        border: solid 1px black
+        @include border-radius(5px)
+        &.error
+          color: red
+        &.notice
+          color: green
+

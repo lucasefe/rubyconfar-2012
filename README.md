@@ -11,5 +11,11 @@ It doesn't use bundler. It relies on a smaller/simpler solution, privided by the
 After that, follow this steps:
 
     dep install # installing dependencies
+    rake migrate # creates the sqlite3 db on db/development.sqlite3
+
+
+Start app
+
     foreman start # to start the app using thin, on port 3000
+
 

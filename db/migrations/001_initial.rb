@@ -9,6 +9,13 @@ Sequel.migration do
       String :image
       String :location
     end
+
+    create_table(:subscriptors) do
+      primary_key :id
+      String :email
+      DateTime :created_at
+      DateTime :updated_at
+    end
   end
   
   down do

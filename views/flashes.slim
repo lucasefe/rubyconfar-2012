@@ -1,0 +1,5 @@
+- unless flash.empty?
+  #flashes
+    - flash.keys.each do |key|
+      .message class=key
+        = flash.delete(key)
