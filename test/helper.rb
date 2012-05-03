@@ -6,6 +6,7 @@ require 'minitest/pride'
 
 require 'capybara'
 require 'capybara/dsl'
+require 'launchy'
 require 'turn'
 
 require 'fileutils'

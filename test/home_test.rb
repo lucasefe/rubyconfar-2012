@@ -4,6 +4,6 @@ describe 'home' do
 
   it "should show me the home" do
     visit "/"
-    assert has_content?("hello")
+    assert has_content?("RubyConf is back")
   end
 end
