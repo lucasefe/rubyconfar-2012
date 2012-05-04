@@ -1,27 +1,52 @@
 @import "bourbon"
+@import "stylesheets/reset"
+@import "stylesheets/colors"
 
 
-body 
-  
+
+
+
+.fadehover
+  position: relative
+  img
+    display: block
+    &.a
+      left: 0
+      position: absolute
+      top: 0
+      z-index: 10
+
+html, body
+  height: 100%
+
+body
+  background: $red
+  border-top: 2px solid $brown
+  color: $brown
   font-family: 'Maven Pro', sans-serif
 
-  h1 
-    font-size: 28px
+  header
+    border-right: 1px solid $brown
+    float: left
+    height: 100%
+    width: 210px
 
-  h2
-    font-size: 24px
+    #column
+      background: $brown
+      color: $red
+      margin: 0 auto
+      width: 165px
 
-  #wrapper
-    margin: 0 auto
-    width: 760px
-    height: 300px
 
-    #flashes
-      .message
-        border: solid 1px black
-        @include border-radius(5px)
-        &.error
-          color: red
-        &.notice
-          color: green
+
+
+
+  #flashes
+    .message
+      border: solid 1px black
+      @include border-radius(5px)
+      &.error
+        color: red
+      &.notice
+        color: green
 
