@@ -4,8 +4,6 @@
 
 
 
-
-
 .fadehover
   position: relative
   img
@@ -15,6 +13,7 @@
       position: absolute
       top: 0
       z-index: 10
+
 
 html, body
   height: 100%
@@ -35,11 +34,66 @@ body
       background: $brown
       color: $red
       margin: 0 auto
+      text-align: center
       width: 164px
+      padding-top: 15px
+
+      h2
+        font-size: 24px
+        margin-bottom: 10px
+
+      h3
+        background: url("../images/2012.png")
+        height: 38px
+        text-indent: -30000px
+        width: 119px
+        margin: 0 auto 50px
+
+      h4
+        font-size: 13px
+        letter-spacing: 1px
+
+      ul
+        margin: 30px 0 16px
+        li
+          display: inline
+          margin: 10px
+
+          &#icon_twitter a
+            height: 20px
+            width: 28px
+
+          &#icon_github a
+            height: 21px
+            width: 27px
+
+          &#icon_facebook a
+            height: 19px
+            width: 19px
+            margin-bottom: 1px
+          
+          a
+            display: inline-block
 
 
+  #wrapper  
+    margin-left: 210px
 
-
+    section#home
+      text-align: center
+      h1#logo
+        background: url("../images/rubyconf.png")
+        display: block
+        height: 200px
+        margin: 20px auto
+        text-indent: -30000px
+        width: 502px
+      h2
+        font-size: 26px
+        line-height: 1.2
+        margin-bottom: 50px
+        small
+          font-size: 20px
 
   #flashes
     .message

@@ -5,19 +5,19 @@ header
     h4 Lugar a confirmar
 
     ul
-      li
+      li#icon_twitter
         a href="http://www.twitter.com/RubyconfAr" target="_blank"
           .fadehover
             img.a src="images/icon_twitter_1.png" alt="Twitter"
             img.b src="images/icon_twitter_2.png" alt="Twitter"
 
-      li
+      li#icon_github
         a href="https://github.com/lucasefe/rubyconfar-2012" target="_blank"
           .fadehover
             img.a src="images/icon_github_1.png" alt="Github"
             img.b src="images/icon_github_2.png" alt="Github"
 
-      li
+      li#icon_facebook
         a href="http://www.facebook.com/rubyconfar" target="_blank"
           .fadehover
             img.a src="images/icon_facebook_1.png" alt="Facebook"
@@ -30,15 +30,21 @@ header
 
 
 
+#wrapper  
+  section#home
+    
+    == partial 'flashes'
 
-section#home
-  
-  == partial 'flashes'
+    h1#logo Rubyconf Argentina
 
-  h1 RubyConf is back
+    h2 
+      | RubyConf Argentina
+      br 
+      b is back in October 
+      small (ZOMG!)
 
-  h2 Keep me in the loop!
+    p Keep me in the loop!
 
-  == partial 'subscriptors/form'
+    == partial 'subscriptors/form'
 
-section#videos
+  section#videos
