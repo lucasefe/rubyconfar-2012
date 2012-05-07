@@ -8,5 +8,5 @@ class Subscriber < Sequel::Model
     super
     validates_presence [:email]
   end
-  
+
 end

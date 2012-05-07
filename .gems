@@ -20,3 +20,5 @@ bourbon -v 1.4.0
 launchy -v 2.1.0
 rack-protection -v 1.2.0
 cuba-sugar -v 0.2.4
+malone -v 1.0.0
+mailcatcher -v 0.5.6
