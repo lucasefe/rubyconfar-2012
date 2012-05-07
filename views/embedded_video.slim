@@ -1,6 +1,7 @@
-li.video
-  a href="http://player.vimeo.com/video/#{id}" 
-    = title
-  p
-    | by 
-    = author
+a href="http://player.vimeo.com/video/#{id}" 
+  li
+    p= author
+    .play_icon
+    img src=image alt=title
+
+    .shadow

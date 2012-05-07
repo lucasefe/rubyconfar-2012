@@ -35,11 +35,6 @@ Cuba.define do
       default.to_s
     end
 
-    def embedded_video(id, author, title)
-      "<iframe src=\"http://player.vimeo.com/video/#{id}\" width=\"500\" height=\"281\" 
-        frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
-    end
-
     def notify_new_subscriber(subscriber)
       Malone.deliver to: subscriber.email, 
         from: SETTINGS['default_email'], 

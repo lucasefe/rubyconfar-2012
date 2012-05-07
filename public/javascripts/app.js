@@ -1,6 +1,5 @@
 $(function() {
   $('#wrapper section').scrollspy({
-    min: "40",
     onEnter: function(element, position) {
       console.log("IN " + element.id)
       
