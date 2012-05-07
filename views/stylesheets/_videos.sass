@@ -11,18 +11,25 @@ section#videos
         @include box-shadow(0px 0px 3px rgba(0,0,0,0.6))
         @include transition (all 2.0s ease-in-out) 
         background: $brown
-        height: 167px
+        height: 194px
         margin: 0px 0px 10px 0px
         padding: 3px 5px 0
         text-align: center
         width: 206px
-        p
+        h1
           @include transition (all 2.0s ease-in-out)
           border-top: 2px solid #742723
           color: $red
-          font-size: 17px
-          margin-bottom: 14px
-          padding-top: 10px
+          font-size: 18px
+          font-weight: bold
+          padding-top: 6px
+
+        p
+          @include transition (all 2.0s ease-in-out)
+          color: $red
+          font-size: 10px
+          margin: 7px 0 11px
+          line-height: 1.3
 
         img
           @include border-radius(3px)
@@ -48,7 +55,7 @@ section#videos
         li
           @include box-shadow(0px 0px 6px rgba(0,0,0,0.9))
           background: darken($brown, 7%)
-          p
+          h1, p
             color: $yellow
           .play_icon
             opacity: 0
