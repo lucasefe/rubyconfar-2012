@@ -1,3 +1,4 @@
+#top_border
 #sidebar
   #column
     h2 OCT 19/20
@@ -34,8 +35,16 @@
       | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 
+#fix
+nav  
+  a.active href="#home" 
+    span Evento
+  .separator
+  a href="#videos" 
+    span Videos
 
-#wrapper  
+#wrapper 
+
   section#home
     
     == partial 'flashes'
