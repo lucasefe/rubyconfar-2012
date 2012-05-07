@@ -33,6 +33,13 @@ Cuba.define do
     def t(key, default = nil)
       default
     end
+
+    def notify_new_subscriber(subscriber)
+      Malone.deliver to: subscriber.email, 
+        from: SETTINGS['default_email'], 
+        subject: t('subscription.notification.subject', "[rubyconfar] We'll keep you posted!"),
+        html: partial('subscribers/success')
+    end
   end
 
   on "stylesheets", extension("css") do |file|
@@ -46,7 +53,9 @@ Cuba.define do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
         if @subscriber.save
+          notify_new_subscriber @subscriber
           res.write t('subscription.success', "<div id='party'><span></span>Ok. We'll keep you posted.</div>")
+
         else
           res.write partial("subscribers/form")
         end
@@ -71,7 +80,7 @@ end
 
 # Cuba.use OmniAuth::Builder do
 #   provider :developer, fields: [:uid, :nickname, :name ]
-#   provider :twitter, APP_CONFIG['twitter']['consumer_key'], APP_CONFIG['twitter']['consumer_secret']
+#   provider :twitter, SETTINGS['twitter']['consumer_key'], SETTINGS['twitter']['consumer_secret']
 # end
 
 # require "./lib/session_helper"

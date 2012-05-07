@@ -9,11 +9,18 @@ require 'capybara/dsl'
 require 'launchy'
 require 'turn'
 
+# Cleanup the test database, if exists. 
 require 'fileutils'
-FileUtils.rm("db/test.sqlite3")
+db_file = "db/test.sqlite3"
+FileUtils.rm(db_file) if File.exists?(db_file)
 
 require_relative '../config/shotgun'
+
+# This should go after loading the Malone conf
+require 'malone/test'
+
 require 'sequel'
+DB.loggers = []
 require 'sequel/extensions/migration'
 Sequel::Migrator.run(DB, 'db/migrations', use_transactions: true)
 
