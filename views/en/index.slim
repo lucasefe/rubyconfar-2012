@@ -54,3 +54,9 @@
       == partial 'subscribers/form'      
 
   section#videos
+
+    h1 Videos
+    ul
+      - Video.sample.each do |id, author, title|
+        li== embedded_video(id, author, title)
+      
