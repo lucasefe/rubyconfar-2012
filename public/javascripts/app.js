@@ -1,4 +1,14 @@
 $(function() {
+  $('#wrapper section').scrollspy({
+    min: "40",
+    onEnter: function(element, position) {
+      console.log("IN " + element.id)
+      
+    }, onLeave: function(element, position) {
+      console.log("OUT " + element.id)
+    }
+  });
+
   $('#subscriber_container form').live('submit', function(){
     $.post(this.action, $(this).serialize(), function(data, textStatus, jqXHR) {
       $('#subscriber_container').html(data)
