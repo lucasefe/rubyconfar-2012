@@ -10,7 +10,7 @@ Sequel.migration do
       String :location
     end
 
-    create_table(:subscriptors) do
+    create_table(:subscribers) do
       primary_key :id
       String :email
       DateTime :created_at

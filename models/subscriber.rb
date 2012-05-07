@@ -1,4 +1,4 @@
-class Subscriptor < Sequel::Model
+class Subscriber < Sequel::Model
   
   self.raise_on_save_failure = false
 

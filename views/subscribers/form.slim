@@ -1,0 +1,8 @@
+#subscriber_container
+  form action="/en/subscribers" method='post'
+    .group
+      input type="email" value=@subscriber.email name="subscriber[email]" placeholder="Email"
+      - if @subscriber.errors.has_key?(:email)
+        .error= @subscriber.errors[:email].join(", ")
+
+    input type="submit" value="GO"

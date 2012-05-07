@@ -24,9 +24,16 @@ Cuba.plugin Cuba::Sugar
 Cuba.settings.store(:template_engine, "slim")
 
 require "./models/user"
-require "./models/subscriptor"
+require "./models/subscriber"
 
 Cuba.define do
+
+  helpers do
+    # TODO: Implement
+    def t(key, default = nil)
+      default
+    end
+  end
 
   on "stylesheets", extension("css") do |file|
     res.headers["Cache-Control"] = "public, max-age=29030400" if req.query_string =~ /[0-9]{10}/
@@ -35,13 +42,13 @@ Cuba.define do
   end
 
   on "(en|es)" do |locale|
-    on "subscriptors" do
-      on post, param(:subscriptor) do |subscriptor|
-        @subscriptor = Subscriptor.new(subscriptor)
-        if @subscriptor.save(raise_on_save_failure: false)
-          res.write partial("subscriptors/success")
+    on "subscribers" do
+      on post, param(:subscriber) do |subscriber|
+        @subscriber = Subscriber.new(subscriber)
+        if @subscriber.save
+          res.write t('subscription.success', "We'll keep you posted")
         else
-          res.write partial("subscriptors/form")
+          res.write partial("subscribers/form")
         end
       end
 
@@ -51,7 +58,7 @@ Cuba.define do
     end
 
     on default do
-      @subscriptor = Subscriptor.new
+      @subscriber = Subscriber.new
       res.write view("#{locale}/index")
     end
 
