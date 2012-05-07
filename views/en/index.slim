@@ -64,15 +64,36 @@ nav
 
   section#videos
 
-    h1 Videos
 
-    a.more-videos More
-    a.less-videos Less
+    ul
+      a href="#"
+        li
+          p Sean Cribbs
+          .play_icon
+          img src="images/vimeos/sean.jpg" alt="Sean Cribbs - Embrace NoSQL and Eventual Consistency with Ripple"
+          .shadow
 
-    ul.less_videos
-      - Video.sample.each do |id, author, title|
-        == partial('embedded_video', id: id, author: author, title: title)
 
-    ul.more-videos
-      - Video.all.each do |id, author, title|
-        == partial('embedded_video', id: id, author: author, title: title)
+
+      a href="#"
+        li
+          p Sean Cribbs
+          .play_icon
+          img src="images/vimeos/sean.jpg" alt="Sean Cribbs - Embrace NoSQL and Eventual Consistency with Ripple"
+          .shadow
+
+
+      a href="#"
+        li
+          p Sean Cribbs
+          .play_icon
+          img src="images/vimeos/sean.jpg" alt="Sean Cribbs - Embrace NoSQL and Eventual Consistency with Ripple"
+          .shadow
+
+    / ul.less-videos
+    /   - Video.sample.each do |id, author, title|
+    /     == partial('embedded_video', id: id, author: author, title: title)
+
+    / ul.more-videos
+    /   - Video.all.each do |id, author, title|
+    /     == partial('embedded_video', id: id, author: author, title: title)

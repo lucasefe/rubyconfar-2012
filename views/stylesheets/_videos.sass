@@ -1,0 +1,57 @@
+section#videos
+  
+  ul
+    margin-top: 50px
+    text-align: center
+    a
+      @include inline-block
+      margin: 25px
+      li
+        @include border-radius(6px)
+        // @include box-shadow(1px 0px 0 rgba(255,255,255,0.2))
+        @include box-shadow(0px 0px 3px rgba(0,0,0,0.6))
+        @include transition (all 2.0s ease-in-out) 
+        background: $brown
+        height: 167px
+        margin: 0px 0px 10px 0px
+        padding: 3px 5px 0
+        text-align: center
+        width: 206px
+
+        p
+          @include transition (all 2.0s ease-in-out)
+          border-top: 2px solid #742723
+          color: $red
+          font-size: 17px
+          margin-bottom: 14px
+          padding-top: 10px
+
+        img
+          @include border-radius(3px)
+          border: 1px solid $red
+          
+
+        .play_icon
+          @include transition (all 2.0s)
+          background: url("../images/play_icon.png") no-repeat center center
+          height: 39px
+          margin: 34px 0 0 88px
+          position: absolute
+          width: 38px
+
+        .shadow
+          background: url("../images/shadow.png")
+          height: 8px
+          width: 212px
+          position: absolute
+          margin: 10px 0 0 -3px
+
+      &:hover
+        li
+          @include box-shadow(0px 0px 6px rgba(0,0,0,0.9))
+          background: darken($brown, 7%)
+          p
+            color: $yellow
+          .play_icon
+            opacity: 0
+

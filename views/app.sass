@@ -2,6 +2,7 @@
 @import "stylesheets/reset"
 @import "stylesheets/colors"
 
+@import "stylesheets/videos"
 
 
 .fadehover
@@ -13,8 +14,8 @@
       position: absolute
       top: 0
       z-index: 10
-
-
+a
+  text-decoration: none  
 html, body
   height: 100%
 
@@ -114,17 +115,16 @@ body
 
     a
       @include inline-block
+      @include transition (all 2.0s ease-in-out)
       color: $brown
       font-weight: bold
-      padding: 13px 6px 12px
-      text-decoration: none        
+      padding: 13px 6px 12px            
       text-transform: uppercase
       vertical-align: top
-      @include transition (all 2.0s ease-in-out)
 
       span
-        padding: 5px 5px 4px
         border-bottom: 2px solid transparent       
+        padding: 5px 5px 4px
 
       &.active
         background: $brown
@@ -251,24 +251,6 @@ body
               margin: 0 5px -3px 0
               width: 18px
 
-    section#videos
-      padding-left: 20px
-      
-      a.less-videos
-        display: none
-      ul 
-        li.video
-          @include border-radius(6px)
-          @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
-          border: 1px solid black
-          height: 80px
-          margin: 0px 0px 10px 0px
-          padding-top: 15px
-          text-align: center
-          width: 250px
-
-        &.more-videos
-          display: none
 
   #flashes
     .message
