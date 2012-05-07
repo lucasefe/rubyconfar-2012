@@ -1,6 +1,5 @@
 $(function() {
   $('#wrapper section').scrollspy({
-    min: "40",
     onEnter: function(element, position) {
       console.log("IN " + element.id)
       
@@ -22,7 +21,7 @@ $(function() {
       $(this).stop().animate({"opacity": "1"}, "slow");
   });
 
-  $("#videos ul li a").fancybox({
+  $("#videos ul a").fancybox({
     'transitionIn': 'elastic',
     'transitionOut': 'elastic',
     'speedIn': 600, 
