@@ -32,4 +32,4 @@ $(function() {
     $('section#videos ul.more-videos').hide(500);
     $(this).hide();
   });
-})
+});

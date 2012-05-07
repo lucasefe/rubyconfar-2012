@@ -14,36 +14,40 @@
       top: 0
       z-index: 10
 
-hr.clear
-  clear: both
-  height: 0
-  border: 1px solid green
-  margin: 0
-  padding: 0
-
 
 html, body
   height: 100%
 
 body
   background: $red
-  border-top: 2px solid $brown
   color: $brown
   font-family: 'Maven Pro', sans-serif
+
+  #top_border
+    background: $brown
+    height: 2px
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 300
 
   #sidebar
     border-right: 1px solid $brown
     float: left
     height: 100%
+    position: fixed
+    top: 2px
     width: 210px
+    z-index: 300
+    background: $red
 
     #column
       background: $brown
       color: $red
       margin: 0 auto
+      padding-top: 15px
       text-align: center
       width: 164px
-      padding-top: 15px
 
       h2
         font-size: 24px
@@ -88,10 +92,62 @@ body
       position: absolute
       z-index: 15
 
+  #fix
+    background: $red
+    height: 35px
+    width: 5px
+    position: fixed
+    z-index: 201
+    top: 2px
+    right: 0
+  nav
+    background: $red
+    border-bottom: 1px solid $brown
+    font-size: 15px
+    height: 34px
+    margin-left: 215px
+    padding: 0 44px
+    position: fixed
+    width: 100%
+    z-index: 200
+    top: 2px    
+
+    a
+      @include inline-block
+      color: $brown
+      font-weight: bold
+      padding: 13px 6px 12px
+      text-decoration: none        
+      text-transform: uppercase
+      vertical-align: top
+      @include transition (all 2.0s ease-in-out)
+
+      span
+        padding: 5px 5px 4px
+        border-bottom: 2px solid transparent       
+
+      &.active
+        background: $brown
+        color: $red
+        span
+          border-bottom: 2px solid $red
+        &:hover
+          span
+            border-bottom-color: $yellow
+
+      &:hover
+        color: $yellow
+
+    .separator
+      @include inline-block
+      background: url("../images/separator.png")
+      height: 22px
+      margin: 7px 10px 0
+      width: 10px
 
   #wrapper  
     margin-left: 210px
-
+    margin-top: 50px
     section#home
       text-align: center
       h1#logo
