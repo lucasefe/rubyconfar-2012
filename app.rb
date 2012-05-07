@@ -46,7 +46,7 @@ Cuba.define do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
         if @subscriber.save
-          res.write t('subscription.success', "We'll keep you posted")
+          res.write t('subscription.success', "<div id='party'><span></span>Ok. We'll keep you posted.</div>")
         else
           res.write partial("subscribers/form")
         end
