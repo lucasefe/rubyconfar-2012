@@ -10,12 +10,12 @@ require 'sass'
 require 'logger'
 require 'omniauth-twitter'
 
+require 'yaml'
+SETTINGS = YAML.load_file('config/settings.yml' )
+
 require 'sequel'
 DB = Sequel.connect("sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
-
-require 'yaml'
-SETTINGS = YAML.load_file('config/settings.yml' )
 
 require 'bourbon'
 SASS_LOAD_PATHS = ["./views/stylesheets/bourbon"]
