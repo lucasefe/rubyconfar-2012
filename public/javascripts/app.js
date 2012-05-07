@@ -21,4 +21,15 @@ $(function() {
     'type': 'iframe'
   });
 
+  $('section#videos a.more-videos').click(function() {
+    $('section#videos a.less-videos').show();
+    $('section#videos ul.more-videos').show(500);
+    $(this).hide();
+  });
+
+  $('section#videos a.less-videos').click(function() {
+    $('section#videos a.more-videos').show();
+    $('section#videos ul.more-videos').hide(500);
+    $(this).hide();
+  });
 })

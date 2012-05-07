@@ -195,7 +195,24 @@ body
               margin: 0 5px -3px 0
               width: 18px
 
+    section#videos
+      padding-left: 20px
+      
+      a.less-videos
+        display: none
+      ul 
+        li.video
+          @include border-radius(6px)
+          @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+          border: 1px solid black
+          height: 80px
+          margin: 0px 0px 10px 0px
+          padding-top: 15px
+          text-align: center
+          width: 250px
 
+        &.more-videos
+          display: none
 
   #flashes
     .message
