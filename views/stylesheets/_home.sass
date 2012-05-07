@@ -1,6 +1,6 @@
 section#home
   text-align: center
-  
+
   h1#logo
     background: url("../images/rubyconf.png")
     display: block
@@ -40,6 +40,7 @@ section#home
         .group
           input
             @include border-radius(4px 0 0 4px)
+            @include transition (background 2.0s)
             background: $brown
             border: 1px solid $red
             border-width: 1px 0 1px 1px
@@ -54,6 +55,7 @@ section#home
               color: $red
 
             &:focus
+              background: darken($brown, 7%)
               color: $yellow
 
           .error
