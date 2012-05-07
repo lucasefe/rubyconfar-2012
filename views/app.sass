@@ -120,6 +120,7 @@ body
       text-decoration: none        
       text-transform: uppercase
       vertical-align: top
+      @include transition (all 2.0s ease-in-out)
 
       span
         padding: 5px 5px 4px
@@ -130,6 +131,12 @@ body
         color: $red
         span
           border-bottom: 2px solid $red
+        &:hover
+          span
+            border-bottom-color: $yellow
+
+      &:hover
+        color: $yellow
 
     .separator
       @include inline-block
