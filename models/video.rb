@@ -26,6 +26,6 @@ class Video
   end
 
   def self.sample(quantity = 3)
-    ALL.sample(quantity)
+    ALL.shuffle.sample(quantity)
   end
 end
