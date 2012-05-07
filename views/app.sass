@@ -176,22 +176,23 @@ body
           #party  
             @include border-radius(6px)
             @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
-            @include linear-gradient(#E0F2C4, #BEDE9E)
-            border: 1px solid #5F8D24
-            color: #5F8D24
+            @include linear-gradient(lighten($brown,10%), $brown)
+            color: $red
             font-size: 16px
             font-weight: bold
             height: 34px
             letter-spacing: 0
-            line-height: 34px
+            line-height: 36px
             padding: 4px
             text-align: center
-            text-shadow: 1px 1px 0 #E0F2C4
+            b
+              color: $yellow
+              font-weight: normal
             span
               @include inline-block
               background: url("../images/icon_success.png") no-repeat center center
               height: 18px
-              margin: 0 7px -3px 0
+              margin: 0 5px -3px 0
               width: 18px
 
 

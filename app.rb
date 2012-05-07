@@ -54,7 +54,7 @@ Cuba.define do
         @subscriber = Subscriber.new(subscriber)
         if @subscriber.save
           notify_new_subscriber @subscriber
-          res.write t('subscription.success', "<div id='party'><span></span>Ok. We'll keep you posted.</div>")
+          res.write t('subscription.success', "<div id='party'><span></span><b>Ok.</b> We'll keep you posted.</div>")
 
         else
           res.write partial("subscribers/form")
