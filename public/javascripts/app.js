@@ -1,4 +1,5 @@
 $(function() {
+
   $('#wrapper section').scrollspy({
     onEnter: function(element, position) {
       console.log("IN " + element.id)
@@ -30,15 +31,4 @@ $(function() {
     'type': 'iframe'
   });
 
-  $('section#videos a.more-videos').click(function() {
-    $('section#videos a.less-videos').show();
-    $('section#videos ul.more-videos').slideDown(500);
-    $(this).hide();
-  });
-
-  $('section#videos a.less-videos').click(function() {
-    $('section#videos a.more-videos').show();
-    $('section#videos ul.more-videos').slideUp(500);
-    $(this).hide();
-  });
 });
