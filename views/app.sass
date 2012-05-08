@@ -114,14 +114,16 @@ body
       position: absolute
       width: 78px
 
-  #fix
+  .fix
     background: $red
-    height: 35px
+    height: 40px
     width: 5px
     position: fixed
     z-index: 201
     top: 2px
     right: 0
+    &.first_fix
+      left: 211px
   nav
     background: $red
     border-bottom: 1px solid $brown
@@ -132,7 +134,8 @@ body
     position: fixed
     width: 100%
     z-index: 200
-    top: 2px    
+    top: 2px
+    @include box-shadow(0 2px 5px rgba(0,0,0,0.3))  
 
     a
       @include inline-block
