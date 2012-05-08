@@ -16,7 +16,7 @@ class Video
     ['38561561', 'Luis Lavena', 'Tirando Ruby por la Ventana'],
     ['38561145', 'Alex Coles', 'The quiet and versatile Rubyist'],
     ['38531629', 'Koichiro Eto', 'The Timeless Way of Software Development'],
-    ['38531248', 'Matt Aimonetti', "Inside Ruby: concurrency \& garbage collection explained"],
+    ['38531248', 'Matt Aimonetti', "Concurrency \& garbage collection explained"],
     ['38496307', 'Yutaka Hara', "Ruby's past, present, and future"]
   ]
 
