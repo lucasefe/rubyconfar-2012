@@ -29,10 +29,24 @@
         img.a src="images/fist_1.png"
         img.b src="images/fist_2.png"
 
+  a#sz_studios href="http://www.szstudios.com.ar" target="_blank"
+    | Beautiful Design by 
+    b Sz Studios
+
   #follow_btn
     a href="https://twitter.com/RubyconfAr" class="twitter-follow-button" data-show-count="false" Follow @RubyconfAr
     script
       | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+  #mushroom
+    .flash
+      object height="78" width="78"
+        param name="movie" value="swf/shroom.swf"
+        param name="wmode" value="transparent"
+        embed height="78" src="swf/shroom.swf" width="78" wmode="transparent"
+
+
 
 
 #fix
@@ -63,8 +77,6 @@ nav
       == partial 'subscribers/form'      
 
   section#videos
-
-
     ul
       - Video.all.each do |id, author, title|
-        == partial('embedded_video', id: id, author: author, title: title, image: "images/vimeos/sean.jpg")
+        == partial('embedded_video', id: id, author: author, title: title, image: "images/vimeos/tom.jpg")

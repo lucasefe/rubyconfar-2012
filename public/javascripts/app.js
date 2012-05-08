@@ -22,6 +22,17 @@ $(function() {
       $(this).stop().animate({"opacity": "1"}, "slow");
   });
 
+  $('#sz_studios').hover(function() {
+      $('#mushroom').animate({height: '78px',}, 1500, 'easeOutQuint')
+      $('#sz_studios').animate({bottom: '2px',}, 1500, 'easeOutQuint')
+      $('#follow_btn').animate({bottom: '110px',}, 1500, 'easeOutQuint')
+    }, function() {
+      $('#mushroom').stop().animate({height: '0',})
+      $('#sz_studios').stop().animate({bottom: '-72px',}, 1500, 'easeOutQuint')
+      $('#follow_btn').stop().animate({bottom: '37px',}, 1500, 'easeOutQuint')
+
+    });
+
   $("#videos ul a").fancybox({
     'transitionIn': 'elastic',
     'transitionOut': 'elastic',
