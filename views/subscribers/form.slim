@@ -3,6 +3,8 @@
     .group
       input type="email" value=@subscriber.email name="subscriber[email]" placeholder="email"
       - if @subscriber.errors.has_key?(:email)
-        .error= @subscriber.errors[:email].join(", ")
+        .error
+          .triang
+          = @subscriber.errors[:email].join(", ")
 
     input name="GO" type="submit" value="GO"
