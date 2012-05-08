@@ -7,6 +7,7 @@ class Subscriber < Sequel::Model
   def validate
     super
     validates_presence [:email]
+    validates_unique :email, message: "already registered!"
   end
 
 end
