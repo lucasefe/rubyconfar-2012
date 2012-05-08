@@ -77,6 +77,7 @@ nav
       == partial 'subscribers/form'      
 
   section#videos
-    ul
-      - Video.all.each do |id, author, title|
-        == partial('embedded_video', id: id, author: author, title: title, image: "images/vimeos/#{author.split.first.downcase}.jpg")
+    article
+      ul
+        - Video.all.each do |id, author, title|
+          == partial('embedded_video', id: id, author: author, title: title, image: "images/vimeos/#{author.split.first.downcase}.jpg")
