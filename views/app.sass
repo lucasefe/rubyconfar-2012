@@ -100,20 +100,19 @@ body
           color: $yellow
 
       .tweet_intro
-        @include box-shadow(1px 1px 0 rgba(255,255,255,0))
-        @include border-radius(1px)
-        background: lighten($red, 5%)
-        border: 1px solid $brown
-        font-size: 12px
-        font-weight: bold
-        margin: 0 0 0 40px
-        padding: 1px 3px 2px
-        position: absolute
-        &:hover
-          @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
-          background: $red
-          border-color: $brown
-          color: $yellow
+        a
+          @include box-shadow(0 0 1px black inset)
+          @include border-radius(1px)
+          background: lighten($red, 5%)
+          font-size: 12px
+          font-weight: bold
+          margin: 0 0 0 40px
+          padding: 2px 4px 4px
+          position: absolute
+          &:hover
+            background: lighten($red, 10%)
+            border-color: $brown
+            color: $brown
 
       ul.tweet_list
         margin: 1px 0 0 40px
@@ -159,7 +158,7 @@ body
       width: 210px
       z-index: 20
       &:hover
-        text-decoration: underline
+        // text-decoration: underline
 
     #mushroom
       bottom: 0
@@ -227,3 +226,10 @@ body
   #wrapper  
     margin-left: 210px
     margin-top: 50px
+
+  footer
+    clear: both
+    margin-top: 20px
+    height: 30px
+    font-size: 10px
+    text-align: center

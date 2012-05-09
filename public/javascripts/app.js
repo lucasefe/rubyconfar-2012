@@ -38,8 +38,9 @@ $(function() {
     'transitionOut': 'elastic',
     'speedIn': 600, 
     'speedOut': 200, 
-    'overlayShow': false, 
-    'type': 'iframe'
+    'overlayColor': '#591B14', 
+    'type': 'iframe',
+    'padding': "5",
   });
 
 });
