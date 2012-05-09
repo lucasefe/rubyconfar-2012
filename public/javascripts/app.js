@@ -40,4 +40,10 @@ $(function() {
     'padding': "5",
   });
 
+
+  // Detecting iOS device
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {    
+      $('head').append('<link rel="stylesheet" href="stylesheets/ios.css" type="text/css" media="screen" charset="utf-8">');
+    });
+
 });
