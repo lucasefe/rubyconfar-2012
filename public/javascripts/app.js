@@ -23,14 +23,11 @@ $(function() {
   });
 
   $('#sz_studios').hover(function() {
-      $('#mushroom').animate({height: '78px',}, 1500, 'easeOutQuint')
-      $('#sz_studios').animate({bottom: '2px',}, 1500, 'easeOutQuint')
-      $('#follow_btn').animate({bottom: '110px',}, 1500, 'easeOutQuint')
-    }, function() {
-      $('#mushroom').stop().animate({height: '0',})
-      $('#sz_studios').stop().animate({bottom: '-72px',}, 1500, 'easeOutQuint')
-      $('#follow_btn').stop().animate({bottom: '37px',}, 1500, 'easeOutQuint')
-
+      $('#mushroom').css({"marginLeft": "0"})
+      $('#mushroom').animate({"opacity": "1"}, "slow");
+    }, function() {      
+      $('#mushroom').animate({"opacity": "0"}, "slow")
+      $('#mushroom').css({"marginLeft": "-400px"}); 
     });
 
   $("#videos ul a").fancybox({

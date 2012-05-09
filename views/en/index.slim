@@ -29,26 +29,24 @@
         img.a src="images/fist_1.png"
         img.b src="images/fist_2.png"
 
+    #mushroom
+      .flash
+        object height="169" width="164"
+          param name="movie" value="swf/shroom.swf"
+          param name="wmode" value="opaque"
+          embed height="169" src="swf/shroom.swf" width="164" wmode="opaque"
+
   .tweet
 
-  a#sz_studios href="http://www.szstudios.com.ar" target="_blank"
-    | Beautiful Design by 
-    b Sz Studios
+  #sz_studios
+    a href="http://www.szstudios.com.ar" target="_blank"
+      | Web Design by 
+      b Sz Studios
 
   #follow_btn
     a href="https://twitter.com/RubyconfAr" class="twitter-follow-button" data-show-count="false" Follow @RubyconfAr
     script
       | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-
-  #mushroom
-    .flash
-      object height="78" width="78"
-        param name="movie" value="swf/shroom.swf"
-        param name="wmode" value="transparent"
-        embed height="78" src="swf/shroom.swf" width="78" wmode="transparent"
-
-
 
 
 .fix.first_fix

@@ -88,6 +88,16 @@ body
           a
             @include inline-block
 
+    #mushroom
+      height: 169px
+      margin-left: -400px
+      margin-top: -169px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      width: 164px
+      z-index: 5000
+
     .tweet
       font-size: 10px
       margin: 15px auto 0
@@ -148,25 +158,23 @@ body
       position: absolute
       z-index: 15
 
-    a#sz_studios
-      bottom: -72px
-      color: $brown
-      font-size: 11px
-      height: 100px
+    #sz_studios
+      bottom: 16px
       position: absolute
       text-align: center
       width: 210px
       z-index: 20
-      &:hover
-        // text-decoration: underline
+      a
+        @include border-radius(2px)        
+        @include transition (all 2.0s ease-in-out)
+        color: $brown
+        font-size: 11px
+        padding: 2px 5px 3px
+        &:hover
+          @include box-shadow(0 0 1px black inset)        
+          background: lighten($red, 5%)
+        
 
-    #mushroom
-      bottom: 0
-      height: 0
-      left: 75px
-      overflow: hidden
-      position: absolute
-      width: 78px
 
   .fix
     background: $red
