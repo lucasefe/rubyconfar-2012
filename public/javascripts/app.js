@@ -22,12 +22,11 @@ $(function() {
       $(this).stop().animate({"opacity": "1"}, "slow");
   });
 
+  var mashroom = $('#mushroom');
   $('#sz_studios').hover(function() {
-      $('#mushroom').css({"marginLeft": "0"})
-      $('#mushroom').animate({"opacity": "1"}, "slow");
+      mashroom.css({"marginLeft": "0"}).animate({"opacity": "1"}, "slow");
     }, function() {      
-      $('#mushroom').animate({"opacity": "0"}, "slow")
-      $('#mushroom').css({"marginLeft": "-400px"}); 
+      mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"marginLeft": "-400px"}) })
     });
 
   $("#videos ul a").fancybox({
