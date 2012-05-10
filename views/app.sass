@@ -10,11 +10,14 @@
   position: relative
   img
     display: block
-    &.a
+    &.a, &.c
       left: 0
       position: absolute
       top: 0
       z-index: 10
+    &.c
+      display: none
+      z-index: 100
 a
   text-decoration: none  
 html, body
@@ -88,6 +91,7 @@ body
           a
             @include inline-block
 
+
     #mushroom
       height: 169px
       margin-left: -400px
@@ -159,7 +163,7 @@ body
       z-index: 15
 
     #sz_studios
-      bottom: 16px
+      bottom: 17px
       position: absolute
       text-align: center
       width: 210px
@@ -169,7 +173,7 @@ body
         @include transition (all 2.0s ease-in-out)
         color: $brown
         font-size: 11px
-        padding: 2px 5px 3px
+        padding: 4px 10px 5px
         &:hover
           @include box-shadow(0 0 1px black inset)        
           background: lighten($red, 5%)

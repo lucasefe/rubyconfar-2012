@@ -56,12 +56,19 @@ $(function() {
 
 
   // Animating the mashroom
-  var mashroom = $('#mushroom');
+  var mashroom = $('#fist img.c');
   $('#sz_studios').hover(function() {
-    mashroom.css({"marginLeft": "0"}).animate({"opacity": "1"}, "slow");
+    mashroom.css({"display": "block"}).animate({"opacity": "1"}, "slow");
   }, function() {      
-    mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"marginLeft": "-400px"}) })
+    mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"display": "none"}) })
   });
+
+  // var mashroom = $('#mushroom');
+  // $('#sz_studios').hover(function() {
+  //   mashroom.css({"marginLeft": "0"}).animate({"opacity": "1"}, "slow");
+  // }, function() {      
+  //   mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"marginLeft": "-400px"}) })
+  // });
 
   // Basic fancybox hooks for the vimeo videos. 
   $("#videos ul a").fancybox({
