@@ -51,8 +51,8 @@
 
 .fix.first_fix
 .fix
-nav  
-  a href="#home" 
+nav
+  a href="#home"
     span Evento
   .separator
   a href="#videos"
@@ -80,7 +80,7 @@ nav
   section#videos
     article
       ul
-        - Video.all.each do |id, author, title|
+        - Video.all.shuffle.each do |id, author, title|
           == partial('embedded_video', id: id, author: author, title: title, image: "images/vimeos/#{author.split.first.downcase}.jpg")
 
   footer

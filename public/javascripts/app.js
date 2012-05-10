@@ -1,14 +1,41 @@
+function highlightIfActive(section) {
+  position = $(document).scrollTop() // should I pass it over, to avoid recalculating it every time? 
+  offset = -100;
+  start = section.position().top + offset;
+  end = section.height() + section.position().top  + offset;
+  elem = $('nav a[href="#' + section.attr('id') + '"]');
+  if ((position >= start) && (position <= end)) {
+    elem.addClass('active');
+  } else {
+    elem.removeClass('active');
+  }
+}
+
 $(function() {
 
-  // $('#wrapper section').scrollspy({
-  //   onEnter: function(element, position) {
-  //     console.log("IN " + element.id)
-      
-  //   }, onLeave: function(element, position) {
-  //     console.log("OUT " + element.id)
-  //   }
-  // });
+  $('section').each(function() {
+    highlightIfActive($(this))
+  });
 
+  $(document).on('scroll', function(){
+    $('section').each(function() {
+      highlightIfActive($(this))
+    });
+  })
+
+  $('nav').scrollspy({offset: 50}).on('activate', function(){
+    console.log("activated")
+  })
+
+  // Nice animation when click the nav
+  $('nav a').click(function(e){
+    $($(this).attr('href')).ScrollTo({
+      duration: 1000
+    });
+    e.preventDefault();
+  });
+
+  // Ajax submision of subscriber form
   $('#subscriber_container form').live('submit', function(){
     $.post(this.action, $(this).serialize(), function(data, textStatus, jqXHR) {
       $('#subscriber_container').html(data)
@@ -16,12 +43,14 @@ $(function() {
     return false
   })
 
+  // Images with hover
   $("img.a").hover(function() {
       $(this).stop().animate({"opacity": "0"}, "slow");
     }, function() {
       $(this).stop().animate({"opacity": "1"}, "slow");
   });
 
+  // Animating the mashroom
   var mashroom = $('#mushroom');
   $('#sz_studios').hover(function() {
     mashroom.css({"marginLeft": "0"}).animate({"opacity": "1"}, "slow");
@@ -29,6 +58,7 @@ $(function() {
     mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"marginLeft": "-400px"}) })
   });
 
+  // Basic fancybox hooks for the vimeo videos. 
   $("#videos ul a").fancybox({
     'transitionIn': 'elastic',
     'transitionOut': 'elastic',
@@ -39,10 +69,22 @@ $(function() {
     'padding': "5",
   });
 
-
   // Detecting iOS device
   if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {    
     $('head').append('<link rel="stylesheet" href="/stylesheets/ios.css" type="text/css" media="screen" charset="utf-8">');
   };
 
+  $('.tweet').tweet({
+    username: "rubyconfar",
+    join_text: "auto",
+    intro_text: "<a href='http://www.twitter.com/RubyconfAr' target='_blank'>@RubyconfAr</a>",
+    avatar_size: 28,
+    count: 1,
+    auto_join_text_default: "",
+    auto_join_text_ed: "",
+    auto_join_text_ing: "",
+    auto_join_text_reply: "",
+    auto_join_text_url: "",
+    loading_text: "Loading tweets..."
+  }); 
 });
