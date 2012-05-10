@@ -191,6 +191,7 @@ body
     &.first_fix
       left: 211px
   nav
+    @include box-shadow(0 2px 5px rgba(0,0,0,0.3))  
     background: $red
     border-bottom: 1px solid $brown
     font-size: 15px
@@ -198,10 +199,9 @@ body
     margin-left: 215px
     padding: 0 44px
     position: fixed
+    top: 2px
     width: 100%
     z-index: 200
-    top: 2px
-    @include box-shadow(0 2px 5px rgba(0,0,0,0.3))  
 
     a
       @include inline-block
