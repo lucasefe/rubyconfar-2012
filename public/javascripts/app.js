@@ -13,6 +13,15 @@ function highlightIfActive(section) {
 
 $(function() {
 
+  // Nice animation when clicking the nav
+  $('nav a').click( function(e){
+    var link = $(this).attr('href');
+    console.log($(link));
+    $('body,html').animate({ scrollTop: $(link).offset().top}, 1000);
+    e.preventDefault();
+  });
+
+
   $('section').each(function() {
     highlightIfActive($(this))
   });
@@ -23,14 +32,7 @@ $(function() {
     });
   })
 
-  // Nice animation when click the nav
-  $('nav a').click(function(e){
-    $($(this).attr('href')).ScrollTo({
-      duration: 1000
-    });
-    e.preventDefault();
-  });
-
+  
   // Ajax submision of subscriber form
   $('#subscriber_container form').live('submit', function(){
     $.post(this.action, $(this).serialize(), function(data, textStatus, jqXHR) {
