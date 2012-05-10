@@ -54,9 +54,9 @@ Cuba.define do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
         if @subscriber.save
-          notify_new_subscriber @subscriber
+          # FIXME:Template not ready.
+          # notify_new_subscriber @subscriber
           res.write t('subscription.success', "<div id='party'><span></span><b>Ok.</b> We'll keep you posted.</div>")
-
         else
           res.write partial("subscribers/form")
         end
