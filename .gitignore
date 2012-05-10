@@ -2,3 +2,5 @@ config/settings.yml
 db/*.sqlite3
 .sass-cache/
 capybara*.html
+.DS_Store
+
