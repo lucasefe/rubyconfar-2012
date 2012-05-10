@@ -48,6 +48,13 @@ $(function() {
       $(this).stop().animate({"opacity": "1"}, "slow");
   });
 
+  $("input[type='email']").hover(function() {
+      $("#fist img.a").stop().animate({"opacity": "0"}, "slow");
+    }, function() {
+      $("#fist img.a").stop().animate({"opacity": "1"}, "slow");
+  });
+
+
   // Animating the mashroom
   var mashroom = $('#mushroom');
   $('#sz_studios').hover(function() {
