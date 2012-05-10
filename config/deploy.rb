@@ -37,6 +37,7 @@ end
 namespace :app do
   task :update_config_file, :roles => :app do
     run "cp -r #{shared_path}/config/settings.yml #{release_path}/config/settings.yml"
+    run "rm -fr #{release_path}/db && ln -sf #{shared_path}/db #{release_path}/db"
   end  
 end
 after  "deploy:update_code",  "app:update_config_file"
