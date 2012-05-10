@@ -23,10 +23,6 @@ $(function() {
     });
   })
 
-  $('nav').scrollspy({offset: 50}).on('activate', function(){
-    console.log("activated")
-  })
-
   // Nice animation when click the nav
   $('nav a').click(function(e){
     $($(this).attr('href')).ScrollTo({
