@@ -14,14 +14,14 @@ class Cuba
     end
 
     def current_locale(locale)
-      ::R18n.set do
+      ::R18n.thread_set do
         ::R18n::I18n.default = settings.fetch(:default_locale)
         ::R18n::I18n.new([locale], settings.fetch(:translations))
       end
     end
 
     def page(path)
-      view("pages/index")
+      view("pages/#{path}")
     end
   end
 end
