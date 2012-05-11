@@ -1,4 +1,6 @@
-database: 'sqlite://db/db.sqlite3'
+default_email: "rubyconfar@gmail.com"
+smtp_settings: 
+  url: "smtp://localhost:1025"
 
 twitter:
   access_token: "REPLACE ME"
