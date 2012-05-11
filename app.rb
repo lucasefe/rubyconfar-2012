@@ -55,14 +55,14 @@ Cuba.define do
         if @subscriber.save
           # FIXME:Template not ready.
           # notify_new_subscriber @subscriber
-          res.write t('subscription.success', "<div id='party'><span></span><b>Ok.</b> We'll keep you posted.</div>")
+          res.write "<div id='party'><span></span><b>Ok.</b> We'll keep you posted.</div>"
         else
           res.write partial("subscribers/form")
         end
       end
 
       on default do 
-        res.redirect "/en"    
+        res.redirect "/"    
       end
     end
 
@@ -74,7 +74,7 @@ Cuba.define do
   end
 
   on default do
-    res.redirect "/en"
+    res.redirect "/es"
   end
 end
 
