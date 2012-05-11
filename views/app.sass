@@ -29,7 +29,7 @@ body
   font-family: 'Maven Pro', sans-serif
 
   #top_border
-    background: $brown
+    background: $yellow
     height: 2px
     position: fixed
     top: 0
@@ -205,6 +205,7 @@ body
 
     a
       @include inline-block
+      @include border-radius(0 0 2px 2px)
       @include transition (all 2.0s ease-in-out)
       color: $brown
       font-weight: bold
@@ -216,12 +217,13 @@ body
         border-bottom: 2px solid transparent       
         padding: 5px 5px 4px
 
-      &.active
+      &.active        
         background: $brown
-        color: $red
+        color: $yellow
         span
-          border-bottom: 2px solid $red
+          border-bottom: 2px solid $yellow
         &:hover
+          color: $red
           span
             border-bottom-color: $yellow
 
