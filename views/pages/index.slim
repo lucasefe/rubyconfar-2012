@@ -3,7 +3,7 @@
   #column
     h2 OCT 19/20
     h3 2012
-    h4 Venue to be confirmed
+    h4= t.venue
 
     ul
       li#icon_twitter
@@ -47,10 +47,10 @@
 .fix
 nav
   a href="#home"
-    span Event
+    span= t.nav.home
   .separator
   a href="#videos"
-    span Videos
+    span= t.nav.videos
 
 #wrapper
 
@@ -63,7 +63,7 @@ nav
     h2 
       | RubyConf Argentina
       br 
-      b is back in October 
+      b= t.welcome
       small (ZOMG!)
 
     #in_the_loop

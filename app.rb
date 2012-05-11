@@ -23,6 +23,9 @@ Cuba.plugin Cuba::Render
 Cuba.plugin Cuba::Sugar
 Cuba.settings.store(:template_engine, "slim")
 
+require './lib/cuba-r18n'
+Cuba.plugin Cuba::R18n
+
 require "./models/video"
 require "./models/user"
 require "./models/subscriber"
@@ -30,11 +33,6 @@ require "./models/subscriber"
 Cuba.define do
 
   helpers do
-    # TODO: Implement
-    def t(key, default = nil)
-      default.to_s
-    end
-
     def notify_new_subscriber(subscriber)
       Malone.deliver to: subscriber.email, 
         from: SETTINGS['default_email'], 
@@ -49,7 +47,8 @@ Cuba.define do
     res.write render("views/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
 
-  on "(en|es)" do |locale|
+  on localized do |locale|
+    current_locale(locale)
     on "subscribers" do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
@@ -69,7 +68,7 @@ Cuba.define do
 
     on default do
       @subscriber = Subscriber.new
-      res.write view("#{locale}/index")
+      res.write page("index")
     end
 
   end

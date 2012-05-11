@@ -23,3 +23,4 @@ cuba-sugar -v 0.2.4
 malone -v 1.0.0
 mailcatcher -v 0.5.6
 capistrano -v 2.12.0
+r18n-core -v 0.4.14
