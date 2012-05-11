@@ -16,14 +16,7 @@ class Cuba
     def current_locale(locale)
       ::R18n.set do
         ::R18n::I18n.default = settings.fetch(:default_locale)
-        locales = [locale, ::R18n::I18n.parse_http(req.env['HTTP_ACCEPT_LANGUAGE'])]
-        
-        if params["locale"]
-          locales.insert(0, params["locale"])
-        elsif session["locale"]
-          locales.insert(0, session["locale"])
-        end
-        ::R18n::I18n.new(locales, settings.fetch(:translations))
+        ::R18n::I18n.new([locale], settings.fetch(:translations))
       end
     end
 

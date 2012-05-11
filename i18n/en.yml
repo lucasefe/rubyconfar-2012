@@ -3,3 +3,6 @@ welcome: "is back in October "
 nav:
   home: "Event"
   videos: "Videos"
+
+subscriber:
+  already_registered: "Already registered"
