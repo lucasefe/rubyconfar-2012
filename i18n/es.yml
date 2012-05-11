@@ -6,3 +6,4 @@ nav:
 
 subscriber:
   already_registered: "Ya te encuentras registrado"
+  is_not_present: "es requerido"

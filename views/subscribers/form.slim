@@ -1,5 +1,5 @@
 #subscriber_container
-  form action="/en/subscribers" method='post'
+  form action="/#{current_locale}/subscribers" method='post'
     .group
       input type="email" value=@subscriber.email name="subscriber[email]" placeholder="email"
       - if @subscriber.errors.has_key?(:email)

@@ -6,3 +6,4 @@ nav:
 
 subscriber:
   already_registered: "Already registered"
+  is_not_present: "is not present"

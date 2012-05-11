@@ -48,7 +48,7 @@ Cuba.define do
   end
 
   on localized do |locale|
-    current_locale(locale)
+    set_locale(locale)
     on "subscribers" do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)

@@ -5,7 +5,6 @@ class Cuba
 
     def self.setup(app)
       app.plugin ::R18n::Helpers
-      app.settings.store :default_locale, 'es'
       app.settings.store :translations, File.join(Dir.pwd, 'i18n/') 
     end
 
@@ -13,9 +12,13 @@ class Cuba
       "(en|es)"
     end
 
-    def current_locale(locale)
+    def current_locale
+      @locale
+    end
+
+    def set_locale(locale)
+      @locale = locale
       ::R18n.thread_set do
-        ::R18n::I18n.default = settings.fetch(:default_locale)
         ::R18n::I18n.new([locale], settings.fetch(:translations))
       end
     end
