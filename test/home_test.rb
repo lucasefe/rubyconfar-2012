@@ -13,6 +13,7 @@ describe 'home' do
     click_button "GO"
     assert  has_content?("We'll keep you posted")
     assert "some@email.com", Subscriber.order("id ASC").last.email
-    assert_equal 1, Malone.deliveries.size
+    # not sending email at this moment
+    # assert_equal 1, Malone.deliveries.size
   end
 end
