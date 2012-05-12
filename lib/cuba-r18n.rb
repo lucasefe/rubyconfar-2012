@@ -9,7 +9,11 @@ class Cuba
     end
 
     def localized
-      "(en|es)"
+      lambda do 
+        if consume("(en|es)")
+          set_locale(captures.last) 
+        end
+      end
     end
 
     def current_locale
@@ -21,6 +25,7 @@ class Cuba
       ::R18n.thread_set do
         ::R18n::I18n.new([locale], settings.fetch(:translations))
       end
+      @locale
     end
 
     def page(path)

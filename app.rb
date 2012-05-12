@@ -46,9 +46,7 @@ Cuba.define do
     res.headers["Content-Type"] = "text/css; charset=utf-8"
     res.write render("views/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
-
-  on localized do |locale|
-    set_locale(locale)
+  on localized do
     on "subscribers" do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
