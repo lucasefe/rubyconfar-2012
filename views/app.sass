@@ -192,7 +192,7 @@ body
       left: 211px
   nav
     @include box-shadow(0 2px 5px rgba(0,0,0,0.3))  
-    background: $red
+    background: $red 
     border-bottom: 1px solid $brown
     font-size: 15px
     height: 34px
@@ -251,8 +251,18 @@ body
         text-transform: uppercase
 
   footer
+    @include box-shadow(0 1px 5px rgba(0,0,0,0.5) inset)
+    background: url("../images/stripes.png")
+    border-top: 1px solid $brown
     clear: both
-    margin-top: 20px
+    font-size: 11px
     height: 30px
-    font-size: 10px
+    margin: 20px 0 0
+    padding: 20px 0 10px
     text-align: center
+    .fix
+      bottom: 0
+      height: 62px
+      top: auto
+
+
