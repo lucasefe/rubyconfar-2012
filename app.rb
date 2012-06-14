@@ -2,8 +2,8 @@
 require './config/shotgun'
 
 Cuba.use Rack::MethodOverride
-Cuba.use Rack::Session::Cookie, 
-  key: "rubyconfar", 
+Cuba.use Rack::Session::Cookie,
+  key: "rubyconfar",
   secret: "jhaksfgsdkgaskjfgskdfgsk"
 
 require "rack/protection"
@@ -34,8 +34,8 @@ Cuba.define do
 
   helpers do
     def notify_new_subscriber(subscriber)
-      Malone.deliver to: subscriber.email, 
-        from: SETTINGS['default_email'], 
+      Malone.deliver to: subscriber.email,
+        from: SETTINGS['default_email'],
         subject: t('subscription.notification.subject', "[rubyconfar] We'll keep you posted!"),
         html: partial('subscribers/success')
     end
@@ -44,7 +44,7 @@ Cuba.define do
   on "stylesheets", extension("css") do |file|
     res.headers["Cache-Control"] = "public, max-age=29030400" if req.query_string =~ /[0-9]{10}/
     res.headers["Content-Type"] = "text/css; charset=utf-8"
-    res.write render("views/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
+    res.write render("views/stylesheets/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
   on localized do
     on "subscribers" do
@@ -59,8 +59,8 @@ Cuba.define do
         end
       end
 
-      on default do 
-        res.redirect "/"    
+      on default do
+        res.redirect "/"
       end
     end
 
