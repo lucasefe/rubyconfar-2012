@@ -3,6 +3,7 @@ welcome: "vuelve en Octubre "
 nav:
   home: "Evento"
   videos: "Videos"
+  proposals: "Convocatorias"
 
 subscriber:
   already_registered: "Ya te encuentras registrado"

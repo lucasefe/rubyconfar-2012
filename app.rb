@@ -29,6 +29,7 @@ Cuba.plugin Cuba::R18n
 require "./models/video"
 require "./models/user"
 require "./models/subscriber"
+require "./models/proposal"
 
 Cuba.define do
 
@@ -47,6 +48,21 @@ Cuba.define do
     res.write render("views/stylesheets/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
   on localized do
+    on "proposals" do
+      on post, param(:proposal) do |proposal|
+        @proposal= Proposal.new(proposal)
+        if @proposal.save
+          res.write partial("proposals/created")
+        else
+          res.write partial("proposals/form")
+        end
+      end
+
+      on default do
+        res.redirect "/"
+      end
+    end
+
     on "subscribers" do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
@@ -66,6 +82,7 @@ Cuba.define do
 
     on default do
       @subscriber = Subscriber.new
+      @proposal = Proposal.new
       res.write page("index")
     end
 

@@ -51,6 +51,8 @@ nav
   .separator
   a href="#videos"
     span= t.nav.videos
+  a href="#proposals"
+    span= t.nav.proposals
 
 #wrapper
 
@@ -69,7 +71,10 @@ nav
     #in_the_loop
 
       p Keep me in the loop!
-      == partial 'subscribers/form'      
+      == partial 'subscribers/form'
+
+  section#proposals
+    == partial 'proposals/form'
 
   section#videos
     h1.title Videos 2011

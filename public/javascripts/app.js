@@ -40,6 +40,13 @@ $(function() {
     })
     return false
   })
+  // Ajax submision of proposal form
+  $('#proposal_container form').live('submit', function(){
+    $.post(this.action, $(this).serialize(), function(data, textStatus, jqXHR) {
+      $('#proposal_container').html(data)
+    })
+    return false
+  })
 
   // Images with hover
   $("img.a").hover(function() {

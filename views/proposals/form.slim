@@ -1,0 +1,10 @@
+
+#proposal_container
+  form action="/#{current_locale}/proposals" method='post'
+    == input_type :proposal, @proposal, :author_name, label: "Name"
+    == input_type :proposal, @proposal, :author_email, label: "Email"
+    == input_type :proposal, @proposal, :author_twitter, label: "Twitter"
+    == input_type :proposal, @proposal, :title, label: "Title"
+    == input_area :proposal, @proposal, :abstract, label: "Abstract / Description"
+
+    input name="GO" type="submit" value="Send proposal"

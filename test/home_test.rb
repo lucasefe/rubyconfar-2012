@@ -17,3 +17,23 @@ describe 'home' do
     # assert_equal 1, Malone.deliveries.size
   end
 end
+
+describe 'proposals' do
+
+  it "should display the home" do
+    visit "/en"
+    assert has_content?("Proposals")
+  end
+
+  it "should allow sending of proposals" do
+    visit "/en"
+    fill_in 'proposal[author_name]', with: "joe smith"
+    fill_in 'proposal[author_email]', with: "some@email.com"
+    fill_in 'proposal[author_twitter]', with: "@jow45565"
+    fill_in 'proposal[title]', with: "Stuff"
+    fill_in 'proposal[abstract]', with: "stuffff"
+    click_button "Send proposal"
+    assert  has_content?("Thank you!")
+    assert "some@email.com", Proposal.order("id ASC").last.author_email
+  end
+end

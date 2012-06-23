@@ -3,7 +3,11 @@ welcome: "is back in October "
 nav:
   home: "Event"
   videos: "Videos"
+  proposals: "Proposals"
 
 subscriber:
   already_registered: "Already registered"
+  is_not_present: "is not present"
+
+proposal:
   is_not_present: "is not present"
