@@ -4,6 +4,7 @@ nav:
   home: "Event"
   videos: "Videos"
   proposals: "Proposals"
+  sponsors: "Sponsors"
 
 subscriber:
   already_registered: "Already registered"

@@ -4,6 +4,7 @@ nav:
   home: "Evento"
   videos: "Videos"
   proposals: "Convocatorias"
+  sponsors: "Sponsors"
 
 subscriber:
   already_registered: "Ya te encuentras registrado"

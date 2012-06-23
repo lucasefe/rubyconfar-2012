@@ -51,6 +51,10 @@ nav
   .separator
   a href="#videos"
     span= t.nav.videos
+  .separator
+  a href="#sponsors"
+    span= t.nav.sponsors
+  .separator
   a href="#proposals"
     span= t.nav.proposals
 
@@ -75,6 +79,9 @@ nav
 
   section#proposals
     == partial 'proposals/form'
+
+  section#sponsors
+    == partial "pages/sponsors_#{current_locale}"
 
   section#videos
     h1.title Videos 2011
