@@ -58,6 +58,21 @@ nav
   a href="#proposals"
     span= t.nav.proposals
 
+
+#localizer
+  span.dir class=current_locale
+    ul
+      li.first
+        a href="/es" class=current_locale?("es", "active", "")
+          img src="images/che_donalds.png"
+          span Espa&ntilde;ol
+
+      li 
+        a href="/en" class=current_locale?("en", "active", "")
+          img src="images/mc_guevaras.png"
+          span English
+
+
 #wrapper
 
   section#home 
