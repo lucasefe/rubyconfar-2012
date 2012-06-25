@@ -93,15 +93,15 @@ nav
       == partial 'subscribers/form'
 
   section#proposals
-    h1.title Proposals
+    h1.title= t.nav.proposals
     == partial 'proposals/form'
 
   section#sponsors
-    h1.title Sponsors
+    h1.title= t.nav.sponsors
     == partial "pages/sponsors_#{current_locale}"
 
   section#videos
-    h1.title Videos 2011
+    h1.title= t.nav.videos
     article
       ul
         - Video.all.shuffle.each do |id, author, title|
