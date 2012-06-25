@@ -58,11 +58,18 @@ section#proposals
         margin: 95px 0 0 0
         width: 263px
 
-      #submit_proposal
-        background: url('../images/submit_proposal_en.png') no-repeat center center
-        height: 78px
-        margin: -4px 0 -65px 281px
-        width: 197px        
+      #submit_proposal        
+        &.en
+          background: url('../images/submit_proposal_en.png') no-repeat center center
+          height: 78px
+          margin: -4px 0 -65px 281px
+          width: 197px      
+
+        &.es
+          background: url('../images/submit_proposal_es.png') no-repeat center center
+          height: 82px
+          margin: -4px 0 -65px 260px
+          width: 214px  
 
       input[type="submit"]
         @include border-radius(6px)              
