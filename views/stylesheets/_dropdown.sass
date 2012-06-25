@@ -1,0 +1,66 @@
+#localizer
+  position: fixed
+  right: 5px
+  top: 2px
+  z-index: 1000
+
+  span.dir
+    background: $brown url('../images/flags.png') no-repeat 5px 8px
+    cursor: pointer
+    display: block
+    height: 34px
+    width: 58px
+    zoom: 1
+    &.es
+      background-position: 5px -31px
+
+    &.hover, &:hover
+      position: relative
+      z-index: 599
+      &> ul
+        visibility: visible
+    ul
+      @include border-radius(3px 0 3px 3px)
+      @include box-shadow(-2px 2px 5px rgba(0,0,0,0.4))
+      background: $brown
+      border: 1px solid $red
+      border-width: 0 1px 1px 1px
+      right: -1px
+      padding: 5px
+      position: absolute
+      text-align: left
+      top: 34px
+      visibility: hidden
+      width: 150px
+      z-index: 598
+
+      li
+        a
+          @include border-radius(2px)
+          clear: both
+          color: $red
+          display: block
+          font-size: 15px          
+          height: 32px
+          padding: 3px 7px
+          &.active
+            background: url('../images/checkboxes.png') no-repeat 122px 12px
+          &:hover
+            background-color: $red
+            background-position: 122px -29px
+            color: $brown
+            font-weight: bold
+
+            img
+              border-color: $brown
+
+          img
+            @include border-radius(2px)
+            border: 1px solid $red
+            float: left
+            margin: 1px 0 0 0
+            width: 36px
+
+          span
+            float: left
+            margin: 8px 0 0 12px

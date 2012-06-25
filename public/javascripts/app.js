@@ -103,5 +103,9 @@ $(function() {
     auto_join_text_reply: "",
     auto_join_text_url: "",
     loading_text: "Loading tweets..."
-  }); 
+  });
+
+  // #locale_selector 
+
+  
 });

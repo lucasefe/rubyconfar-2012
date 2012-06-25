@@ -49,14 +49,29 @@ nav
   a href="#home"
     span= t.nav.home
   .separator
-  a href="#videos"
-    span= t.nav.videos
+  a href="#proposals"
+    span= t.nav.proposals
   .separator
   a href="#sponsors"
     span= t.nav.sponsors
   .separator
-  a href="#proposals"
-    span= t.nav.proposals
+  a href="#videos"
+    span= t.nav.videos
+
+
+#localizer
+  span.dir class=current_locale
+    ul
+      li.first
+        a href="/es" class=current_locale?("es", "active", "")
+          img src="images/che_donalds.png"
+          span Espa&ntilde;ol
+
+      li 
+        a href="/en" class=current_locale?("en", "active", "")
+          img src="images/mc_guevaras.png"
+          span English
+
 
 #wrapper
 

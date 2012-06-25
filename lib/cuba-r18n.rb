@@ -20,6 +20,10 @@ class Cuba
       @locale
     end
 
+    def current_locale?(locale, yes, no)
+      current_locale == locale ? yes : no
+    end
+
     def set_locale(locale)
       @locale = locale
       ::R18n.thread_set do
