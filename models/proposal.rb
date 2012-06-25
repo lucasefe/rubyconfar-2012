@@ -6,7 +6,7 @@ class Proposal < Sequel::Model
 
   def validate
     super
-    validates_presence [:author_email], message: lambda { R18n.t.proposal.is_not_present }
+    validates_presence [:author_email, :author_name, :title, :abstract], message: lambda { R18n.t.proposal.is_not_present }
   end
 
 end

@@ -18,7 +18,16 @@ module Helper
       parent: parent_param,
       object: object,
       field: field,
+      type: type_for(field),
+      placeholder_name: options.fetch(:placeholder, field), 
       label_name: options.fetch(:label, field) } )
   end
 
+  def type_for(field)
+    if field.to_s.include?('email')
+      'email'
+    else
+      'text'
+    end
+  end
 end

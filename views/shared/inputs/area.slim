@@ -1,7 +1,8 @@
 .group
-  label for="#{parent}_#{field}" 
-    = label_name
-  textarea rows="10" cols="30" name="#{parent}[#{field}]" placeholder=label_name
+  - if label_name
+    label for="#{parent}_#{field}"
+      = label_name
+  textarea id="#{parent}_#{field}" rows="10" cols="30" name="#{parent}[#{field}]" placeholder=placeholder_name
     = value=object.send(field) 
 
   - if object.errors.has_key?(field)
