@@ -1,10 +1,13 @@
 
 #proposal_container
-  form action="/#{current_locale}/proposals" method='post'
-    == input_type :proposal, @proposal, :author_name, label: "Name"
-    == input_type :proposal, @proposal, :author_email, label: "Email"
-    == input_type :proposal, @proposal, :author_twitter, label: "Twitter"
-    == input_type :proposal, @proposal, :title, label: "Title"
-    == input_area :proposal, @proposal, :abstract, label: "Abstract / Description"
 
-    input name="GO" type="submit" value="Send proposal"
+  form action="/#{current_locale}/proposals" method='post'
+    == input_type :proposal, @proposal, :author_name, label: false, placeholder: "Name"
+    == input_type :proposal, @proposal, :author_email, label: false, placeholder: "Email"
+    == input_type :proposal, @proposal, :author_twitter, label: false, placeholder: "Twitter"
+    == input_type :proposal, @proposal, :title, label: false, placeholder: "Title"
+    == input_area :proposal, @proposal, :abstract, label: false, placeholder: "Abstract / Description"
+
+    #submit_proposal class=current_locale
+
+    input name="GO" type="submit" value="GO"
