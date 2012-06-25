@@ -1,5 +1,5 @@
 #localizer
-  position: absolute
+  position: fixed
   right: 5px
   top: 2px
   z-index: 1000
@@ -23,7 +23,9 @@
       @include border-radius(3px 0 3px 3px)
       @include box-shadow(-2px 2px 5px rgba(0,0,0,0.4))
       background: $brown
-      right: 0
+      border: 1px solid $red
+      border-width: 0 1px 1px 1px
+      right: -1px
       padding: 5px
       position: absolute
       text-align: left
