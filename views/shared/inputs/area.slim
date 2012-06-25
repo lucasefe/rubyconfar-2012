@@ -6,5 +6,5 @@
     = value=object.send(field) 
 
   - if object.errors.has_key?(field)
-    .error
+    .error class="#{parent}_#{field}"
       = object.errors[field].join(", ")

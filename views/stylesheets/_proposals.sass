@@ -14,7 +14,7 @@ section#proposals
       width: 536px
       input[type="text"], input[type="email"], textarea
         @include border-radius(3px)
-        @include transition(all, 0.7s)
+        @include transition(all, 0.45s)
         @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
         background: $brown
         border: 1px solid $brown
@@ -22,7 +22,10 @@ section#proposals
         font-size: 15px
         height: 22px
         padding: 3px 6px
+        &::-webkit-input-placeholder
+          color: $red
         &:focus
+          background: darken($brown, 7%)
           border-color: $yellow
           color: $yellow          
 
@@ -33,11 +36,11 @@ section#proposals
         width: 353px
         &:focus
           height: 250px
-          font-size: 13px
+          font-size: 12px
+          width: 402px
 
       #proposal_author_name, #proposal_author_email, #proposal_author_twitter, #proposal_title
         position: absolute
-
 
       #proposal_author_name
         margin: 58px 0 0 98px
@@ -74,3 +77,38 @@ section#proposals
         width: 51px
         &:hover
           @include linear-gradient(lighten($red, 5%), $red)
+
+
+
+      .error
+        @include border-radius(2px)
+        @include linear-gradient(lighten($yellow, 15%), $yellow)
+        @include box-shadow(2px 2px 4px rgba(0,0,0,0.5))
+        border: 1px dashed  $yellow    
+        font-size: 10px
+        padding: 2px 5px
+        position: absolute
+        text-shadow: 1px 1px 0 lighten($yellow, 15%)
+
+        &.proposal_author_name
+          margin: 48px 0 0 93px
+
+        &.proposal_author_email
+          margin: 29px 0 0 443px
+
+        &.proposal_title
+          margin: 84px 0 0 -3px
+
+        &.proposal_abstract
+          margin: -120px 0 0 443px
+
+
+
+  #thanks
+    background: url('../images/checkmark_big.png') no-repeat center top
+    padding-top: 50px
+    margin-top: 30px
+    text-align: center
+    h2
+      font-size: 26px
+      font-weight: bold
