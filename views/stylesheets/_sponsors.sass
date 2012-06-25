@@ -41,7 +41,6 @@ section#sponsors
       tr        
 
         &.odd
-          // background: lighten($red, 5%)
           background: rgba(89,27,20,0.1)
         td
           border-bottom: 1px dashed lighten($brown, 25%)
@@ -57,6 +56,15 @@ section#sponsors
             background: url('../images/checkmark.png') no-repeat center center
           &.no
             background: url('../images/xmark.png') no-repeat center center
+
+          &.title
+            background: lighten($red, 4%)
+            // color: $yellow
+            padding-top: 20px
+            text-transform: uppercase      
+
+            b
+              font-size: 18px
 
 
         &.price
