@@ -105,7 +105,16 @@ $(function() {
     loading_text: "Loading tweets..."
   });
 
-  // #locale_selector 
-
-  
+  $(".slides").slides({
+    play: 5000,
+    effect: 'slide',
+    // crossfade: true,
+    generatePagination: true,
+    slideSpeed: 1000,
+    generateNextPrev: true,
+    hoverPause: true,
+    slideEasing: "easeOutExpo",
+    preload: true,
+    preloadImage: 'images/spinner.gif'
+  });  
 });
