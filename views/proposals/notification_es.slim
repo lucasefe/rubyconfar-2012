@@ -1,0 +1,35 @@
+css:
+  p { font-family: Arial; font-size: 12px; }
+  h2 { font-family: Arial; font-size: 18px; }
+  h3 { font-family: Arial; font-size: 22px; }
+
+h2 
+| Hemos recibido tu propuesta para la RubyConf Argentina 2012.
+
+h3 
+| Detalles de la propuesta
+
+p 
+  strong Autor: 
+  == @proposal.author_name
+
+p 
+  strong Email: 
+  == @proposal.author_email
+
+p 
+  strong Twitter: 
+  == @proposal.author_twitter
+
+p 
+  strong T&iacute;tulo: 
+  == @proposal.title
+
+p 
+  strong Descripci&oacute;n: 
+  == @proposal.abstract
+
+
+hr
+
+p Gracias!

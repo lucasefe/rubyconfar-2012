@@ -16,3 +16,5 @@ subscriber:
 
 proposal:
   is_not_present: "is not present"
+  notification:
+    subject: "We've received your proposal!"

@@ -18,3 +18,5 @@ subscriber:
 
 proposal:
   is_not_present: "es requerido"
+  notification:
+    subject: "Recibimos la propuesta! "
