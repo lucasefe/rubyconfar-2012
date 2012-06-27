@@ -34,12 +34,15 @@ require "./models/proposal"
 Cuba.define do
 
   helpers do
-    def notify_new_subscriber(subscriber)
-      Malone.deliver to: subscriber.email,
+
+    def notify_new_proposal(proposal)
+      Malone.deliver to: proposal.author_email,
         from: SETTINGS['default_email'],
-        subject: t('subscription.notification.subject', "[rubyconfar] We'll keep you posted!"),
-        html: partial('subscribers/success')
+        bcc: SETTINGS['default_email'],
+        subject: t.proposal.notification.subject,
+        html: partial("proposals/notification_#{current_locale}")
     end
+
   end
 
   on "stylesheets", extension("css") do |file|
@@ -47,11 +50,13 @@ Cuba.define do
     res.headers["Content-Type"] = "text/css; charset=utf-8"
     res.write render("views/stylesheets/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
+
   on localized do
     on "proposals" do
       on post, param(:proposal) do |proposal|
         @proposal= Proposal.new(proposal)
         if @proposal.save
+          notify_new_proposal @proposal
           res.write partial("proposals/created")
         else
           res.write partial("proposals/form")
@@ -67,8 +72,6 @@ Cuba.define do
       on post, param(:subscriber) do |subscriber|
         @subscriber = Subscriber.new(subscriber)
         if @subscriber.save
-          # FIXME:Template not ready.
-          # notify_new_subscriber @subscriber
           res.write "<div id='party'><span></span><b>Ok.</b> We'll keep you posted.</div>"
         else
           res.write partial("subscribers/form")
