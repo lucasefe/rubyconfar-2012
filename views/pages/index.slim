@@ -55,6 +55,9 @@ nav
   a href="#sponsors"
     span= t.nav.sponsors
   .separator
+  a href="#venue"
+    span= t.nav.venue
+  .separator
   a href="#videos"
     span= t.nav.videos
 
@@ -99,6 +102,10 @@ nav
   section#sponsors
     h1.title= t.nav.sponsors
     == partial "pages/sponsors_#{current_locale}"
+
+  section#venue
+    h1.title= t.nav.venue
+    == partial "pages/venue"
 
   section#videos
     h1.title= t.nav.videos
