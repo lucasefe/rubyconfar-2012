@@ -36,7 +36,7 @@ Cuba.define do
   helpers do
 
     def notify_new_proposal(proposal, email)
-      Malone.deliver to: email
+      Malone.deliver to: email,
         from: SETTINGS['default_email'],
         subject: t.proposal.notification.subject,
         html: partial("proposals/notification_#{current_locale}")
