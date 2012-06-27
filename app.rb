@@ -35,10 +35,9 @@ Cuba.define do
 
   helpers do
 
-    def notify_new_proposal(proposal)
-      Malone.deliver to: proposal.author_email,
+    def notify_new_proposal(proposal, email)
+      Malone.deliver to: email
         from: SETTINGS['default_email'],
-        bcc: SETTINGS['default_email'],
         subject: t.proposal.notification.subject,
         html: partial("proposals/notification_#{current_locale}")
     end
@@ -56,7 +55,8 @@ Cuba.define do
       on post, param(:proposal) do |proposal|
         @proposal= Proposal.new(proposal)
         if @proposal.save
-          notify_new_proposal @proposal
+          notify_new_proposal @proposal, @proposal.author_email
+          notify_new_proposal @proposal, SETTINGS['default_email']
           res.write partial("proposals/created")
         else
           res.write partial("proposals/form")
