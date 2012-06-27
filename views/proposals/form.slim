@@ -1,6 +1,8 @@
 
 #proposal_container
 
+  h2== t.proposal_deadline_text
+
   form action="/#{current_locale}/proposals" method='post'
     == input_type :proposal, @proposal, :author_name, label: false, placeholder: "Name"
     == input_type :proposal, @proposal, :author_email, label: false, placeholder: "Email"

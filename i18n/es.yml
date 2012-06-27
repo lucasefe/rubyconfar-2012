@@ -1,5 +1,10 @@
 venue: "Paseo La Plaza"
 welcome: "vuelve en Octubre "
+
+proposal_deadline_text: Env&iacute;a tu propuesta antes del Viernes 17 de Agosto de 2012.
+proposal_thanks: Gracias!
+proposal_thanks_subtitle: Nos contactaremos a la brevedad!
+
 nav:
   home: "Evento"
   videos: "Videos 2011"
@@ -9,4 +14,7 @@ nav:
 
 subscriber:
   already_registered: "Ya te encuentras registrado"
+  is_not_present: "es requerido"
+
+proposal:
   is_not_present: "es requerido"
