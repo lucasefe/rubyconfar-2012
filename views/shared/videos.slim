@@ -1,4 +1,4 @@
 article
   ul
     - Video.all.shuffle.each do |id, author, title|
-      == partial('shared/embedded_video', id: id, author: author, title: title, image: "images/vimeos/#{author.split.first.downcase}.jpg")
+      == partial('shared/embedded_video', id: id, author: author, title: title, image: "/images/vimeos/#{author.split.first.downcase}.jpg")
