@@ -51,6 +51,15 @@ Cuba.define do
   end
 
   on localized do
+
+    on "sponsoring" do
+      res.write view("pages/sponsoring_#{current_locale}")
+    end
+
+    on "2011" do
+      res.write view("past/2011_#{current_locale}")
+    end
+
     on "proposals" do
       on post, param(:proposal) do |proposal|
         @proposal= Proposal.new(proposal)
