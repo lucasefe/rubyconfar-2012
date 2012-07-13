@@ -1,112 +1,28 @@
-#top_border
-#sidebar
-  #column
-    h2 OCT 19/20
-    h3 2012
-    h4= t.venue
+section#home 
+  
+  == partial 'flashes'
 
-    ul
-      li#icon_twitter
-        a href="http://www.twitter.com/RubyconfAr" target="_blank"
-          .fadehover
-            img.a src="images/icon_twitter_1.png" alt="Twitter"
-            img.b src="images/icon_twitter_2.png" alt="Twitter"
+  h1#logo Rubyconf Argentina
 
-      li#icon_github
-        a href="https://github.com/lucasefe/rubyconfar-2012" target="_blank"
-          .fadehover
-            img.a src="images/icon_github_1.png" alt="Github"
-            img.b src="images/icon_github_2.png" alt="Github"
+  h2 
+    | RubyConf Argentina
+    br 
+    b= t.welcome
+    small (ZOMG!)
 
-      li#icon_facebook
-        a href="http://www.facebook.com/rubyconfar" target="_blank"
-          .fadehover
-            img.a src="images/icon_facebook_1.png" alt="Facebook"
-            img.b src="images/icon_facebook_2.png" alt="Facebok"
+  #in_the_loop
 
-    a#fist href="#top"
-      .fadehover
-        img.c src="images/fist_3.png"
-        img.a src="images/fist_1.png"
-        img.b src="images/fist_2.png"
+    p Keep me in the loop!
+    == partial 'subscribers/form'
 
-  .tweet
+section#proposals
+  h1.title= t.nav.proposals
+  == partial 'proposals/form'
 
-  #sz_studios
-    a href="http://www.szstudios.com.ar" target="_blank"
-      | Web Design by 
-      b Sz Studios
+section#sponsors
+  h1.title= t.nav.sponsors
+  == partial "pages/sponsors_#{current_locale}"
 
-  #follow_btn
-    a href="https://twitter.com/RubyconfAr" class="twitter-follow-button" data-show-count="false" Follow @RubyconfAr
-    script
-      | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-
-.fix.first_fix
-.fix
-nav
-  a href="#home"
-    span= t.nav.home
-  .separator
-  a href="#proposals"
-    span= t.nav.proposals
-  .separator
-  a href="#sponsors"
-    span= t.nav.sponsors
-  .separator
-  a href="#venue"
-    span= t.nav.venue
-  .separator
-  a href="/#{current_locale}/2011"
-    span= t.nav.past_2011
-
-#localizer
-  span.dir class=current_locale
-    ul
-      li.first
-        a href="/es" class=current_locale?("es", "active", "")
-          img src="images/che_donalds.png"
-          span Espa&ntilde;ol
-
-      li 
-        a href="/en" class=current_locale?("en", "active", "")
-          img src="images/mc_guevaras.png"
-          span English
-
-
-#wrapper
-
-  section#home 
-    
-    == partial 'flashes'
-
-    h1#logo Rubyconf Argentina
-
-    h2 
-      | RubyConf Argentina
-      br 
-      b= t.welcome
-      small (ZOMG!)
-
-    #in_the_loop
-
-      p Keep me in the loop!
-      == partial 'subscribers/form'
-
-  section#proposals
-    h1.title= t.nav.proposals
-    == partial 'proposals/form'
-
-  section#sponsors
-    h1.title= t.nav.sponsors
-    == partial "pages/sponsors_#{current_locale}"
-
-  section#venue
-    h1.title= t.nav.venue
-    == partial "pages/venue"
-
-  footer
-    .fix.first_fix
-    .fix
-    | Copyright 2012.
+section#venue
+  h1.title= t.nav.venue
+  == partial "pages/venue"
