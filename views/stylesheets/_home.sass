@@ -10,6 +10,42 @@ section#home
     margin: 0px auto
     text-indent: -30000px
     width: 502px
+
+
+  #legacy
+    @include inline-block
+    margin: 30px 0
+    div
+      @include border-radius(6px)
+      @include box-shadow(0px 0px 3px rgba(0,0,0,0.6))
+      @include inline-block
+      @include transition (all 0.5s)
+      background: $brown  
+      padding: 5px
+      img
+        float: left
+        width: 50px
+        &#scott
+          z-index: 5
+          position: relative
+        &#burns
+          margin-left: -50px
+        &#eto
+          margin-left: -50px
+        &#konex
+          margin-left: -50px
+        &#tom
+          margin-left: -50px
+    p
+      color: $brown
+      font-size: 20px
+      margin: 0 0 15px 0
+
+    &:hover
+      div
+        background: $yellow
+
+
   h2
     font-size: 26px
     line-height: 1.2

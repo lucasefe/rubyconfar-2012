@@ -10,6 +10,24 @@
 @import "sponsors"
 @import "venue"
 
+
+.button
+  @include linear-gradient($yellow, darken($yellow, 15%))
+  @include border-radius(4px)
+  @include transition(all 0.3s)
+  @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+  border: 1px solid $brown
+  color: $brown
+  font-size: 14px
+  margin-left: 10px
+  font-weight: bold
+  padding: 2px 11px
+  text-shadow: 1px 1px 0 $yellow
+  &:hover
+    // @include box-shadow(0 0 7px $brown)
+    @include linear-gradient($yellow, darken($yellow, 19%))
+
+
 .fadehover
   position: relative
   img
