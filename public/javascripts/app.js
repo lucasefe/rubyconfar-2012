@@ -119,12 +119,8 @@ $(function() {
   });
 });
 
-
-
 $(document).ready(function() {
-  // $('#scott').animate({marginLeft: "-282px"}, 3500, 'easeOutBounce');
-  // $('#tom').animate({marginLeft: "-141px"}, 3500, 'easeOutBounce');
-  // $('#eto').animate({marginLeft: "141px"}, 3500, 'easeOutBounce');
-  // $('#burns').animate({marginLeft: "282px"}, 3500, 'easeOutBounce');
-  $('#legacy img').animate({marginLeft: "0px", width: "141px"}, 3500, 'easeOutBounce');
+  $("#legacy ul").simplyScroll({
+      autoMode: 'loop'
+  });
 });
