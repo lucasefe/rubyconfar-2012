@@ -3,9 +3,15 @@ section#home
   == partial 'flashes'
 
   h1#logo Rubyconf Argentina
-  a#legacy href="/#{current_locale}/2011"
-    
+  #legacy href="/#{current_locale}/2011"
+
     .scroll_container
+      p 
+        == t.tagline
+      a.button href="/#{current_locale}/2011"
+        | See 2011
+      hr.clear
+
       iframe src="http://player.vimeo.com/video/45990031" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
       ul
         li
@@ -18,10 +24,10 @@ section#home
           img src="/images/2011/eto.jpg" alt="Koichiro Eto"
         li  
           img src="/images/2011/rc2011.jpg" alt="RubyConf Argentina 2011"
-      hr.clear
-      .button See 2011
-      p 
-        == t.tagline
+
+      
+
+      
       
 
   
