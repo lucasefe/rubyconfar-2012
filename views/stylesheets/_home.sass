@@ -12,9 +12,17 @@ section#home
     width: 502px
 
 
+  
   #legacy
     @include inline-block
     margin: 30px 0
+
+    iframe
+      border-left: 1px solid lighten($brown, 10%)
+      float: right
+      margin: 2px 0 0 0
+      padding-left: 30px
+
     .scroll_container
       @include border-radius(6px)
       @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
@@ -29,11 +37,26 @@ section#home
         border: 2px solid transparent
         &:hover
           border-color: $yellow
+    
+    hr.clear
+      border: 0 none
+      margin-bottom: 20px
+    
     p
-      color: $brown
+      color: $red
       font-size: 20px
       margin: 0 0 15px 0
-
+      text-align: left
+      width: 750px
+    
+    .button
+      float: left
+      font-size: 20px
+      height: 54px
+      line-height: 54px
+      margin: 0 40px
+      width: 140px
+      
 
   h2
     font-size: 26px
