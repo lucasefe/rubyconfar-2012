@@ -1,0 +1,114 @@
+
+section#sponsorship
+  border-top: 1px solid $brown
+  padding-top: 40px  
+
+  .custom_sponsoring
+    @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+    @include border-radius(3px)
+    background: lighten($red, 4%)    
+    border: solid 1px $brown
+    margin: 30px 42px 60px
+    padding: 15px  
+    text-align: center
+    
+    h2
+      font-size: 26px
+      font-weight: bold
+      margin-bottom: 10px
+    h3
+      font-size: 22px  
+      margin-bottom: 10px
+    p
+      font-size: 18px
+      margin-bottom: 10px
+      a
+        color: $yellow
+        &:visited
+          color: $yellow
+
+
+  .table_container
+    @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+    @include border-radius(3px)
+    background: lighten($red, 4%)    
+    border: solid 1px $brown
+    margin: 30px 42px 60px
+    padding: 5px
+
+    table
+      background: $red 
+      width: 100%
+      border: solid 1px $brown
+
+      thead
+        background: rgba(89,27,20,0.8) url("../images/stripes.png")
+        @include box-shadow(0 1px 3px rgba(0,0,0,0.4))
+        th
+          color: $red
+          font-size: 18px
+          font-weight: bold
+          height: 35px
+          padding: 10px 5px
+          text-align: center
+          text-shadow: -1px -1px 0 $brown
+          text-transform: uppercase
+          vertical-align: bottom
+          border-bottom: 1px dashed $brown
+          &:first-child
+            text-align: left
+            padding-left: 5px
+
+          h5
+            color: $red
+            font-size: 12px
+            letter-spacing: 1px     
+
+      
+      tr        
+
+        &.odd
+          background: rgba(89,27,20,0.1)
+        td
+          border-bottom: 1px dashed lighten($brown, 25%)
+          font-size: 14px
+          letter-spacing: normal
+          padding: 10px 5px
+          text-align: center
+          vertical-align: middle
+          &:first-child
+            text-align: left
+
+          &.yes
+            background: url('../images/checkmark.png') no-repeat center center
+          &.no
+            background: url('../images/xmark.png') no-repeat center center
+
+          &.title
+            background: lighten($red, 4%)
+            // color: $yellow
+            padding-top: 20px
+            text-transform: uppercase      
+
+            b
+              font-size: 18px
+
+
+        &.price
+          background: rgba(89,27,20,0.5) url("../images/stripes.png")
+          height: 40px          
+          color: $red
+          text-shadow: -1px -1px 0 $brown
+
+          td:nth-child(n+2)
+            color: $yellow
+            font-size: 17px
+            font-weight: bold
+
+            span
+              color: darken($yellow, 20%)
+              font-size: 13px
+              font-weight: normal
+
+          
+            

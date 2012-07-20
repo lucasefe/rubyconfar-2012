@@ -30,6 +30,19 @@ section#home
         li  
           img src="/images/2011/rc2011.jpg" alt="RubyConf Argentina 2011"
 
+
+section#sponsors
+  .box
+    h5 Sponsors
+    hr.clear
+    a href="http://vulsai.com" target="_blank"
+      .fadehover
+        img.a src="/images/sponsors/vulsai_1.png" alt="Vulsai | Empowering Thinking"
+        img.b src="/images/sponsors/vulsai_2.png" alt="Vulsai | Empowering Thinking"
+        
+  .box_bottom
+  .box_bottom.lower
+
       
 
       
@@ -42,9 +55,9 @@ section#proposals
   h1.title= t.nav.proposals
   == partial 'proposals/form'
 
-section#sponsors
-  h1.title= t.nav.sponsors
-  == partial "pages/sponsors_#{current_locale}"
+section#sponsorship
+  h1.title= t.nav.sponsorship
+  == partial "pages/sponsorship_#{current_locale}"
 
 section#venue
   h1.title= t.nav.venue
