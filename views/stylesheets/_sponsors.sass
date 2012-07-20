@@ -10,22 +10,26 @@ section#sponsors
     width: 820px
     padding: 0 0 16px 0
 
+
     h5
-      width: 80px
+      width: 90px
       margin: -10px auto 10px
-      font-size: 12px
+      font-size: 13px
       background: $red
       padding: 3px
       text-transform: uppercase
       letter-spacing: 1px
 
-    .fadehover
+    a
       @include inline-block
-      img
-        @include border-radius(3px)
-        border: 1px solid $red        
-        &.b
-          border-color: $brown
+      vertical-align: middle
+      margin: 0 12px
+      .fadehover
+        img
+          @include border-radius(4px)
+          border: 1px solid $red
+          &.b
+            border-color: $brown
 
 
 
