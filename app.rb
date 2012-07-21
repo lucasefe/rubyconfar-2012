@@ -57,6 +57,7 @@ Cuba.define do
     end
 
     on "2011" do
+      @subscriber = Subscriber.new
       res.write view("past/2011_#{current_locale}")
     end
 
