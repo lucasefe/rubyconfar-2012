@@ -1,20 +1,11 @@
 section#home 
-  
+
   == partial 'flashes'
 
   h1#logo Rubyconf Argentina
   #legacy href="/#{current_locale}/2011"
 
-    .tagline
-      h2 
-        strong 
-          | Join the largest 
-          em Ruby 
-          | event
-        span in the Spanish speaking world,
-        | where we gather to share and learn about the latest technologies!
-        a.button href="/#{current_locale}/2011"
-          | See 2011
+    == partial("shared/tag_line_#{current_locale}")
 
     .scroll_container
       iframe src="http://player.vimeo.com/video/45990031" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
