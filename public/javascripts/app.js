@@ -1,9 +1,9 @@
 function highlightIfActive(section) {
-  position = $(document).scrollTop() // should I pass it over, to avoid recalculating it every time? 
+  position = $(document).scrollTop() // should I pass it over, to avoid recalculating it every time?
   offset = -100;
   start = section.position().top + offset;
   end = section.height() + section.position().top  + offset;
-  elem = $('nav a[href="#' + section.attr('id') + '"]');
+  elem = $('nav a[href="' + document.location.pathname + '#' + section.attr('id') + '"]');
   if ((position >= start) && (position <= end)) {
     elem.addClass('active');
   } else {
@@ -12,11 +12,9 @@ function highlightIfActive(section) {
 }
 
 $(function() {
-
   // Nice animation when clicking the nav
   $('nav a').click( function(e){
-    var link = $(this).attr('href');
-    console.log($(link));
+    var link = "#" + $(this).attr('href').split('#')[1];
     $('body,html').animate({ scrollTop: $(link).offset().top}, 1000);
     e.preventDefault();
   });
@@ -32,7 +30,7 @@ $(function() {
     });
   })
 
-  
+
   // Ajax submision of subscriber form
   $('#subscriber_container form').live('submit', function(){
     $.post(this.action, $(this).serialize(), function(data, textStatus, jqXHR) {
@@ -66,7 +64,7 @@ $(function() {
   var mashroom = $('#fist img.c');
   $('#sz_studios').hover(function() {
     mashroom.css({"display": "block"}).animate({"opacity": "1"}, "slow");
-  }, function() {      
+  }, function() {
     mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"display": "none"}) })
   })
 
@@ -75,19 +73,19 @@ $(function() {
     $('nav a:first').click();
   });
 
-  // Basic fancybox hooks for the vimeo videos. 
+  // Basic fancybox hooks for the vimeo videos.
   $("#videos ul a").fancybox({
     'transitionIn': 'elastic',
     'transitionOut': 'elastic',
-    'speedIn': 600, 
-    'speedOut': 200, 
-    'overlayColor': '#591B14', 
+    'speedIn': 600,
+    'speedOut': 200,
+    'overlayColor': '#591B14',
     'type': 'iframe',
     'padding': "5",
   });
 
   // Detecting iOS device
-  if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {    
+  if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
     $('head').append('<link rel="stylesheet" href="/stylesheets/ios.css" type="text/css" media="screen" charset="utf-8">');
   };
 
