@@ -6,20 +6,41 @@ section#sponsors
     @include border-radius(4px)
     @include box-shadow(1px 1px 0 rgba(255,255,255,0.1))
     border: 1px solid $brown
-    margin: 0 auto
+    margin: 40px auto 0
+    padding: 10px 0
     width: 820px
-    padding: 0 0 16px 0
 
+    &#platinum
+      border-width: 3px
+
+      .box_bottom
+        border-width: 2px
+        &.lower
+          margin: 17px 0 0 6px
+          border-width: 1px
+
+    &#silver, &#bronze
+      .box_bottom
+        margin: 10px 0 0 3px
+    
+    &#silver
+      border-width: 2px
+      .box_bottom
+        margin: 11px 0 0 3px
+
+    hr
+      margin: 0
 
     h5
-      width: 90px
-      margin: -10px auto 10px
-      font-size: 13px
+      margin: -21px 15px 0
+      font-size: 12px
       font-weight: bold
       background: $red
-      padding: 3px
+      padding: 3px 7px
       text-transform: uppercase
       letter-spacing: 1px
+      position: absolute
+      z-index: 100
 
     a
       @include inline-block
@@ -32,21 +53,14 @@ section#sponsors
           &.b
             border-color: $brown
 
-    &#media_partners
-      margin: 30px auto 20px
-      width: 400px
-      hr
-        margin: 0
-      h5
-        width: 140px
-
 
   .box_bottom
     @include border-radius(0 0 4px 4px)
     @include box-shadow(1px 1px 0 rgba(255,255,255,0.1))
     border: 1px solid $brown
     height: 3px
-    margin: -1px auto 0
+    margin: 11px 0 0 3px
     width: 814px
+    position: absolute
     &.lower
       width: 804px
