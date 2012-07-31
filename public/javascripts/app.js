@@ -62,7 +62,7 @@ $(function() {
 
   // Animating the mashroom
   var mashroom = $('#fist img.c');
-  $('#sz_studios').hover(function() {
+  $('#sz_studios, .fadehover#sz').hover(function() {
     mashroom.css({"display": "block"}).animate({"opacity": "1"}, "slow");
   }, function() {
     mashroom.animate({"opacity": "0"}, "slow", function() { mashroom.css({"display": "none"}) })
