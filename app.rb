@@ -42,6 +42,15 @@ Cuba.define do
         html: partial("proposals/notification_#{current_locale}")
     end
 
+    def current?(path)
+      req.path == path
+    end
+
+    def link_to(title, path)
+      localized_path = "/#{current_locale}#{path}"
+      classes = current?(localized_path) ? "active" : ""
+      "<a href='#{localized_path}' class='#{classes}'><span>#{title}</span></a>"
+    end
   end
 
   on "stylesheets", extension("css") do |file|

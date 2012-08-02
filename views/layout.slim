@@ -77,21 +77,16 @@ html
 
     .fix.first_fix
     .fix
-    nav
-      a href="/#{current_locale}/#home"
-        span= t.nav.home
+    nav.top
+      == link_to t.nav.home, "#home"
       .separator
-      a href="/#{current_locale}/#proposals"
-        span= t.nav.proposals
+      == link_to t.nav.proposals, "#proposals"
       .separator
-      a href="/#{current_locale}/#sponsorship"
-        span= t.nav.sponsorship
+      == link_to t.nav.sponsorship, "#sponsorship"
       .separator
-      a href="/#{current_locale}/#venue"
-        span= t.nav.venue
+      == link_to t.nav.venue, "#venue"
       .separator
-      a href="/#{current_locale}/2011"
-        span= t.nav.past_2011
+      == link_to t.nav.past_2011, "/2011"
 
     #localizer
       span.dir class=current_locale

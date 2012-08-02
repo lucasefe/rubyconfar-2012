@@ -1,14 +1,16 @@
 function highlightIfActive(section) {
+  selector = 'nav.top a[href="' + document.location.pathname + '#' + section.attr('id') + '"]';
+  elem = $(selector);
+
   position = $(document).scrollTop() // should I pass it over, to avoid recalculating it every time?
   offset = -100;
   start = section.position().top + offset;
   end = section.height() + section.position().top  + offset;
-  elem = $('nav a[href="' + document.location.pathname + '#' + section.attr('id') + '"]');
   if ((position >= start) && (position <= end)) {
     elem.addClass('active');
   } else {
     elem.removeClass('active');
-  }
+  };
 }
 
 $(function() {
