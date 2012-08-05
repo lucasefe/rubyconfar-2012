@@ -27,12 +27,15 @@ describe 'proposals' do
 
   it "should allow sending of proposals" do
     visit "/en"
-    fill_in 'proposal[author_name]', with: "joe smith"
-    fill_in 'proposal[author_email]', with: "some@email.com"
-    fill_in 'proposal[author_twitter]', with: "@jow45565"
-    fill_in 'proposal[title]', with: "Stuff"
-    fill_in 'proposal[abstract]', with: "stuffff"
-    click_button "Send proposal"
+
+    within "#proposal_container" do
+      fill_in 'proposal[author_name]', with: "joe smith"
+      fill_in 'proposal[author_email]', with: "some@email.com"
+      fill_in 'proposal[author_twitter]', with: "@jow45565"
+      fill_in 'proposal[title]', with: "Stuff"
+      fill_in 'proposal[abstract]', with: "stuffff"
+      click_button "GO"
+    end
     assert  has_content?("Thank you!")
     assert "some@email.com", Proposal.order("id ASC").last.author_email
   end
