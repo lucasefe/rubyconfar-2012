@@ -7,6 +7,7 @@ require "cuba/render"
 require 'cuba/sugar'
 require 'slim'
 require 'sass'
+require 'shield'
 require 'logger'
 require 'omniauth-twitter'
 
