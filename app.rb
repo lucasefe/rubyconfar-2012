@@ -22,7 +22,7 @@ Cuba.plugin Cuba::R18n
 
 # ADMIN
 require "./routes/public"
-require "./routes/admin"
+# require "./routes/admin"
 
 require "./models/video"
 require "./models/promotional_video"

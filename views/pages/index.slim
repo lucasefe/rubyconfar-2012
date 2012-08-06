@@ -8,7 +8,8 @@ section#home
     == partial("shared/tag_line_#{current_locale}")
 
     .scroll_container
-      iframe src="http://player.vimeo.com/video/45990031" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      - promo = PromotionalVideo.sample(1).first
+      iframe src="http://player.vimeo.com/video/#{promo[0]}" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
       ul
         li
           img src="/images/2011/scott_chacon.jpg" alt="Scott Chacon"
