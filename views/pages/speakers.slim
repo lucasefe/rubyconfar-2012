@@ -1,14 +1,13 @@
-h1 Speakers
+ul
+  - Speaker.all.each do |speaker|
+    li
+      
+      img src="/images/speakers/jano-gonzalez.png"
 
-- Speaker.all.each do |speaker|
-  li
-    
-    img src="/images/speakers/jano-gonzalez.png" width="200" height="200"
-
-    = speaker.display_name
-    br
-    span.twitter
-      = speaker.twitter
-    br
-    span.company
-      = speaker.company
+      = speaker.display_name
+      br
+      span.twitter
+        = speaker.twitter
+      br
+      span.company
+        = speaker.company
