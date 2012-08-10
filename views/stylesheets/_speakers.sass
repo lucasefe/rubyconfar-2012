@@ -4,13 +4,21 @@ section#speakers
 
 ul
   text-align: center
-  li
-    
+  li    
     @include border-radius(6px)
     @include inline-block
+    @include transition(all, 0.5s)
     background: #398f94
     border: 1px solid $brown
     margin: 20px
+    height: 350px
+    overflow: hidden
     vertical-align: top
     width: 250px
-    height: 400px
+    padding: 17px
+    &:hover
+      height: 500px
+      width: 445px
+
+    img
+      display: block
