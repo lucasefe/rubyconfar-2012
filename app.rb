@@ -27,6 +27,7 @@ require "./routes/public"
 require "./models/video"
 require "./models/promotional_video"
 require "./models/user"
+require "./models/speaker"
 require "./models/subscriber"
 require "./models/proposal"
 
