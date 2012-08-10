@@ -2,23 +2,46 @@ section#speakers
   border-top: 1px solid $brown
   padding-top: 40px
 
-ul
-  text-align: center
-  li    
-    @include border-radius(6px)
-    @include inline-block
-    @include transition(all, 0.5s)
-    background: #398f94
-    border: 1px solid $brown
-    margin: 20px
-    height: 350px
-    overflow: hidden
-    vertical-align: top
-    width: 250px
-    padding: 17px
-    &:hover
-      height: 500px
-      width: 445px
+  ul
+    text-align: center
+    li    
+      @include border-radius(6px)
+      @include inline-block
+      @include transition(all, 0.5s)
+      background: #398f94
+      border: 1px solid $red
+      height: 350px
+      margin: 20px
+      overflow: hidden
+      padding: 20px
+      position: relative
+      vertical-align: top
+      width: 240px
+      &:hover
+        border-color: $brown
+        height: 500px
+        margin: 0 -80px -150px
+        width: 440px
+        z-index: 100
+        img
+          width: 250px
 
-    img
-      display: block
+      img
+        @include transition(all, 0.5s)
+        display: block
+        margin: -40px auto -5px
+        width: 220px
+      h1
+        font-size: 26px
+        font-weight: bold
+      h2
+        color: $yellow
+        font-size: 17px
+        font-weight: bold
+      h3
+        font-size: 17px
+        font-weight: bold
+        text-align: left
+      p
+        text-align: left
+        font-size: 13px
