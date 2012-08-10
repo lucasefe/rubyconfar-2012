@@ -4,44 +4,70 @@ section#speakers
 
   ul
     text-align: center
-    li    
-      @include border-radius(6px)
+    li      
       @include inline-block
       @include transition(all, 0.5s)
-      background: #398f94
-      border: 1px solid $red
-      height: 350px
-      margin: 20px
-      overflow: hidden
-      padding: 20px
+      margin: 20px      
       position: relative
       vertical-align: top
-      width: 240px
-      &:hover
-        border-color: $brown
-        height: 500px
-        margin: 0 -80px -150px
-        width: 440px
-        z-index: 100
-        img
-          width: 250px
+      width: 240px      
 
       img
         @include transition(all, 0.5s)
+        @include transform(rotate(-15deg))
         display: block
-        margin: -40px auto -5px
-        width: 220px
-      h1
-        font-size: 26px
-        font-weight: bold
-      h2
-        color: $yellow
-        font-size: 17px
-        font-weight: bold
-      h3
-        font-size: 17px
-        font-weight: bold
-        text-align: left
-      p
-        text-align: left
-        font-size: 13px
+        margin: 0 auto -230px
+        width: 210px
+
+      .container
+        @include border-radius(6px)
+        @include transition(all, 0.5s)  
+        background-color: $red
+        background-image: url('../images/yellow.png')
+        background-position: center -7px
+        background-repeat: repeat-x
+        border: 1px solid $red
+        height: 30px
+        overflow: hidden
+        padding: 230px 20px 20px
+
+        h1
+          font-size: 24px
+          font-weight: bold
+        h2
+          color: $yellow
+          font-size: 18px
+          font-weight: bold
+          margin-top: 2px
+        h3
+          border-bottom: 1px solid $brown
+          font-size: 20px
+          font-weight: bold
+          margin: 10px 0 10px 0
+          padding-bottom: 5px
+          text-align: left
+        p
+          font-size: 13px
+          text-align: left
+          margin-bottom: 15px
+          line-height: 1.2
+          &:last-child
+            margin-bottom: 0
+
+
+      &:hover        
+        margin: 0 -80px -150px
+        width: 440px
+        z-index: 1000
+        
+        .container
+          @include box-shadow(0 0 10px rgba(89,27,20,0.7))
+          background-color: $red
+          background-color: rgba(226,72,64,0.9)
+          background-position: center top
+          border-color: $brown
+          height: 220px          
+          
+        img
+          @include transform(rotate(0deg))
+          width: 250px
