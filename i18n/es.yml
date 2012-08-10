@@ -7,11 +7,12 @@ proposal_thanks_subtitle: Nos contactaremos a la brevedad!
 
 nav:
   home: "Evento"
-  videos: "Videos 2011"
+  past_2011: "Edición 2011"
   proposals: "Convocatorias"
+  speakers: "Oradores"
   sponsorship: "Patrocinio"
   venue: "Lugar"
-  past_2011: "Edición 2011"
+  videos: "Videos 2011"
 
 subscriber:
   already_registered: "Ya te encuentras registrado"

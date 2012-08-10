@@ -6,11 +6,12 @@ proposal_thanks: Thank you!
 proposal_thanks_subtitle: We'll be contacting you shortly. 
 nav:
   home: "Event"
-  videos: "Videos 2011"
+  past_2011: "2011 Edition"
   proposals: "Proposals"
+  speakers: "Speakers"
   sponsorship: "Sponsorship"
   venue: "Venue"
-  past_2011: "2011 Edition"
+  videos: "Videos 2011"
 
 subscriber:
   already_registered: "Already registered"
