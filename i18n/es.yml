@@ -14,6 +14,9 @@ nav:
   venue: "Lugar"
   videos: "Videos 2011"
 
+speakers:
+  subtitle: Registrate
+
 subscriber:
   already_registered: "Ya te encuentras registrado"
   is_not_present: "es requerido"

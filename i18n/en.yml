@@ -4,6 +4,10 @@ tagline: "Join the largest Ruby event in the Spanish speaking world, where we ga
 proposal_deadline_text: Submit your proposal before Friday, August 17, 2012.
 proposal_thanks: Thank you!
 proposal_thanks_subtitle: We'll be contacting you shortly. 
+
+speakers:
+  subtitle: Register Now
+
 nav:
   home: "Event"
   past_2011: "2011 Edition"
