@@ -3,7 +3,7 @@ section#speakers
   padding-top: 40px
 
 
-  ul
+  ul#so_many_speakers
     margin: 0 auto
     width: 823px
     // text-align: center
@@ -104,3 +104,91 @@ section#speakers
           width: 250px
         h1
           margin-top: 40px
+
+
+
+
+  article
+    @include border-radius(4px)
+    @include box-shadow(1px 1px 0 rgba(255,255,255,0.3))
+    border: 1px solid $brown
+    margin: 90px auto
+    text-align: center
+    width: 823px
+    vertical-align: top
+
+    img.register_now
+      margin-top: -78px
+      margin-left: -3px
+    #goodies
+      #left_side
+        border-right: 1px dashed $brown
+        float: left
+        text-align: left
+        height: 390px
+        width: 50%
+        position: relative
+        z-index: 2
+        h2
+          border-bottom: 1px dashed $brown
+          padding: 0 0 9px 28px
+          margin-bottom: 10px
+          font-weight: bold
+          font-size: 17px
+        ul
+          padding-top: 5px
+          li
+            font-size: 16px
+            font-weight: bold
+            height: 48px
+            margin: 5px 0
+            padding-left: 100px
+            padding-top: 12px
+  
+            &#admission
+              background: url("../images/icon_admission.png") no-repeat 30px center
+            &#parties
+              background: url("../images/icon_parties.png") no-repeat 45px center
+            &#bag
+              background: url("../images/icon_bag.png") no-repeat 37px center
+            &#attendees
+              background: url("../images/icon_attendees.png") no-repeat 43px center
+            &#coffee
+              background: url("../images/icon_coffee.png") no-repeat 46px center
+            &#fun
+              background: url("../images/icon_fun.png") no-repeat 43px center
+      
+      #right_side
+        background: url("../images/stripes.png")
+        float: right
+        margin-left: -1px
+        width: 50%
+        hgroup
+          background: $red
+          border-bottom: 1px dashed $brown
+          h1
+            font-weight: bold
+            span
+              font-size: 25px
+              border-bottom: 1px solid $brown
+              padding-bottom: 2px
+            strong
+              font-size: 70px
+          h2
+          h3
+
+        #general_admission
+          background: $red
+          border-bottom: 1px dashed $brown
+          span
+          strong
+          small 
+  
+        #call_to_action
+
+          a
+            img
+    img#sign
+      clear: both
+      display: block
+      margin: 0 auto -43px

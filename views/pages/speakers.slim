@@ -1,4 +1,4 @@
-ul
+ul#so_many_speakers
   - Speaker.all.in_groups_of(3, false) do |speakers|
     - classes = %w(left center right)
     - speakers.each do |speaker|
@@ -22,16 +22,36 @@ ul
 
 article
   img.register_now src="/images/register_now_#{current_locale}.png" alt=t.speakers.subtitle
-  
+
   #goodies
     #left_side
       h2 Your tickets will get you:
       ul
-        li#admission Admission to 2 days of sessions
-        li#parties Access to any after-hours parties
-        li#bag Official Conference Goodie Bag
-        li#attendees Access to our fantastic attendees and speakers
-        li#coffee Tons of coffee during the whole event
+        li#admission 
+          | Admission to 2 
+          br
+          |days of sessions
+        
+        li#parties 
+          |Access to any 
+          br
+          | after-hours parties
+
+        li#bag 
+          | Official Conference 
+          br
+          | Goodie Bag
+
+        li#attendees 
+          | Access to our fantastic 
+          br 
+          | attendees and speakers
+
+        li#coffee 
+          | Tons of coffee 
+          br
+          | during the whole event
+
         li#fun Ruby Fun Day!
     
     #right_side
@@ -51,7 +71,8 @@ article
           | Admission
 
       #call_to_action
-        a href="#" Buy Now!
+        a href="#" 
+          img src="/images/buy_now_#{current_locale}.png" alt="Buy Now!"
 
-  img src="images/sign.png"
+  img#sign src="images/sign.png"
       
