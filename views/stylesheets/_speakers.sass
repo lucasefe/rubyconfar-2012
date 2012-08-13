@@ -4,17 +4,21 @@ section#speakers
 
 
   ul
-    background-color: green
     margin: 0 auto
-    width: 822px
-    text-align: center
+    width: 823px
+    // text-align: center
     li      
       @include inline-block
       @include transition(all, 0.5s)
-      margin: 20px      
+      margin-bottom: 20px
+      margin-top: 20px
       position: relative
       vertical-align: top
-      width: 240px      
+      width: 270px
+      &.center
+        margin-left: 6px
+        margin-right: 6px
+
 
       img
         @include transition(all, 0.5s)
@@ -38,6 +42,7 @@ section#speakers
         margin-top: 40px
         hgroup
           height: 48px
+          text-align: center
 
           h1
             @include transition(all, 0.5s) 
@@ -49,15 +54,23 @@ section#speakers
             font-weight: bold
             margin-top: 2px
         h3
-          border-bottom: 1px solid $brown
+          background: url("../images/presentation_icon.png") no-repeat left 2px
+          border-bottom: 3px solid $brown
           font-size: 19px
           font-weight: bold
-          margin: 10px 0 10px 0
+          margin: 10px 0 0 0
           padding-bottom: 5px
+          padding-left: 20px
           text-align: left
         .text
-          height: 127px
+          @include border-radius(0 0 3px 3px)
+          @include box-shadow(2px 2px 4px rgba(0,0,0,0.25) inset)
+          background: lighten($red, 4%) url("../images/stripes.png") repeat-y 337px top        
+          border: 1px solid $brown
+          border-width: 0 1px 1px
+          height: 151px
           overflow: auto
+          padding: 10px 20px 10px 10px
           p
             font-size: 13px
             line-height: 1.2
@@ -67,10 +80,15 @@ section#speakers
             &:last-child
               margin-bottom: 0
 
+      &.left:hover
+        margin: 0 -130px -229px 0
+      &.center:hover
+        margin: 0 -59px -229px -59px
+      &.right:hover
+        margin: 0 0 -229px -130px
 
-      &:hover        
-        margin: 0 -80px -150px
-        width: 440px
+      &:hover 
+        width: 400px
         z-index: 1000
         
         .container
@@ -79,7 +97,7 @@ section#speakers
           background-color: rgba(226,72,64,0.9)
           background-position: center top
           border-color: $brown
-          height: 240px
+          height: 298px
           margin-top: 0     
         img
           //@include transform(rotate(0deg))
