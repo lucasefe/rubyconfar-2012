@@ -2,7 +2,11 @@ section#speakers
   border-top: 1px solid $brown
   padding-top: 40px
 
+
   ul
+    background-color: green
+    margin: 0 auto
+    width: 822px
     text-align: center
     li      
       @include inline-block
@@ -32,16 +36,18 @@ section#speakers
         overflow: hidden
         padding: 185px 20px 20px
         margin-top: 40px
+        hgroup
+          height: 48px
 
-        h1
-          @include transition(all, 0.5s) 
-          font-size: 24px
-          font-weight: bold
-        h2
-          color: $yellow
-          font-size: 18px
-          font-weight: bold
-          margin-top: 2px
+          h1
+            @include transition(all, 0.5s) 
+            font-size: 24px
+            font-weight: bold
+          h2
+            color: $yellow
+            font-size: 18px
+            font-weight: bold
+            margin-top: 2px
         h3
           border-bottom: 1px solid $brown
           font-size: 19px
@@ -76,7 +82,7 @@ section#speakers
           height: 240px
           margin-top: 0     
         img
-          @include transform(rotate(0deg))
+          //@include transform(rotate(0deg))
           width: 250px
         h1
           margin-top: 40px
