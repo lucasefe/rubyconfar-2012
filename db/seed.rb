@@ -69,27 +69,27 @@ Sass and Compass in Action (Manning 2012). He is active in the
 development community as host of The Changelog, a weekly podcast and
 blog showcasing new and interesting Open Source projects."
 
-pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
-  country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
-  Ingeniería en Informática; me apasionan la música, el desarrollo de software,
-  el fútbol y el espíritu comunitario.
-
-  Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
-  que quieren trabajar mejor, conociéndose más e implementando metodologías y
-prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
-usuario de GNU+Linux.
-
-Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
-comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
-cosas nuevas.", bio_en: "Estusiasta y social. Estudié Ingeniería en
-Informática; me apasionan la música, el desarrollo de software, el fútbol y el
-espíritu comunitario.
-
-Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
-que quieren trabajar mejor, conociéndose más e implementando metodologías y
-prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
-usuario de GNU+Linux.
-
-Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
-comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
-cosas nuevas."
+# pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
+#   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
+#   Ingeniería en Informática; me apasionan la música, el desarrollo de software,
+#   el fútbol y el espíritu comunitario.
+#
+#   Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
+#   que quieren trabajar mejor, conociéndose más e implementando metodologías y
+# prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
+# usuario de GNU+Linux.
+#
+# Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
+# comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
+# cosas nuevas.", bio_en: "Estusiasta y social. Estudié Ingeniería en
+# Informática; me apasionan la música, el desarrollo de software, el fútbol y el
+# espíritu comunitario.
+#
+# Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
+# que quieren trabajar mejor, conociéndose más e implementando metodologías y
+# prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
+# usuario de GNU+Linux.
+#
+# Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
+# comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
+# cosas nuevas."
