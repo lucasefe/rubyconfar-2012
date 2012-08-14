@@ -169,13 +169,33 @@ section#speakers
           h1
             font-weight: bold
             span
-              font-size: 25px
+              @include inline-block
               border-bottom: 1px solid $brown
+              font-size: 25px
+              margin-right: 3px
+              margin-top: 26px
               padding-bottom: 2px
+              vertical-align: top
+              margin-left: 5px
             strong
               font-size: 70px
           h2
+            @include border-radius(3px)
+            @include box-shadow(1px 1px 0 rgba(255,255,255,0.3))
+            @include inline-block
+            background: $brown
+            color: $red
+            font-size: 20px
+            padding: 5px 8px
+            text-transform: uppercase
           h3
+            @include border-radius(3px)
+            @include box-shadow(1px 1px 0 rgba(255,255,255,0.3))
+            width: 90px
+            border: 1px solid $brown
+            font-size: 12px
+            padding: 11px 9px 5px
+            margin: -9px 0 0 182px
 
         #general_admission
           background: $red
