@@ -14,8 +14,11 @@ ul#so_many_speakers
           .text
             == biography_from speaker
 
+  img#more src="/images/speakers/more_#{current_locale}.png"
+
 article
-  img.register_now src="/images/register_now_#{current_locale}.png" alt=t.speakers.subtitle
+  a href="https://eventioz.com/events/rubyconf-argentina-2012/registrations/new" target="_blank"
+    img.register_now src="/images/register_now_#{current_locale}.png" alt=t.speakers.subtitle
 
   #goodies
     #left_side
@@ -65,7 +68,7 @@ article
           | Admission
 
       #call_to_action
-        a href="#" 
+        a href="https://eventioz.com/events/rubyconf-argentina-2012/registrations/new" target="_blank"
           img src="/images/buy_now_#{current_locale}.png" alt="Buy Now!"
 
   hr.clear

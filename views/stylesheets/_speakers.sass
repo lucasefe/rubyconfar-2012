@@ -4,9 +4,12 @@ section#speakers
 
 
   ul#so_many_speakers
-    margin: 0 auto
+    margin: 35px auto 0
     width: 823px
-    // text-align: center
+
+    img#more
+      margin: 23px 0 0 28px
+
     li      
       @include inline-block
       @include transition(all, 0.5s)
@@ -40,6 +43,10 @@ section#speakers
         overflow: hidden
         padding: 185px 20px 20px
         margin-top: 40px
+        a
+          color: $yellow
+          &:hover
+            text-decoration: underline
         hgroup
           height: 48px
           text-align: center
@@ -125,7 +132,7 @@ section#speakers
         border-right: 1px dashed $brown
         float: left
         text-align: left
-        height: 425px
+        height: 435px
         width: 50%
         position: relative
         z-index: 2
@@ -220,10 +227,8 @@ section#speakers
             margin-left: 5px
   
         #call_to_action
-          padding: 44px 0
+          padding: 52px 0
 
-          a
-            img
     img#sign
       margin: -34px 0 0 59px
       left: 50%
