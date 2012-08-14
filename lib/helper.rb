@@ -1,4 +1,12 @@
+require 'redcarpet'
+
 module Helper
+
+  def biography_from(speaker)
+    text = speaker.send("bio_#{current_locale}")
+    rndr = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new)
+    rndr.render(text)
+  end
 
   def flash
     session['flash'] ||= {}
@@ -19,7 +27,7 @@ module Helper
       object: object,
       field: field,
       type: type_for(field),
-      placeholder_name: options.fetch(:placeholder, field), 
+      placeholder_name: options.fetch(:placeholder, field),
       label_name: options.fetch(:label, field) } )
   end
 

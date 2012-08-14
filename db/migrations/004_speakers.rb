@@ -9,6 +9,7 @@ Sequel.migration do
       String :bio_es
       String :bio_en
       String :company
+      String :country
       DateTime :created_at
       DateTime :updated_at
     end
