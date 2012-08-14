@@ -10,7 +10,7 @@ section#speakers
     img#more
       margin: 23px 0 0 28px
 
-    li      
+    li
       @include inline-block
       @include transition(all, 0.5s)
       margin-bottom: 20px
@@ -33,7 +33,7 @@ section#speakers
       .container
         @include box-shadow(0 0 10px $red)
         @include border-radius(6px)
-        @include transition(all, 0.5s)  
+        @include transition(all, 0.5s)
         background-color: $red
         background-image: url('../images/yellow.png')
         background-position: center -7px
@@ -52,7 +52,7 @@ section#speakers
           text-align: center
 
           h1
-            @include transition(all, 0.5s) 
+            @include transition(all, 0.5s)
             font-size: 24px
             font-weight: bold
           h2
@@ -72,7 +72,7 @@ section#speakers
         .text
           @include border-radius(0 0 3px 3px)
           @include box-shadow(2px 2px 4px rgba(0,0,0,0.25) inset)
-          background: lighten($red, 4%) url("../images/stripes.png") repeat-y 337px top        
+          background: lighten($red, 4%) url("../images/stripes.png") repeat-y 337px top
           border: 1px solid $brown
           border-width: 0 1px 1px
           height: 151px
@@ -94,10 +94,10 @@ section#speakers
       &.right:hover
         margin: 0 0 -229px -130px
 
-      &:hover 
+      &:hover
         width: 400px
         z-index: 1000
-        
+
         .container
           @include box-shadow(0 0 15px rgba(89,27,20,0.9))
           background-color: $red
@@ -105,7 +105,7 @@ section#speakers
           background-position: center top
           border-color: $brown
           height: 298px
-          margin-top: 0     
+          margin-top: 0
         img
           //@include transform(rotate(0deg))
           width: 250px
@@ -151,7 +151,7 @@ section#speakers
             margin: 5px 0
             padding-left: 100px
             padding-top: 12px
-  
+
             &#admission
               background: url("../images/icon_admission.png") no-repeat 30px center
             &#parties
@@ -164,7 +164,7 @@ section#speakers
               background: url("../images/icon_coffee.png") no-repeat 46px center
             &#fun
               background: url("../images/icon_fun.png") no-repeat 43px center
-      
+
       #right_side
         background: url("../images/stripes.png")
         float: right
@@ -209,7 +209,7 @@ section#speakers
           background: $red
           border-bottom: 1px dashed $brown
           color: #882022
-          padding: 20px 0 
+          padding: 20px 0
           span
             @include inline-block
             border-bottom: 1px solid #882022
@@ -225,7 +225,7 @@ section#speakers
             text-align: left
             font-size: 13px
             margin-left: 5px
-  
+
         #call_to_action
           padding: 52px 0
 

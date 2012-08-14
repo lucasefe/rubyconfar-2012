@@ -3,7 +3,10 @@ require 'redcarpet'
 module Helper
 
   def biography_from(speaker)
-    text = speaker.send("bio_#{current_locale}")
+    markdown speaker.send("bio_#{current_locale}")
+  end
+
+  def markdown(text)
     rndr = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new)
     rndr.render(text)
   end

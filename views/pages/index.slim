@@ -1,4 +1,4 @@
-section#home 
+section#home
 
   == partial 'flashes'
 
@@ -17,11 +17,14 @@ section#home
           img src="/images/2011/tom.jpg" alt="Tom Preston Werner"
         li
           img src="/images/2011/konex.jpg" alt="Ciudad Cultural Konex"
-        li  
+        li
           img src="/images/2011/eto.jpg" alt="Koichiro Eto"
-        li  
+        li
           img src="/images/2011/rc2011.jpg" alt="RubyConf Argentina 2011"
 
+section#speakers
+  h1.title= t.nav.speakers
+  == partial 'pages/speakers'
 
 section#sponsors
   h1.title Sponsors
@@ -60,7 +63,7 @@ section#sponsors
 
   .box#bronze
     h5 Bronze
-    hr.clear    
+    hr.clear
 
     a href="http://becloudy.com/" target="_blank"
       .fadehover
@@ -77,7 +80,7 @@ section#sponsors
         img.a src="/images/sponsors/aycron_1.png" alt="Aycron"
         img.b src="/images/sponsors/aycron_2.png" alt="Aycron"
 
-    
+
 
     .box_bottom
 
@@ -93,18 +96,6 @@ section#sponsors
       .fadehover
         img.a src="/images/sponsors/urban_station_1.png" alt="Urban Station"
         img.b src="/images/sponsors/urban_station_2.png" alt="Urban Station"
-
-      
-
-      
-      
-
-  
-  
-
-section#speakers
-  h1.title= t.nav.speakers
-  == partial 'pages/speakers'
 
 section#proposals
   h1.title= t.nav.proposals
