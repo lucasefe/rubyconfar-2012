@@ -69,6 +69,29 @@ Sass and Compass in Action (Manning 2012). He is active in the
 development community as host of The Changelog, a weekly podcast and
 blog showcasing new and interesting Open Source projects."
 
+steveklabnik = Speaker.create first_name: "Steve", last_name: "Klabnik",
+  twitter: "steveklabnik", country: "USA", company: "",
+  bio_es: "Ruby, anarchism, and Critcal Code Studies.
+  I teach the best Ruby and Rails classes in the world with Jumpstart Lab, and hack on Rails, Draper, and bunches more open source.",
+  bio_en: "Ruby, anarchism, and Critcal Code Studies.
+  I teach the best Ruby and Rails classes in the world with Jumpstart Lab, and hack on Rails, Draper, and bunches more open source."
+
+cuerbot = Speaker.create first_name: "Bruno", last_name: "Aguirre",
+  twitter: "cuerbot", country: "URUGUAY", company: "Cubox",
+  bio_en: "Bruno (o elcuervo para los amigos) fue criado por un grupo de salvajes de la tribu de telecomunicaciones, ellos lo llevaron al mundo de lo distribuido y protocolos asíncronos.
+El avance de la ciudad en las tierras de estos salvajes y las olas migratorias del pingüino emperador llevo a este desarrollador a las tierras del HTTP en donde busca unir a los dos mundos.
+Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en Cubox.
+Es opensource-dependiente, mantiene varios proyectos, es de Géminis y disfruta de largas caminatas en la playa y cenas a la luz de las velas.",
+bio_es: "Bruno (o elcuervo para los amigos) fue criado por un grupo de salvajes de la tribu de telecomunicaciones, ellos lo llevaron al mundo de lo distribuido y protocolos asíncronos.
+El avance de la ciudad en las tierras de estos salvajes y las olas migratorias del pingüino emperador llevo a este desarrollador a las tierras del HTTP en donde busca unir a los dos mundos.
+Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en Cubox.
+Es opensource-dependiente, mantiene varios proyectos, es de Géminis y disfruta de largas caminatas en la playa y cenas a la luz de las velas."
+
+spastorino = Speaker.create first_name: "Santiago", last_name: "Pastorino",
+  twitter: "spastorino", country: "URUGUAY", company: "WyeWorks",
+bio_es: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate.",
+bio_en: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate."
+
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
 #   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
 #   Ingeniería en Informática; me apasionan la música, el desarrollo de software,
