@@ -124,3 +124,8 @@ $(document).ready(function() {
       autoMode: 'loop'
   });
 });
+
+$(function()
+{
+  $('.scroll-pane').jScrollPane();
+});
