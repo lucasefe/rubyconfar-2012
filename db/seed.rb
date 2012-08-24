@@ -38,7 +38,7 @@ foca = Speaker.create first_name: "Nicolás", last_name: "Sanguinetti",
 He usually hacks on ruby and javascript open source thingies at http://github.com/foca. He lives in Montevideo, Uruguay, where he works as an engineer for Cubox.", bio_es: "Nicolás (también conocido como Foca), ya lleva 10 años escribiendo código horrible, cada línea peor que el anterior. Durante este período, aprendió algunas cosas sobre cómo probar código horrible, y espera poder decir una o dos cosas que valga la pena escuchar en esta presentación. Ojalá.
 Por lo general programa algunos proyectos open source en Ruby y Javascript, que podemos encontrar en http://github.com/foca. Vive en Montevideo, Uruguay, donde trabaja como ingeniero para Cubox."
 
-apotonick = Speaker.create first_name: "Nick", last_name: "Suterer",
+apotonick = Speaker.create first_name: "Nick", last_name: "Sutterer",
   twitter: "apotonick", country: "GERMANY", bio_en: "Nick Sutterer is proud to be a member of the
 Ruby open source
 community. His Cells and Apotomo projects have been bringing increased
