@@ -1,6 +1,8 @@
 section#speakers
   border-top: 1px solid $brown
   padding-top: 40px
+  padding-bottom: 90px
+  background: url("../images/stripes.png")
 
   h1.title
     width: 220px
@@ -40,11 +42,11 @@ section#speakers
         @include box-shadow(0 0 10px $red)
         @include border-radius(6px)
         @include transition(all, 0.5s)
-        background-color: $red
+        background-color: transparent
         background-image: url('../images/yellow.png')
-        background-position: center -7px
+        background-position: center -8px
         background-repeat: repeat-x
-        border: 1px solid $red
+        border: 1px solid transparent
         height: 30px
         overflow: hidden
         padding: 185px 20px 20px
@@ -124,8 +126,9 @@ section#speakers
   article
     @include border-radius(4px)
     @include box-shadow(1px 1px 0 rgba(255,255,255,0.3))
+    background-color: $red
     border: 1px solid $brown
-    margin: 90px auto
+    margin: 90px auto 0
     text-align: center
     width: 823px
     vertical-align: top
