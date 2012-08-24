@@ -137,6 +137,12 @@ body
     #in_the_loop
       margin: 0 auto
       width: 162px
+      a
+        @include transition(all 0.3s)
+        img#reg
+          margin-top: 15px
+        &:hover
+          opacity: 0.7
 
       p
         background: url("../images/in_the_loop_small.png")

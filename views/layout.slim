@@ -61,8 +61,10 @@ html
 
       //.tweet
       #in_the_loop
-        p Keep me in the loop!
-        == partial 'subscribers/form'
+        / p Keep me in the loop!
+        / == partial 'subscribers/form'
+        a href="#registration"
+          img#reg src="/images/register_now_sidebar_#{current_locale}.png"
 
       #sz_studios
         a href="http://www.szstudios.com.ar" target="_blank"
