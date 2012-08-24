@@ -70,11 +70,11 @@ development community as host of The Changelog, a weekly podcast and
 blog showcasing new and interesting Open Source projects."
 
 steveklabnik = Speaker.create first_name: "Steve", last_name: "Klabnik",
-  twitter: "steveklabnik", country: "USA", company: "",
-  bio_es: "Ruby, anarchism, and Critcal Code Studies.
-  I teach the best Ruby and Rails classes in the world with Jumpstart Lab, and hack on Rails, Draper, and bunches more open source.",
-  bio_en: "Ruby, anarchism, and Critcal Code Studies.
-  I teach the best Ruby and Rails classes in the world with Jumpstart Lab, and hack on Rails, Draper, and bunches more open source."
+  twitter: "steveklabnik", country: "USA", company: "JumpstartLab",
+  bio_es: "Steve Klabnik hacks on Hackety Hack and other open source projects. He was a Ruby Hero in 2011.
+  In addition to speaking about hypermedia APIs he's also writing a book about those. He also teaches the best Ruby and Rails classes in the world with Jumpstart Lab.",
+  bio_en: "Steve Klabnik hacks on Hackety Hack and other open source projects. He was a Ruby Hero in 2011.
+  In addition to speaking about hypermedia APIs he's also writing a book about those. He also teaches the best Ruby and Rails classes in the world with Jumpstart Lab."
 
 cuerbot = Speaker.create first_name: "Bruno", last_name: "Aguirre",
   twitter: "cuerbot", country: "URUGUAY", company: "Cubox",
@@ -89,8 +89,8 @@ Es opensource-dependiente, mantiene varios proyectos, es de Géminis y disfruta 
 
 spastorino = Speaker.create first_name: "Santiago", last_name: "Pastorino",
   twitter: "spastorino", country: "URUGUAY", company: "WyeWorks",
-bio_es: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate.",
-bio_en: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate."
+  bio_es: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate.",
+  bio_en: "Santiago is a Rails Core Team Member, devoted Open Source developer and Co-Founder of WyeWorks. He's a well rounded Software Engineer, perfectionist and passionate about creating extremely high quality products using the very best practices. As a side effect of getting his Computer Science degree, he is now proudly addicted to Coca-Cola and chocolate."
 
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
 #   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
