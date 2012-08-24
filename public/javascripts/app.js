@@ -117,15 +117,13 @@ $(function() {
     preload: true,
     preloadImage: 'images/spinner.gif'
   });
+
+  $('.scroll-pane').jScrollPane();
+
 });
 
 $(document).ready(function() {
   $("#legacy ul").simplyScroll({
       autoMode: 'loop'
   });
-});
-
-$(function()
-{
-  $('.scroll-pane').jScrollPane();
 });
