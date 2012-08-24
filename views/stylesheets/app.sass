@@ -425,14 +425,20 @@ body
     margin-left: 210px
 
     section      
-      h1.title
-        text-shadow: -1px -1px 0 $brown
-        color: $yellow
-        font-size: 26px
-        font-weight: bold
-        margin-top: 18px
-        text-align: center
-        text-transform: uppercase
+    h1.title
+      color: $brown
+      font-size: 26px
+      font-weight: bold
+      margin:
+        top: 18px
+        left: auto
+        right: auto
+      text-align: center
+      background-image: url("../images/titles.png")
+      height: 36px
+      text-indent: -30000px
+      
+
 
   footer
     @include box-shadow(0 1px 5px rgba(0,0,0,0.5) inset)

@@ -23,7 +23,8 @@ section#home
           img src="/images/2011/rc2011.jpg" alt="RubyConf Argentina 2011"
 
 section#speakers
-  h1.title= t.nav.speakers
+  h1.title class=current_locale
+    = t.nav.speakers
   == partial 'pages/speakers'
 
 section#sponsors
@@ -86,7 +87,6 @@ section#sponsors
         img.b src="/images/sponsors/aycron_2.png" alt="Aycron"
 
 
-
     .box_bottom
 
   .box#media_partners
@@ -103,13 +103,16 @@ section#sponsors
         img.b src="/images/sponsors/urban_station_2.png" alt="Urban Station"
 
 section#proposals
-  h1.title= t.nav.proposals
+  h1.title class=current_locale
+    = t.nav.proposals 
   == partial 'proposals/form'
 
 section#sponsorship
-  h1.title= t.nav.sponsorship
+  h1.title class=current_locale
+    = t.nav.sponsorship
   == partial "pages/sponsorship_#{current_locale}"
 
 section#venue
-  h1.title= t.nav.venue
+  h1.title class=current_locale
+    = t.nav.venue
   == partial "pages/venue"
