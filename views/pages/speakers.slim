@@ -10,6 +10,12 @@ ul#so_many_speakers
             h1= speaker.display_name
             h2= speaker.company
 
+          .social
+            a href="http://twitter.com/#{speaker.twitter}"
+              = "@#{speaker.twitter}"
+            a href="http://github.com/#{speaker.github}"
+              = speaker.github
+
           h3 Bio
           .text.scroll-pane
             == biography_from speaker
