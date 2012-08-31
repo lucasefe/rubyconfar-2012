@@ -30,7 +30,26 @@ section#speakers
         margin-left: 6px
         margin-right: 6px
 
-
+      span.country
+        @include transition(all, 0.5s)
+        display: block
+        height: 41px
+        margin: 150px 0 0 30px
+        position: absolute
+        width: 40px
+        z-index: 3
+        &.ARGENTINA
+          background: url('../images/country_arg.png')
+        &.URUGUAY
+          background: url('../images/country_uruguay.png')
+        &.BRASIL
+          background: url('../images/country_brasil.png')
+        &.CHILE
+          background: url('../images/country_chile.png')
+        &.USA
+          background: url('../images/country_usa.png')
+        &.GERMANY
+          background: url('../images/country_germany.png')
       img
         @include transition(all, 0.5s)
         @include transform(rotate(-15deg))
@@ -145,6 +164,10 @@ section#speakers
           border-color: $brown
           height: 298px
           margin-top: 0
+
+        span.country
+          margin: 180px 0 0 87px
+
         img
           //@include transform(rotate(0deg))
           width: 250px
