@@ -106,7 +106,7 @@ section#speakers
           padding-bottom: 5px
           padding-left: 20px
           text-align: left
-          
+
         .text
           @include border-radius(0 0 3px 3px)
           @include box-shadow(2px 2px 4px rgba(0,0,0,0.25) inset)
@@ -216,7 +216,7 @@ section#speakers
         hgroup
           background: $red
           border-bottom: 1px dashed $brown
-          padding: 90px 0 90px 20px
+          padding: 80px 0 100px 20px
           h1
             font-weight: bold
             span
@@ -230,6 +230,24 @@ section#speakers
               vertical-align: top
             strong
               font-size: 70px
+          
+          .dialog
+            background: url('../images/triang2.png') no-repeat center top
+            margin: 15px 0 0 0
+            padding-top: 7px
+            position: absolute
+            p
+              @include border-radius(4px)
+              @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+              background: $brown  
+              color: $red
+              font-size: 14px
+              width: 332px
+              line-height: 1.5
+              padding: 10px 20px
+              strong
+                color: $yellow
+                font-weight: bold
           h2
             @include border-radius(3px)
             @include box-shadow(1px 1px 0 rgba(255,255,255,0.3))
