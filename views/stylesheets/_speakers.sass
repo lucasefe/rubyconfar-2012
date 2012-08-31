@@ -37,6 +37,8 @@ section#speakers
         display: block
         margin: 0 auto -230px
         width: 210px
+        position: relative
+        z-index: 2
 
       .container
         @include box-shadow(0 0 10px $red)
@@ -68,6 +70,33 @@ section#speakers
             font-size: 18px
             font-weight: bold
             margin-top: 2px
+
+        .social
+          @include transition(all, 0.5s)
+          margin: -180px 0 0 60px
+          position: absolute
+
+          a
+            @include transition(all, 0.25s)
+            background: url("../images/social_icons.png") no-repeat right top
+            display: block
+            height: 25px            
+            text-indent: -30000px
+            width: 27px
+            
+            &.twitter_user
+              border-bottom: 1px dashed $brown
+              margin-bottom: 15px
+              padding-bottom: 15px
+              &:hover
+                background-position: left top
+
+            &.github_user
+              background-position: right -50px
+              &:hover
+                background-position: left -50px
+
+
         h3
           background: url("../images/presentation_icon.png") no-repeat left 2px
           border-bottom: 3px solid $brown
@@ -77,6 +106,7 @@ section#speakers
           padding-bottom: 5px
           padding-left: 20px
           text-align: left
+          
         .text
           @include border-radius(0 0 3px 3px)
           @include box-shadow(2px 2px 4px rgba(0,0,0,0.25) inset)
@@ -86,6 +116,7 @@ section#speakers
           height: 151px
           overflow: auto
           padding: 10px 20px 10px 10px
+
           p
             font-size: 13px
             line-height: 1.2
@@ -120,7 +151,10 @@ section#speakers
         h1
           margin-top: 40px
 
-
+        .social
+          margin: -240px 0 0 0
+          a
+            margin-bottom: 12px
 
 
   article

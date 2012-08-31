@@ -11,9 +11,9 @@ ul#so_many_speakers
             h2= speaker.company
 
           .social
-            a href="http://twitter.com/#{speaker.twitter}"
+            a.twitter_user href="http://twitter.com/#{speaker.twitter}"
               = "@#{speaker.twitter}"
-            a href="http://github.com/#{speaker.github}"
+            a.github_user href="http://github.com/#{speaker.github}"
               = speaker.github
 
           h3 Bio
