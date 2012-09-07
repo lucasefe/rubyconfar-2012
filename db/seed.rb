@@ -37,9 +37,23 @@ Today he's focused on the Heroku public API, distributed architectures
 and getting to the master league."
 
 foca = Speaker.create first_name: "Nicolás", last_name: "Sanguinetti",
-  twitter: "godfoca", github: "foca", company: "Cubox", country: "URUGUAY", bio_en: "Nicolás (also known as foca) has been writing horrible code for the past 10 years, each line worse than the last. Over this period, he learnt a few things about testing horrible code, and hopefully he can say one or two things that are worth listening over this presentation. Hopefully.
-He usually hacks on ruby and javascript open source thingies at http://github.com/foca. He lives in Montevideo, Uruguay, where he works as an engineer for Cubox.", bio_es: "Nicolás (también conocido como Foca), ya lleva 10 años escribiendo código horrible, cada línea peor que el anterior. Durante este período, aprendió algunas cosas sobre cómo probar código horrible, y espera poder decir una o dos cosas que valga la pena escuchar en esta presentación. Ojalá.
-Por lo general programa algunos proyectos open source en Ruby y Javascript, que podemos encontrar en http://github.com/foca. Vive en Montevideo, Uruguay, donde trabaja como ingeniero para Cubox."
+  twitter: "godfoca", github: "foca", company: "GitHub", country: "URUGUAY",
+  bio_en: "Nicolás (also known as foca) has been writing horrible code for
+the past 10 years, each line worse than the last. At some point he
+realized Eclipse was actually a horrible tool for anything-but-Java
+and decided he would learn a new editor. And for the past 8 years he's
+been using vim, so he's confident he can show a thing or two about it.
+He usually hacks on ruby and javascript open source thingies at
+http://github.com/foca. He lives in Montevideo, Uruguay, where he
+works as an engineer for GitHub.<Esc>:wq",
+bio_es: "Nicolás (also known as foca) has been writing horrible code for
+the past 10 years, each line worse than the last. At some point he
+realized Eclipse was actually a horrible tool for anything-but-Java
+and decided he would learn a new editor. And for the past 8 years he's
+been using vim, so he's confident he can show a thing or two about it.
+He usually hacks on ruby and javascript open source thingies at
+http://github.com/foca. He lives in Montevideo, Uruguay, where he
+works as an engineer for GitHub.<Esc>:wq"
 
 apotonick = Speaker.create first_name: "Nick", last_name: "Sutterer",
   twitter: "apotonick", github: "apotonick",
@@ -80,14 +94,14 @@ steveklabnik = Speaker.create first_name: "Steve", last_name: "Klabnik",
   In addition to speaking about hypermedia APIs he's also writing a book about those. He also teaches the best Ruby and Rails classes in the world with Jumpstart Lab."
 
 cuerbot = Speaker.create first_name: "Bruno", last_name: "Aguirre",
-  twitter: "cuerbot", github: "elcuervo", country: "URUGUAY", company: "Cubox",
+  twitter: "cuerbot", github: "elcuervo", country: "URUGUAY", company: "New Context",
   bio_en: "Bruno (o elcuervo para los amigos) fue criado por un grupo de salvajes de la tribu de telecomunicaciones, ellos lo llevaron al mundo de lo distribuido y protocolos asíncronos.
 El avance de la ciudad en las tierras de estos salvajes y las olas migratorias del pingüino emperador llevo a este desarrollador a las tierras del HTTP en donde busca unir a los dos mundos.
-Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en Cubox.
+Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en New Context.
 Es opensource-dependiente, mantiene varios proyectos, es de Géminis y disfruta de largas caminatas en la playa y cenas a la luz de las velas.",
 bio_es: "Bruno (o elcuervo para los amigos) fue criado por un grupo de salvajes de la tribu de telecomunicaciones, ellos lo llevaron al mundo de lo distribuido y protocolos asíncronos.
 El avance de la ciudad en las tierras de estos salvajes y las olas migratorias del pingüino emperador llevo a este desarrollador a las tierras del HTTP en donde busca unir a los dos mundos.
-Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en Cubox.
+Fanático de los protocolos y la investigación tiene hoy su laboratorio secreto en New Context.
 Es opensource-dependiente, mantiene varios proyectos, es de Géminis y disfruta de largas caminatas en la playa y cenas a la luz de las velas."
 
 spastorino = Speaker.create first_name: "Santiago", last_name: "Pastorino",
