@@ -74,7 +74,7 @@ error, why you should not confuse your models with your resources, and
 how to play a mean bass in a punk rock band."
 
 wynn = Speaker.create first_name: "Wynn", last_name: "Netherland",
-  twitter: 'pengwynn', github: "pengwynn", country: "USA", company: "Github", bio_en: "Wynn Netherland is a full
+  twitter: 'pengwynn', github: "pengwynn", country: "USA", company: "GitHub", bio_en: "Wynn Netherland is a full
 stack web creative. He spends his days
 shipping Awesome™ at GitHub. He is author of several books including
 Sass and Compass in Action (Manning 2012). He is active in the
@@ -111,8 +111,8 @@ spastorino = Speaker.create first_name: "Santiago", last_name: "Pastorino",
 
 
 s = Speaker.create first_name: "Martín", last_name: "Salías",
-bio_es: "Martin is an old programming language maniac who has been coding for a living the last 30 years in all type of crazy projects. He considers himself an eternal apprentice, and that's why he spends most of his time doing coaching and training at Kleer, as teaching is a very effective learning technique. He loves community and was part of the group starting the Agiles Latin American conferences, contributes to Alt.NET, the open source side of the .NET world, and his favorite platforms are Python, Ruby and JavaScript. He blogs frequently (in Spanich) about coding stuf at http://CodeAndBeyond.org.",
-bio_en: "Martin is an old programming language maniac who has been coding for a living the last 30 years in all type of crazy projects. He considers himself an eternal apprentice, and that's why he spends most of his time doing coaching and training at Kleer, as teaching is a very effective learning technique. He loves community and was part of the group starting the Agiles Latin American conferences, contributes to Alt.NET, the open source side of the .NET world, and his favorite platforms are Python, Ruby and JavaScript. He blogs frequently (in Spanich) about coding stuf at http://CodeAndBeyond.org.",
+bio_es: "Martin is an old programming language maniac who has been coding for a living the last 30 years in all type of crazy projects. He considers himself an eternal apprentice, and that's why he spends most of his time doing coaching and training at Kleer, as teaching is a very effective learning technique. He loves community and was part of the group starting the Agiles Latin American conferences, contributes to Alt.NET, the open source side of the .NET world, and his favorite platforms are Python, Ruby and JavaScript. He blogs frequently (in Spanish) about coding stuff at http://CodeAndBeyond.org.",
+bio_en: "Martin is an old programming language maniac who has been coding for a living the last 30 years in all type of crazy projects. He considers himself an eternal apprentice, and that's why he spends most of his time doing coaching and training at Kleer, as teaching is a very effective learning technique. He loves community and was part of the group starting the Agiles Latin American conferences, contributes to Alt.NET, the open source side of the .NET world, and his favorite platforms are Python, Ruby and JavaScript. He blogs frequently (in Spanish) about coding stuff at http://CodeAndBeyond.org.",
 github: "martinsalias",
 twitter: "martinsalias",
 country: "ARGENTINA",
