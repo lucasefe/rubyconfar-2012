@@ -125,7 +125,7 @@ bio_en: "Bermon Painter is the UX Design Lead for Hendrick Automotive Group, whe
 github: "bpainter",
 twitter: "bermonpainter",
 country: "USA",
-company:"Hendrick Automotive Group"
+company:"Hendrick Automotive"
 
 
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
