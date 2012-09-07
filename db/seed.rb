@@ -117,6 +117,17 @@ github: "martinsalias",
 twitter: "martinsalias",
 country: "ARGENTINA",
 company:"Kleer"
+
+
+s = Speaker.create first_name: "Bernon", last_name: "Painter",
+bio_es: "Bermon Painter guía UX para Hendrick Automotive Group, donde trabaja con un equipo extraordinario que hace experiencias geniales y aplicaciones web con Ruby. También esta involucrado en la comunidad de tecnología en Charlotte, NC y organiza los grupos Charlotte User Experience Designers, Charlotte Front-End Developers y Charlotte Grok. En su tiempo libre el trabaja con @teamsassdesign haciendo el nuevo diseño del sitio web de Sass. Fuera de tecnología el disfruta aprender idiomas, habla español, ingles y un poco de italiano, toca música clasica en el piano, y disfruta viajar a las playas y montañas del Ecuador con su familia.",
+bio_en: "Bermon Painter is the UX Design Lead for Hendrick Automotive Group, where he works with an amazing team that crafts nifty experiences and web applications with Ruby. He's also heavily involved in the local tech community in Charlotte, NC and organizes the Charlotte User Experience Designer, Charlotte Front-End Developers and Charlotte Grok groups. In his free time he works the folks at @teamsassdesign on the redesign of the Sass website. Outside of technology he enjoys languages, speaks fluent Spanish, working on Italian, plays classical piano and enjoys visiting the beaches and mountains of Ecuador with his family.",
+github: "bpainter",
+twitter: "bermonpainter",
+country: "USA",
+company:"Hendrick Automotive Group"
+
+
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
 #   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
 #   Ingeniería en Informática; me apasionan la música, el desarrollo de software,
