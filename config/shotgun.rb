@@ -15,7 +15,7 @@ require 'yaml'
 SETTINGS = YAML.load_file('config/settings.yml' )
 
 require 'sequel'
-DB = Sequel.connect("sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
+DB = Sequel.connect(ENV['DATABASE_URL'] || "sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
 
 require 'bourbon'
