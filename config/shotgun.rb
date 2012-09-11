@@ -11,8 +11,7 @@ require 'shield'
 require 'logger'
 require 'omniauth-twitter'
 require './lib/configuration'
-
-if ENV['RACK_ENV'] == 'development'
+unless ENV['DATABASE_URL']
   require 'sqlite3'
 else
   require 'pg'
