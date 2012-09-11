@@ -18,7 +18,6 @@ gem 'minitest-matchers', '1.2.0', require: false
 gem 'mote', '0.2.2', require: false
 gem 'omniauth', '1.1.0', require: false
 gem 'omniauth-twitter', '0.0.11', require: false
-gem 'pg', '0.14.1'
 gem 'pry-doc', '0.4.4', require: false
 gem 'r18n-core', '0.4.14', require: false
 gem 'rack-protection', '1.2.0', require: false
@@ -28,6 +27,10 @@ gem 'sequel', '3.34.1'
 gem 'shield', '1.0.0', require: false
 gem 'shotgun', '0.9', require: false
 gem 'slim', '1.2.0', require: false
-gem 'sqlite3', '1.3.6', require: false
 gem 'thin', '1.3.1', require: false
 gem 'turn', '0.9.5', require: false
+gem 'pg', '0.14.1'
+
+group :development, :test do
+  gem 'sqlite3', '1.3.6', require: false
+end
