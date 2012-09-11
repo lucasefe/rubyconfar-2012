@@ -10,9 +10,7 @@ require 'sass'
 require 'shield'
 require 'logger'
 require 'omniauth-twitter'
-
-require 'yaml'
-SETTINGS = YAML.load_file('config/settings.yml' )
+require './lib/configuration'
 
 if ENV['RACK_ENV'] == 'development'
   require 'sequel'
@@ -26,7 +24,7 @@ require 'bourbon'
 SASS_LOAD_PATHS = ["./views/stylesheets/bourbon"]
 
 require 'malone'
-Malone.connect(url: SETTINGS['smtp_settings']['url'])
+Malone.connect(url: Configuration.smtp_url)
 
 
 class Array

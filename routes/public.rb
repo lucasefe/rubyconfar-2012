@@ -12,9 +12,10 @@ class Public < Cuba
   define do
 
     helpers do
+
       def notify_new_proposal(proposal, email)
         Malone.deliver to: email,
-          from: SETTINGS['default_email'],
+          from: Configuration.default_email,
           subject: t.proposal.notification.subject,
           html: partial("proposals/notification_#{current_locale}")
       end
@@ -46,7 +47,7 @@ class Public < Cuba
           @proposal= Proposal.new(proposal)
           if @proposal.save
             notify_new_proposal @proposal, @proposal.author_email
-            notify_new_proposal @proposal, SETTINGS['default_email']
+            notify_new_proposal @proposal, Configuration.default_email
             res.write partial("proposals/created")
           else
             res.write partial("proposals/form")
