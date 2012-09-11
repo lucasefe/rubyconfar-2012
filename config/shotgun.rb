@@ -13,10 +13,12 @@ require 'omniauth-twitter'
 require './lib/configuration'
 
 if ENV['RACK_ENV'] == 'development'
-  require 'sequel'
+  require 'sqlite3'
 else
   require 'pg'
 end
+
+require 'sequel'
 DB = Sequel.connect(ENV['DATABASE_URL'] || "sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
 
