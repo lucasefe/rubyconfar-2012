@@ -10,19 +10,22 @@ require 'sass'
 require 'shield'
 require 'logger'
 require 'omniauth-twitter'
-
-require 'yaml'
-SETTINGS = YAML.load_file('config/settings.yml' )
+require './lib/configuration'
+unless ENV['DATABASE_URL']
+  require 'sqlite3'
+else
+  require 'pg'
+end
 
 require 'sequel'
-DB = Sequel.connect("sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
+DB = Sequel.connect(ENV['DATABASE_URL'] || "sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
 
 require 'bourbon'
 SASS_LOAD_PATHS = ["./views/stylesheets/bourbon"]
 
 require 'malone'
-Malone.connect(url: SETTINGS['smtp_settings']['url'])
+Malone.connect(url: Configuration.smtp_url)
 
 
 class Array

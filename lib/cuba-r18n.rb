@@ -5,13 +5,13 @@ class Cuba
 
     def self.setup(app)
       app.plugin ::R18n::Helpers
-      app.settings.store :translations, File.join(Dir.pwd, 'i18n/') 
+      app.settings.store :translations, File.join(Dir.pwd, 'i18n/')
     end
 
     def localized
-      lambda do 
+      lambda do
         if consume("(en|es)")
-          set_locale(captures.last) 
+          set_locale(captures.last)
         end
       end
     end

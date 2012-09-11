@@ -1,2 +1,1 @@
-web: shotgun -p 3000 
-smtp: mailcatcher -f
+web: bundle exec thin start -p $PORT
