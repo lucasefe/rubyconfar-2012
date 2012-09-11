@@ -28,6 +28,6 @@ gem 'sequel', '3.34.1'
 gem 'shield', '1.0.0', require: false
 gem 'shotgun', '0.9', require: false
 gem 'slim', '1.2.0', require: false
-gem 'sqlite3', '1.3.6'
+gem 'sqlite3', '1.3.6', require: false
 gem 'thin', '1.3.1', require: false
 gem 'turn', '0.9.5', require: false

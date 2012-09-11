@@ -14,7 +14,11 @@ require 'omniauth-twitter'
 require 'yaml'
 SETTINGS = YAML.load_file('config/settings.yml' )
 
-require 'sequel'
+if ENV['RACK_ENV'] == 'development'
+  require 'sequel'
+else
+  require 'pg'
+end
 DB = Sequel.connect(ENV['DATABASE_URL'] || "sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
 
