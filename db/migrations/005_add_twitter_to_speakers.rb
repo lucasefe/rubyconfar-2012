@@ -1,7 +1,7 @@
 Sequel.migration do
 
   up do
-    add_column :speakers, :github, :string
+    add_column :speakers, :github, String
   end
 
   down do
