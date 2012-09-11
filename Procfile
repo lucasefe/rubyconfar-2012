@@ -1,1 +1,1 @@
-web: shotgun -p 3000
+web: shotgun -p $PORT
