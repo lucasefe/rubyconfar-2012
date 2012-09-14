@@ -50,6 +50,8 @@ section#speakers
           background: url('../images/country_usa.png')
         &.GERMANY
           background: url('../images/country_germany.png')
+        &.ESPANA
+          background: url('../images/country_espana.png')
       img
         @include transition(all, 0.5s)
         @include transform(rotate(-15deg))
@@ -99,10 +101,10 @@ section#speakers
             @include transition(all, 0.25s)
             background: url("../images/social_icons.png") no-repeat right top
             display: block
-            height: 25px            
+            height: 25px
             text-indent: -30000px
             width: 27px
-            
+
             &.twitter_user
               border-bottom: 1px dashed $brown
               margin-bottom: 15px
@@ -253,7 +255,7 @@ section#speakers
               vertical-align: top
             strong
               font-size: 70px
-          
+
           .dialog
             background: url('../images/triang2.png') no-repeat center top
             margin: 15px 0 0 0
@@ -262,7 +264,7 @@ section#speakers
             p
               @include border-radius(4px)
               @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
-              background: $brown  
+              background: $brown
               color: $red
               font-size: 14px
               width: 332px
