@@ -177,7 +177,7 @@ twitter: "calavera",
 country: "USA",
 company:"GitHub"
 
-s = Speaker.create first_name: "Krzysztof Kowalik", last_name: "Pablo Astigarraga",
+s = Speaker.create first_name: "Krzysztof Kowalik", last_name: " / Pablo Astigarraga",
 bio_es: "Chris is 23 years old freak from Poland, easy to recognize by his
 strange hairdos. Some time ago he moved to Montevideo in far far away
 Uruguay, where people are boring and drink weird herbs from weirder
