@@ -169,6 +169,35 @@ twitter: "j3",
 country: "USA",
 company:"Jumpstart Lab"
 
+s = Speaker.create first_name: "David", last_name: "Calavera",
+bio_es: "David works as a developer at GitHub making GitHub Enterprise even more awesome. When he's not coding you can probably find him improving his circus skills around the beautiful San Francisco.",
+bio_en: "David works as a developer at GitHub making GitHub Enterprise even more awesome. When he's not coding you can probably find him improving his circus skills around the beautiful San Francisco.",
+github: "calavera",
+twitter: "calavera",
+country: "USA",
+company:"GitHub"
+
+s = Speaker.create first_name: "Krzysztof Kowalik", last_name: "Pablo Astigarraga",
+bio_es: "Chris is 23 years old freak from Poland, easy to recognize by his
+strange hairdos. Some time ago he moved to Montevideo in far far away
+Uruguay, where people are boring and drink weird herbs from weirder
+vessels. He met there PoTe, another 23 years old freak with stylish
+afro. Chris used to kick Pablo's ass in soccer, while he is kicking
+Chris' ass in PES... They work together on cool Ruby, Python and Go
+projects, they do Open Source, they experiment with new ideas and have
+fun with every written line of code.",
+bio_en: "Chris is 23 years old freak from Poland, easy to recognize by his
+strange hairdos. Some time ago he moved to Montevideo in far far away
+Uruguay, where people are boring and drink weird herbs from weirder
+vessels. He met there PoTe, another 23 years old freak with stylish
+afro. Chris used to kick Pablo's ass in soccer, while he is kicking
+Chris' ass in PES... They work together on cool Ruby, Python and Go
+projects, they do Open Source, they experiment with new ideas and have
+fun with every written line of code.",
+github: "",
+twitter: "poteland",
+country: "URUGUAY",
+company:"New Context"
 
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
 #   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
