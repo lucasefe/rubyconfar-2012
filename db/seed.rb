@@ -174,7 +174,7 @@ bio_es: "David works as a developer at GitHub making GitHub Enterprise even more
 bio_en: "David works as a developer at GitHub making GitHub Enterprise even more awesome. When he's not coding you can probably find him improving his circus skills around the beautiful San Francisco.",
 github: "calavera",
 twitter: "calavera",
-country: "USA",
+country: "ESPANA",
 company:"GitHub"
 
 s = Speaker.create first_name: "Krzysztof Kowalik", last_name: " / Pablo Astigarraga",
