@@ -221,7 +221,7 @@ She also likes coffee, specially the ones from Starbucks. ",
 github: "hannelita",
 twitter: "hannelita",
 country: "BRASIL",
-company:""
+company: "Caelum"
 
 s = Speaker.create first_name: "Andy", last_name: "Atkinson ",
 bio_es: "Andy Atkinson has worked as a full-stack Rails engineer on
