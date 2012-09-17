@@ -199,6 +199,53 @@ twitter: "poteland",
 country: "URUGUAY",
 company:"New Context"
 
+
+s = Speaker.create first_name: "Hanneli", last_name: "Tavante",
+bio_es: "Hanneli (a.k.a. @hannelita) is a Brazilian developer working at
+Caelum, addicted to code, learn new programming languages, frameworks,
+blow capacitors, do some C programming to relax and commit useful (or
+unuseful) code for random Open Source Projects that she finds at
+Github. She tries to help community projects with her blog,
+http://hannelita.wordpress.com
+
+She also likes coffee, specially the ones from Starbucks. ",
+
+bio_en: "Hanneli (a.k.a. @hannelita) is a Brazilian developer working at
+Caelum, addicted to code, learn new programming languages, frameworks,
+blow capacitors, do some C programming to relax and commit useful (or
+unuseful) code for random Open Source Projects that she finds at
+Github. She tries to help community projects with her blog,
+http://hannelita.wordpress.com
+
+She also likes coffee, specially the ones from Starbucks. ",
+github: "hannelita",
+twitter: "hannelita",
+country: "BRASIL",
+company:""
+
+s = Speaker.create first_name: "Andy", last_name: "Atkinson ",
+bio_es: "Andy Atkinson has worked as a full-stack Rails engineer on
+consumer-facing projects at LivingSocial for 2 years. He has been part
+of the rapid growth of the engineering team from 10 to 80, from
+working independently, to being part of a team of engineers,
+designers, and managers. In that time he has experienced the
+challenges of continuing to release new products and features to
+consumers at the same rate of speed and level of quality within a
+rapidly growing organization.",
+bio_en: "Andy Atkinson has worked as a full-stack Rails engineer on
+consumer-facing projects at LivingSocial for 2 years. He has been part
+of the rapid growth of the engineering team from 10 to 80, from
+working independently, to being part of a team of engineers,
+designers, and managers. In that time he has experienced the
+challenges of continuing to release new products and features to
+consumers at the same rate of speed and level of quality within a
+rapidly growing organization.",
+github: "webandy",
+twitter: "webandy",
+country: "USA",
+company:"LivingSocial"
+
+
 # pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
 #   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
 #   Ingeniería en Informática; me apasionan la música, el desarrollo de software,
