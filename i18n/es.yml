@@ -12,6 +12,7 @@ nav:
   speakers: "Oradores"
   sponsorship: "Patrocinio"
   venue: "Lugar"
+  rfd: "Ruby Fun Day!"
   videos: "Videos 2011"
 
 speakers:
@@ -25,3 +26,8 @@ proposal:
   is_not_present: "es requerido"
   notification:
     subject: "Recibimos la propuesta! "
+
+rfd:
+  beginners: "Track Principiantes"
+  intermediate: "Track Intermedio"
+  advanced: "Track Avanzado"

@@ -15,6 +15,7 @@ nav:
   speakers: "Speakers"
   sponsorship: "Sponsorship"
   venue: "Venue"
+  rfd: "Ruby Fun Day!"
   videos: "Videos 2011"
 
 subscriber:
@@ -25,3 +26,8 @@ proposal:
   is_not_present: "is not present"
   notification:
     subject: "We've received your proposal!"
+    
+rfd:
+  beginners: "Beginners Track"
+  intermediate: "Intermediate Track"
+  advanced: "Advanced Track"
