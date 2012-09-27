@@ -4,56 +4,102 @@
   padding: 40px 37px 75px
 
   h1.title
-    width: 293px
     background-position: left -250px
+    margin-bottom: 33px
+    width: 293px
 
-  h2
-    text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
-    font-size: 20px
-    margin: 30px 0 10px 0
-    font-weight: bold
-
-  p
-    margin-bottom: 15px
-
-  a
-    color: $yellow
-    text-decoration: none
-
-    &:hover
-      text-decoration: underline
-
-
-  .important
-    width: 80%
-    padding: 10px
-    margin: 30px auto
-    -moz-box-shadow: $brown 2px 2px 0 inset
-    -webkit-box-shadow: $brown 2px 2px 0 inset
-    box-shadow: #744F10 2px 2px 0 inset
-    text-shadow: 1px 1px 0 $brown
-    -webkit-text-shadow: 1px 1px 0 $brown
-    background: $yellow
-    border: 1px solid #471915
-    color: $red
-    font-size: 19px
-    font-weight: bold
-    margin-bottom: 15px
+  #when
+    @include border-radius(3px)
+    @include box-shadow(1px 1px 2px rgba(0,0,0,0.4))
+    border: solid 1px $brown
+    float: right
+    margin: -90px 6px 40px
     text-align: center
-    p
-      margin: 7px 0
+    width: 60px
+    h4
+      @include border-radius(3px 3px 0 0)
+      background: $brown
+      color: $yellow
+      font-size: 14px
+      // font-weight: bold
+      padding: 2px 0 4px
+    h5
+      background: $yellow
+      font-size: 35px
+      font-weight: bold
+      padding: 2px 0 4px
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.3)
+    h6
+      @include border-radius(0 0 3px 3px)
+      background: darken($yellow, 4%) url("../images/stripes.png")
+      border-top: 1px solid $brown
+      font-size: 10px
+      padding: 1px 0 3px
 
-  .sessions
-    .session
-      width: 820px
-      margin: 20px 25px
-      border-bottom: 1px dotted $brown
-      h1
-        text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
-        font-size: 18px
-        margin: 0 0 0 0
-        font-weight: bold
-      p.speaker
-        font-style: italic
-        font-size: 16px
-        margin-bottom: 10px
+  section
+    @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+    @include border-radius(3px)
+    background: lighten($red, 4%) url("../images/stripes.png")
+    border: solid 1px $brown
+    margin-bottom: 30px
+    padding: 10px
+
+    article
+      background: $red
+      border: solid 1px $brown
+      padding: 10px 20px 20px
+      p
+        margin-top: 15px
+        strong
+          font-weight: bold
+
+  // h2
+  //   text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
+  //   font-size: 20px
+  //   margin: 30px 0 10px 0
+  //   font-weight: bold
+
+  // p
+  //   margin-bottom: 15px
+
+  // a
+  //   color: $yellow
+  //   text-decoration: none
+
+  //   &:hover
+  //     text-decoration: underline
+
+
+  // .important
+  //   width: 80%
+  //   padding: 10px
+  //   margin: 30px auto
+  //   -moz-box-shadow: $brown 2px 2px 0 inset
+  //   -webkit-box-shadow: $brown 2px 2px 0 inset
+  //   box-shadow: #744F10 2px 2px 0 inset
+  //   text-shadow: 1px 1px 0 $brown
+  //   -webkit-text-shadow: 1px 1px 0 $brown
+  //   background: $yellow
+  //   border: 1px solid #471915
+  //   color: $red
+  //   font-size: 19px
+  //   font-weight: bold
+  //   margin-bottom: 15px
+  //   text-align: center
+  //   p
+  //     margin: 7px 0
+
+  // .sessions
+  //   .session
+  //     width: 820px
+  //     margin: 20px 25px
+  //     border-bottom: 1px dotted $brown
+  //     h1
+  //       text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
+  //       font-size: 18px
+  //       margin: 0 0 0 0
+  //       font-weight: bold
+  //     p.speaker
+  //       font-style: italic
+  //       font-size: 16px
+  //       margin-bottom: 10px
