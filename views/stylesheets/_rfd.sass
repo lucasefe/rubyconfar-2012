@@ -3,6 +3,9 @@
   margin: 30px 0 40px
   padding: 40px 37px 75px
 
+  a
+    color: $yellow
+
   h1.title
     background-position: left -250px
     margin-bottom: 33px
@@ -41,7 +44,7 @@
     @include border-radius(3px)
     background: lighten($red, 4%) url("../images/stripes.png")
     border: solid 1px $brown
-    margin-bottom: 30px
+    margin-bottom: 20px
     padding: 10px
 
     article
@@ -52,6 +55,31 @@
         margin-top: 15px
         strong
           font-weight: bold
+
+
+  #where
+    background: url("../images/triang2.png") no-repeat 17px top
+    font-size: 13px
+    margin: 0 0 0 15px
+    padding-top: 7px
+    width: 400px
+    address
+      @include border-radius(3px)
+      background: $brown
+      color: $red
+      padding: 15px
+      h3
+        @include inline-block
+        background: url("../images/up.png")
+        height: 30px
+        text-indent: -30000px
+        width: 160px
+        margin: 0 10px 0 0
+      h4
+        @include inline-block
+        width: 200px
+
+      p
 
   // h2
   //   text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
