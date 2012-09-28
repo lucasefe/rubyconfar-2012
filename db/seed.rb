@@ -223,7 +223,7 @@ twitter: "hannelita",
 country: "BRASIL",
 company: "Caelum"
 
-s = Speaker.create first_name: "Andy", last_name: "Atkinson ",
+s = Speaker.create first_name: "Andy", last_name: "Atkinson",
 bio_es: "Andy Atkinson has worked as a full-stack Rails engineer on
 consumer-facing projects at LivingSocial for 2 years. He has been part
 of the rapid growth of the engineering team from 10 to 80, from
@@ -245,28 +245,86 @@ twitter: "webandy",
 country: "USA",
 company:"LivingSocial"
 
+s = Speaker.create first_name: "Gastón", last_name: "Ramos",
+bio_es: "Gastón programaba principalmente en Php y Perl
+hasta que conoció Ruby en el año 2005,
+a partir de ese momento comenzó a difundirlo
+entre sus amigos y no tan amigos.
+Es fundador de una comunidad de rubystas en
+su localidad, en el año 2009 se fué a vivir
+al campo, desde allí colabora en algunos proyectos
+open source en sus tiempos libres.
+De día trabaja en Deviget y algunas noches
+en el proyecto GNU/Linux Debian.",
+bio_en: "Gastón programaba principalmente en Php y Perl
+hasta que conoció Ruby en el año 2005,
+a partir de ese momento comenzó a difundirlo
+entre sus amigos y no tan amigos.
+Es fundador de una comunidad de rubystas en
+su localidad, en el año 2009 se fué a vivir
+al campo, desde allí colabora en algunos proyectos
+open source en sus tiempos libres.
+De día trabaja en Deviget y algunas noches
+en el proyecto GNU/Linux Debian.",
+github: "gramos",
+twitter: "gramos",
+country: "ARGENTINA",
+company:"Deviget"
 
-# pablitux = Speaker.create first_name: "Pablo", last_name: "Tortorella",
-#   country: "ARGENTINA", twitter: "pablitux", company: "Kleer", bio_es: "Estusiasta y social. Estudié
-#   Ingeniería en Informática; me apasionan la música, el desarrollo de software,
-#   el fútbol y el espíritu comunitario.
-#
-#   Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
-#   que quieren trabajar mejor, conociéndose más e implementando metodologías y
-# prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
-# usuario de GNU+Linux.
-#
-# Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
-# comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
-# cosas nuevas.", bio_en: "Estusiasta y social. Estudié Ingeniería en
-# Informática; me apasionan la música, el desarrollo de software, el fútbol y el
-# espíritu comunitario.
-#
-# Formo parte de Kleer y de la Comunidad Ágil Latinoamericana: acompaño equipos
-# que quieren trabajar mejor, conociéndose más e implementando metodologías y
-# prácticas ágiles; También soy docente en la Universidad de Buenos Aires y
-# usuario de GNU+Linux.
-#
-# Me gusta pasar buenos momentos con mi novia y con mis amigos, jugar al fútbol,
-# comer pastas, asado y comida peruana, tocar la armónica y aprender idiomas y
-# cosas nuevas."
+# s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
+# bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
+# Naturales in UBA. He has been teaching Object Oriented Programming and
+# Advanced Design with Objects in the same University for more that ten
+# years. He is also professor in the Software Engineer Master’s degree
+# at the UCA. He has been working as a programmer, architect, technology
+# and development manager in different companies such as IBM, Banco
+# Galicia and Mercap SRL. He has been speaker in different international
+# congresses such as OOPSLA (Object Oriented Programming, Systems,
+# Languages and Applications), ESUG (European Smalltalk User Group),
+# Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
+# Argentina de Smalltalk). Currently he spends more of his time doing
+# what he likes the most: teaching and programming with objects.",
+# bio_en: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
+# Naturales in UBA. He has been teaching Object Oriented Programming and
+# Advanced Design with Objects in the same University for more that ten
+# years. He is also professor in the Software Engineer Master’s degree
+# at the UCA. He has been working as a programmer, architect, technology
+# and development manager in different companies such as IBM, Banco
+# Galicia and Mercap SRL. He has been speaker in different international
+# congresses such as OOPSLA (Object Oriented Programming, Systems,
+# Languages and Applications), ESUG (European Smalltalk User Group),
+# Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
+# Argentina de Smalltalk). Currently he spends more of his time doing
+# what he likes the most: teaching and programming with objects.",
+# github: "10Pines",
+# twitter: "HernanWilkinson",
+# country: "ARGENTINA",
+# company:"10pines"
+
+# s = Speaker.create first_name: "Lucas Videla", last_name: " / Matías Gonzalez",
+# bio_es: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
+# de la industria. Nadie puede entender cómo, pero en algún momento
+# podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
+# trabaja en uno21 y da charlas de git.
+
+# Matías tiene basta experiencia en la industria y dos años de
+# experiencia en capacitación para empresas. Le gusta hacer las cosas
+# bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
+# entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
+# encontrar en encuentros como el RFD!",
+# bio_en: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
+# de la industria. Nadie puede entender cómo, pero en algún momento
+# podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
+# trabaja en uno21 y da charlas de git.
+
+# Matías tiene basta experiencia en la industria y dos años de
+# experiencia en capacitación para empresas. Le gusta hacer las cosas
+# bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
+# entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
+# encontrar en encuentros como el RFD!",
+# github: "",
+# twitter: "luke_ar",
+# country: "ARGENTINA",
+# company:"uno21"
+
+
