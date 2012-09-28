@@ -271,6 +271,34 @@ twitter: "gramos",
 country: "ARGENTINA",
 company:"Deviget"
 
+
+s = Speaker.create first_name: "Lucas Videla", last_name: " / Matías Gonzalez",
+bio_es: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
+de la industria. Nadie puede entender cómo, pero en algún momento
+podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
+trabaja en uno21 y da charlas de git.
+
+Matías tiene basta experiencia en la industria y dos años de
+experiencia en capacitación para empresas. Le gusta hacer las cosas
+bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
+entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
+encontrar en encuentros como el RFD!",
+bio_en: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
+de la industria. Nadie puede entender cómo, pero en algún momento
+podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
+trabaja en uno21 y da charlas de git.
+
+Matías tiene basta experiencia en la industria y dos años de
+experiencia en capacitación para empresas. Le gusta hacer las cosas
+bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
+entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
+encontrar en encuentros como el RFD!",
+github: "",
+twitter: "luke_ar",
+country: "ARGENTINA",
+company:"uno21"
+
+
 # s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
 # bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
 # Naturales in UBA. He has been teaching Object Oriented Programming and
@@ -300,31 +328,3 @@ company:"Deviget"
 # twitter: "HernanWilkinson",
 # country: "ARGENTINA",
 # company:"10pines"
-
-# s = Speaker.create first_name: "Lucas Videla", last_name: " / Matías Gonzalez",
-# bio_es: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
-# de la industria. Nadie puede entender cómo, pero en algún momento
-# podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
-# trabaja en uno21 y da charlas de git.
-
-# Matías tiene basta experiencia en la industria y dos años de
-# experiencia en capacitación para empresas. Le gusta hacer las cosas
-# bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
-# entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
-# encontrar en encuentros como el RFD!",
-# bio_en: "Lucas es profe en la UNLaM y la UNTreF, desarrollador y un entusiasta
-# de la industria. Nadie puede entender cómo, pero en algún momento
-# podía hacer mortales y otras acrobacias. Ahora hace Tai Chi Chuan,
-# trabaja en uno21 y da charlas de git.
-
-# Matías tiene basta experiencia en la industria y dos años de
-# experiencia en capacitación para empresas. Le gusta hacer las cosas
-# bien y disfruta haciéndolo. A punto de recibirse, distribuye su tiempo
-# entre la facu, dar clases y desarrollar en uno21. ¡Y ahora lo pueden
-# encontrar en encuentros como el RFD!",
-# github: "",
-# twitter: "luke_ar",
-# country: "ARGENTINA",
-# company:"uno21"
-
-
