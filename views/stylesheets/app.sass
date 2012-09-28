@@ -97,13 +97,48 @@ body
       h3
         background: url("../images/2012.png")
         height: 38px
+        margin: 0 auto 10px
         text-indent: -30000px
         width: 119px
-        margin: 0 auto 35px
 
       h4
         font-size: 16px
         letter-spacing: 1px
+
+      #ruby_fun_day
+        @include border-radius(3px)
+        background: $yellow
+        border: 1px solid $brown
+        height: 22px
+        margin: 25px 18px 10px
+        
+        a
+          color: $brown
+
+          h5
+            float: left
+            font-size: 12px
+            font-weight: bold
+            padding: 5px 0 0 5px
+            text-align: left
+            text-transform: uppercase
+          #when
+            @include border-radius(0 3px 3px 0)
+            border: 1px solid $brown
+            float: right
+            font-weight: bold
+            margin: -1px -1px 0 0
+            width: 26px
+            h6
+              @include border-radius(0 3px 0 0)            
+              background: $red
+              color: $yellow
+              font-size: 8px
+            p
+              font-size: 12px              
+              padding: 1px 0
+              text-shadow: 1px 1px 0 rgba(255,255,255,0.3)
+
 
       ul
         margin: 30px 0 16px
