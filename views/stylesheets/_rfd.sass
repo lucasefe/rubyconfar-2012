@@ -5,6 +5,8 @@
 
   a
     color: $yellow
+    &:hover
+      text-decoration: underline
 
   h1.title
     background-position: left -250px
@@ -58,28 +60,32 @@
 
 
   #where
-    background: url("../images/triang2.png") no-repeat 17px top
-    font-size: 13px
+    background: url("../images/triang2.png") no-repeat 39px top
+    font-size: 12px
     margin: 0 0 0 15px
     padding-top: 7px
-    width: 400px
+    width: 415px
     address
       @include border-radius(3px)
       background: $brown
       color: $red
-      padding: 15px
+      padding: 18px 17px
       h3
         @include inline-block
-        background: url("../images/up.png")
+        background: url("../images/up.png") no-repeat
         height: 30px
         text-indent: -30000px
         width: 160px
-        margin: 0 10px 0 0
+        margin: 0 20px 0 0
+        border-right: 1px solid $red
+        padding-right: 20px
       h4
         @include inline-block
-        width: 200px
+        width: 180px
 
       p
+        display: absolute
+        margin: -13px 0 0 201px
 
   // h2
   //   text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
