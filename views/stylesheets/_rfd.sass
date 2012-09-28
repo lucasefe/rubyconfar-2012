@@ -67,18 +67,19 @@
     width: 415px
     address
       @include border-radius(3px)
+      @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
       background: $brown
       color: $red
       padding: 18px 17px
       h3
         @include inline-block
         background: url("../images/up.png") no-repeat
+        border-right: 1px solid $red
         height: 30px
+        margin: 0 20px 0 0
+        padding-right: 20px
         text-indent: -30000px
         width: 160px
-        margin: 0 20px 0 0
-        border-right: 1px solid $red
-        padding-right: 20px
       h4
         @include inline-block
         width: 180px
@@ -86,6 +87,23 @@
       p
         display: absolute
         margin: -13px 0 0 201px
+
+  .important
+    @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+    @include border-radius(3px)
+    background: $yellow
+    padding: 18px 17px 3px
+    margin: 15px 
+    border: 1px solid $brown
+    p
+      margin-bottom: 15px
+      strong
+        background: url("../images/icon_alert.png") no-repeat left 1px
+        font-weight: bold
+        padding-left: 20px
+      small
+        font-size: 12px
+
 
   // h2
   //   text-shadow: 1px 1px 0 rgba(255,255,255,0.1)
