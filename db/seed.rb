@@ -127,39 +127,39 @@ twitter: "bermonpainter",
 country: "USA",
 company:"Hendrick Automotive"
 
-s = Speaker.create first_name: "Jacqui", last_name: "Maher",
-bio_es: "Jacqui Maher is an Interactive News Editor at The New York Times. She
-works in a group of developer/journalists in the newsroom on projects
-big and small, typically ones that try to make sense of large unwieldy
-or complicated sources of data for readers. A native of NYC, working for
-the paper had been her dream for a long time. While she's thankful she
-didn't have to start in the mail room, she had no idea how much XML it
-would involve.
+# s = Speaker.create first_name: "Jacqui", last_name: "Maher",
+# bio_es: "Jacqui Maher is an Interactive News Editor at The New York Times. She
+# works in a group of developer/journalists in the newsroom on projects
+# big and small, typically ones that try to make sense of large unwieldy
+# or complicated sources of data for readers. A native of NYC, working for
+# the paper had been her dream for a long time. While she's thankful she
+# didn't have to start in the mail room, she had no idea how much XML it
+# would involve.
 
-Most recently Jacqui helped lead the London 2012 Olympics coverage for
-the Times, even reporting on the spectacular final event &mdash; the Modern
-Pentathlon &mdash; live from Greenwich. She'll be talking about how the NYT
-used all the technologies to win the Olympics, including scaling for
-clients in multiple languages around the world, with much love for
-Redis. She might also want to talk about climbing the Seven Summits.",
-bio_en: "Jacqui Maher is an Interactive News Editor at The New York Times. She
-works in a group of developer/journalists in the newsroom on projects
-big and small, typically ones that try to make sense of large unwieldy
-or complicated sources of data for readers. A native of NYC, working for
-the paper had been her dream for a long time. While she's thankful she
-didn't have to start in the mail room, she had no idea how much XML it
-would involve.
+# Most recently Jacqui helped lead the London 2012 Olympics coverage for
+# the Times, even reporting on the spectacular final event &mdash; the Modern
+# Pentathlon &mdash; live from Greenwich. She'll be talking about how the NYT
+# used all the technologies to win the Olympics, including scaling for
+# clients in multiple languages around the world, with much love for
+# Redis. She might also want to talk about climbing the Seven Summits.",
+# bio_en: "Jacqui Maher is an Interactive News Editor at The New York Times. She
+# works in a group of developer/journalists in the newsroom on projects
+# big and small, typically ones that try to make sense of large unwieldy
+# or complicated sources of data for readers. A native of NYC, working for
+# the paper had been her dream for a long time. While she's thankful she
+# didn't have to start in the mail room, she had no idea how much XML it
+# would involve.
 
-Most recently Jacqui helped lead the London 2012 Olympics coverage for
-the Times, even reporting on the spectacular final event &mdash; the Modern
-Pentathlon &mdash; live from Greenwich. She'll be talking about how the NYT
-used all the technologies to win the Olympics, including scaling for
-clients in multiple languages around the world, with much love for
-Redis. She might also want to talk about climbing the Seven Summits.",
-github: "jacqui",
-twitter: "jacqui",
-country: "USA",
-company:"New York Times"
+# Most recently Jacqui helped lead the London 2012 Olympics coverage for
+# the Times, even reporting on the spectacular final event &mdash; the Modern
+# Pentathlon &mdash; live from Greenwich. She'll be talking about how the NYT
+# used all the technologies to win the Olympics, including scaling for
+# clients in multiple languages around the world, with much love for
+# Redis. She might also want to talk about climbing the Seven Summits.",
+# github: "jacqui",
+# twitter: "jacqui",
+# country: "USA",
+# company:"New York Times"
 
 s = Speaker.create first_name: "Jeff", last_name: "Casimir",
 bio_es: "I started teaching in 2003 with Teach for America in my native Washington, DC. I first taught middle-school students, then taught Computer Science to high schoolers, and finally helped start a new charter middle school in a role most easily described as “Vice Principal.” I love teaching developers because you are giving people the power to build their dreams.",
@@ -298,6 +298,13 @@ twitter: "luke_ar",
 country: "ARGENTINA",
 company:"uno21"
 
+s = Speaker.create first_name: "Florian", last_name: "Gilcher",
+bio_es: "DISPONIBLE A LA BREVEDAD",
+bio_en: "SOON TO BE ANNOUNCED",
+github: "skade",
+twitter: "argorak",
+country: "GERMANY",
+company:"asquera GmbH"
 
 # s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
 # bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
