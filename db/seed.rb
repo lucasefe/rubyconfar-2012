@@ -315,7 +315,7 @@ bio_en: "Nico is a standup comedian. When he's not doing that, he opens the Illu
 Lucas loves to program, he is a 24/7 cupcake loving Ruby committed software developer. In the rare moments when Lucas is not in front of a keyboard he enjoys playing bass, hanging out with his girlfriend and making cupcakes.",
 twitter: "n1cus-lucasefe",
 github: "lucasefe",
-company: "Chefs Feed / SZ Studios", 
+company: "Sz Studios / Chefs Feed", 
 country: "ARGENTINA"
 
 s = Speaker.create first_name: "Ernesto", last_name: "Tagwerker",
