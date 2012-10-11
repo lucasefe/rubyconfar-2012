@@ -318,7 +318,7 @@ github: "lucasefe",
 company: "Chefs Feed / SZ Studios", 
 country: "ARGENTINA"
 
-s = Speaker.create first_name: "Ernesto", last_name: "Martens",
+s = Speaker.create first_name: "Ernesto", last_name: "Tagwerker",
 bio_es: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista. 
 Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos. 
 En su tiempo libre coordina meetups de Lean Startup y Ruby; contribuye a proyectos de eCommerce y OpenData; y juega al ping-pong semi-profesionalmente. ",
