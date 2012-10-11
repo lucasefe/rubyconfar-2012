@@ -306,7 +306,7 @@ twitter: "argorak",
 country: "GERMANY",
 company:"asquera GmbH"
 
-s = Speaker.create first_name: "Nico Sztabzyb", last_name: "Lucas Florio",
+s = Speaker.create first_name: "Nico Sztabzyb", last_name: " / Lucas Florio",
 bio_es: "Nico is a standup comedian. When he's not doing that, he opens the Illustrator and tries to make the web a better place, one website at a time. 
 
 Lucas loves to program, he is a 24/7 cupcake loving Ruby committed software developer. In the rare moments when Lucas is not in front of a keyboard he enjoys playing bass, hanging out with his girlfriend and making cupcakes.",
