@@ -306,6 +306,45 @@ twitter: "argorak",
 country: "GERMANY",
 company:"asquera GmbH"
 
+s = Speaker.create first_name: "Ernesto", last_name: "Martens",
+bio_es: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista. 
+Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos. 
+En su tiempo libre coordina meetups de Lean Startup y Ruby; contribuye a proyectos de eCommerce y OpenData; y juega al ping-pong semi-profesionalmente. ",
+bio_es: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista. 
+Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos. 
+En su tiempo libre coordina meetups de Lean Startup y Ruby; contribuye a proyectos de eCommerce y OpenData; y juega al ping-pong semi-profesionalmente. ",
+twitter: "etagwerker",
+github: "etagwerker",
+company: "OmbuShop", 
+country: "ARGENTINA"
+
+s = Speaker.create first_name: "Nico Sztabzyb", last_name: "Lucas Florio",
+bio_es: "",
+bio_es: "",
+twitter: "n1cus-lucasefe",
+github: "lucasefe",
+company: "Chefs Feed / SZ Studios", 
+country: "ARGENTINA"
+
+
+# s = Speaker.create first_name: "Michel", last_name: "Martens",
+# bio_es: "Michel has been working with Ruby since 2003. He is co-creator of many
+# libraries like Ohm, Contest and Cuba, and contributes to Redis since
+# 2009. He presented at LAWebDev in 2009, at RubyConf Uruguay in 2010,
+# and is a regular speaker at the Ruby Argentina meetup. Member of the
+# Ruby Visual Identity Team and founder of the Ruby Argentina Group, he
+# is also an amateur go player and lives in Buenos Aires, Argentina.",
+# bio_es: "Michel has been working with Ruby since 2003. He is co-creator of many
+# libraries like Ohm, Contest and Cuba, and contributes to Redis since
+# 2009. He presented at LAWebDev in 2009, at RubyConf Uruguay in 2010,
+# and is a regular speaker at the Ruby Argentina meetup. Member of the
+# Ruby Visual Identity Team and founder of the Ruby Argentina Group, he
+# is also an amateur go player and lives in Buenos Aires, Argentina.",
+# twitter: "soveran",
+# github: "soveran",
+# company: "Freelance", 
+# country: "ARGENTINA"
+
 # s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
 # bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
 # Naturales in UBA. He has been teaching Object Oriented Programming and

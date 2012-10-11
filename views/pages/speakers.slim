@@ -11,10 +11,15 @@ ul#so_many_speakers
             h2= speaker.company
 
           .social
-            a.twitter_user href="http://twitter.com/#{speaker.twitter}"
-              = "@#{speaker.twitter}"
-            a.github_user href="http://github.com/#{speaker.github}"
-              = speaker.github
+            - speaker.twitter.split("-").each do |t|
+              a.twitter_user href="http://twitter.com/#{t}"
+                = "@#{t}"
+            - speaker.github.split("-").each do |t|
+              a.github_user href="http://github.com/#{t}"
+                = t
+
+
+            
 
           h3 Bio
           .text.scroll-pane
