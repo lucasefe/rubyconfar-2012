@@ -307,27 +307,27 @@ country: "GERMANY",
 company:"asquera GmbH"
 
 s = Speaker.create first_name: "Nico Sztabzyb", last_name: " / Lucas Florio",
-bio_es: "Nico is a standup comedian. When he's not doing that, he opens the Illustrator and tries to make the web a better place, one website at a time. 
+bio_es: "Nico is a standup comedian. When he's not doing that, he opens the Illustrator and tries to make the web a better place, one website at a time.
 
 Lucas loves to program, he is a 24/7 cupcake loving Ruby committed software developer. In the rare moments when Lucas is not in front of a keyboard he enjoys playing bass, hanging out with his girlfriend and making cupcakes.",
-bio_en: "Nico is a standup comedian. When he's not doing that, he opens the Illustrator and tries to make the web a better place, one website at a time. 
+bio_en: "Nico is a standup comedian. When he's not doing that, he opens the Illustrator and tries to make the web a better place, one website at a time.
 
 Lucas loves to program, he is a 24/7 cupcake loving Ruby committed software developer. In the rare moments when Lucas is not in front of a keyboard he enjoys playing bass, hanging out with his girlfriend and making cupcakes.",
 twitter: "n1cus-lucasefe",
 github: "lucasefe",
-company: "Sz Studios / Chefs Feed", 
+company: "Sz Studios / Chefs Feed",
 country: "ARGENTINA"
 
 s = Speaker.create first_name: "Ernesto", last_name: "Tagwerker",
-bio_es: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista. 
-Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos. 
+bio_es: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista.
+Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos.
 En su tiempo libre coordina meetups de Lean Startup y Ruby; contribuye a proyectos de eCommerce y OpenData; y juega al ping-pong semi-profesionalmente. ",
-bio_en: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista. 
-Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos. 
+bio_en: "Ernesto es fundador de OmbuShop; Ing. en Sistemas (UTN), Lean Practitioner y Rubyista.
+Hace años que trabaja exclusivamente con startups. Luego de sufrir con Java y fat startups, descubrió Ruby y Lean Startup y vio la luz. Hoy pasa sus días programando; hackeando funnels; e ideando MVPs y experimentos.
 En su tiempo libre coordina meetups de Lean Startup y Ruby; contribuye a proyectos de eCommerce y OpenData; y juega al ping-pong semi-profesionalmente. ",
 twitter: "etagwerker",
 github: "etagwerker",
-company: "OmbuShop", 
+company: "OmbuShop",
 country: "ARGENTINA"
 
 s = Speaker.create first_name: "Michel", last_name: "Martens",
@@ -345,7 +345,7 @@ Ruby Visual Identity Team and founder of the Ruby Argentina Group, he
 is also an amateur go player and lives in Buenos Aires, Argentina.",
 twitter: "soveran",
 github: "soveran",
-company: "", 
+company: "OpenRedis",
 country: "ARGENTINA"
 
 # s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
