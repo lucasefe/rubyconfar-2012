@@ -345,7 +345,7 @@ Ruby Visual Identity Team and founder of the Ruby Argentina Group, he
 is also an amateur go player and lives in Buenos Aires, Argentina.",
 twitter: "soveran",
 github: "soveran",
-company: "Freelance", 
+company: "", 
 country: "ARGENTINA"
 
 # s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
