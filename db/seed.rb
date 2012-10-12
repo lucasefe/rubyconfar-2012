@@ -18,7 +18,7 @@ libre toca música e intenta practicar deportes (sin mucho éxito)."
 jano.save
 
 pedro = Speaker.create first_name: "Pedro", last_name: "Belo", country: "BRASIL",
-twitter: "pedro", github: "pedro", company: "Heroku",
+twitter: "ped", github: "pedro", company: "Heroku",
 bio_en: "Pedro's first task in Heroku was to make the online editor's cursor
 display properly in Firefox 3. Since then he worked on logging, the
 command-line client, refactoring and splitting systems, the pricing
