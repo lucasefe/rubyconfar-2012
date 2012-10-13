@@ -348,32 +348,32 @@ github: "soveran",
 company: "OpenRedis",
 country: "ARGENTINA"
 
-# s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
-# bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
-# Naturales in UBA. He has been teaching Object Oriented Programming and
-# Advanced Design with Objects in the same University for more that ten
-# years. He is also professor in the Software Engineer Master’s degree
-# at the UCA. He has been working as a programmer, architect, technology
-# and development manager in different companies such as IBM, Banco
-# Galicia and Mercap SRL. He has been speaker in different international
-# congresses such as OOPSLA (Object Oriented Programming, Systems,
-# Languages and Applications), ESUG (European Smalltalk User Group),
-# Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
-# Argentina de Smalltalk). Currently he spends more of his time doing
-# what he likes the most: teaching and programming with objects.",
-# bio_en: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
-# Naturales in UBA. He has been teaching Object Oriented Programming and
-# Advanced Design with Objects in the same University for more that ten
-# years. He is also professor in the Software Engineer Master’s degree
-# at the UCA. He has been working as a programmer, architect, technology
-# and development manager in different companies such as IBM, Banco
-# Galicia and Mercap SRL. He has been speaker in different international
-# congresses such as OOPSLA (Object Oriented Programming, Systems,
-# Languages and Applications), ESUG (European Smalltalk User Group),
-# Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
-# Argentina de Smalltalk). Currently he spends more of his time doing
-# what he likes the most: teaching and programming with objects.",
-# github: "10Pines",
-# twitter: "HernanWilkinson",
-# country: "ARGENTINA",
-# company:"10pines"
+s = Speaker.create first_name: "Hernán", last_name: "Wilkinson",
+bio_es: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
+Naturales in UBA. He has been teaching Object Oriented Programming and
+Advanced Design with Objects in the same University for more that ten
+years. He is also professor in the Software Engineer Master’s degree
+at the UCA. He has been working as a programmer, architect, technology
+and development manager in different companies such as IBM, Banco
+Galicia and Mercap SRL. He has been speaker in different international
+congresses such as OOPSLA (Object Oriented Programming, Systems,
+Languages and Applications), ESUG (European Smalltalk User Group),
+Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
+Argentina de Smalltalk). Currently he spends more of his time doing
+what he likes the most: teaching and programming with objects.",
+bio_en: "He graduated in Computer Sciences, from Facultad de Ciencias Exactas y
+Naturales in UBA. He has been teaching Object Oriented Programming and
+Advanced Design with Objects in the same University for more that ten
+years. He is also professor in the Software Engineer Master’s degree
+at the UCA. He has been working as a programmer, architect, technology
+and development manager in different companies such as IBM, Banco
+Galicia and Mercap SRL. He has been speaker in different international
+congresses such as OOPSLA (Object Oriented Programming, Systems,
+Languages and Applications), ESUG (European Smalltalk User Group),
+Smalltalks and Agiles. He is founder of 10Pines and FAST (Fundación
+Argentina de Smalltalk). Currently he spends more of his time doing
+what he likes the most: teaching and programming with objects.",
+github: "10Pines",
+twitter: "HernanWilkinson",
+country: "ARGENTINA",
+company:"10pines"
