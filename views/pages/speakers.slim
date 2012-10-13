@@ -1,5 +1,5 @@
 ul#so_many_speakers
-  - Speaker.order(:id).reverse.all.in_groups_of(3, false) do |speakers|
+  - Speaker.all.shuffle.in_groups_of(3, false) do |speakers|
     - classes = %w(left center right)
     - speakers.each do |speaker|
       li class=classes.shift
