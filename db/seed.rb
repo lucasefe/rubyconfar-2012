@@ -377,3 +377,11 @@ github: "10Pines",
 twitter: "HernanWilkinson",
 country: "ARGENTINA",
 company:"10pines"
+
+s = Speaker.create first_name: "Pablo", company: "Kleer", last_name: "Tortorella", twitter: "pablitux", github: "pablotortorella", 
+bio_es: "Pablo Tortorella works as Agile Coach and Trainer in Kleer, a company located in Argentina and Brasil. Kleer offers both open and in-company courses all over Latin America, as well as also offers coaching services, in order to help teams and organizations implementing agile practices, tools and methodologies.
+He also teaches Scrum in the University of Buenos Aires (UBA), where he studied and graduated with a degree in Computer Science.
+Nowadays he spreads agile spirit and actively participates in Latin America's local agile communities' growth, through their participation in events as speaker and facilitator.",
+bio_en: "Pablo Tortorella works as Agile Coach and Trainer in Kleer, a company located in Argentina and Brasil. Kleer offers both open and in-company courses all over Latin America, as well as also offers coaching services, in order to help teams and organizations implementing agile practices, tools and methodologies.
+He also teaches Scrum in the University of Buenos Aires (UBA), where he studied and graduated with a degree in Computer Science.
+Nowadays he spreads agile spirit and actively participates in Latin America's local agile communities' growth, through their participation in events as speaker and facilitator."
