@@ -22,7 +22,6 @@ Cuba.plugin Cuba::R18n
 
 # ADMIN
 require "./routes/public"
-require "./routes/api"
 
 require "./models/video"
 require "./models/promotional_video"
@@ -37,10 +36,6 @@ Cuba.define do
     res.headers["Cache-Control"] = "public, max-age=29030400" if req.query_string =~ /[0-9]{10}/
     res.headers["Content-Type"] = "text/css; charset=utf-8"
     res.write render("views/stylesheets/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
-  end
-
-  on "api" do
-    run Api
   end
 
   on default do
