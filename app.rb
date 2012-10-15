@@ -22,7 +22,7 @@ Cuba.plugin Cuba::R18n
 
 # ADMIN
 require "./routes/public"
-# require "./routes/admin"
+require "./routes/api"
 
 require "./models/video"
 require "./models/promotional_video"
@@ -39,9 +39,9 @@ Cuba.define do
     res.write render("views/stylesheets/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
 
-  # on "admin" do
-  #   run Admin
-  # end
+  on "api" do
+    run Api
+  end
 
   on default do
     run Public

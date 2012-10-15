@@ -21,3 +21,14 @@ end
 task :load_models do
   Dir.glob('./models/*').each { |r| require r unless File.directory?(r) }
 end
+
+namespace :attender do 
+  desc 'update attender'
+  task :update do 
+    require 'fileutils'
+    FileUtils.mkdir "./attender" if File.exists?("./attender")
+    %x(curl http://app.attenderapp.com/api/9/getSessions.json > ./attender/sessions.json)
+    %x(curl http://app.attenderapp.com/api/9/getSpeakers.json > ./attender/speakers.json)
+  end
+
+end

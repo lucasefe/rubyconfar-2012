@@ -17,6 +17,7 @@ nav:
   venue: "Venue"
   rfd: "Ruby Fun Day!"
   videos: "Videos 2011"
+  schedule: "Schedule"
 
 subscriber:
   already_registered: "Already registered"
