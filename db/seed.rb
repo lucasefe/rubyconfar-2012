@@ -17,24 +17,24 @@ libre toca música e intenta practicar deportes (sin mucho éxito)."
 
 jano.save
 
-pedro = Speaker.create first_name: "Pedro", last_name: "Belo", country: "BRASIL",
-twitter: "ped", github: "pedro", company: "Heroku",
-bio_en: "Pedro's first task in Heroku was to make the online editor's cursor
-display properly in Firefox 3. Since then he worked on logging, the
-command-line client, refactoring and splitting systems, the pricing
-page, Node.js support, the add-ons program, Starcraft nights and
-[starving-samurai-42](http://starving-samurai-42.tumblr.com/).
+# pedro = Speaker.create first_name: "Pedro", last_name: "Belo", country: "BRASIL",
+# twitter: "ped", github: "pedro", company: "Heroku",
+# bio_en: "Pedro's first task in Heroku was to make the online editor's cursor
+# display properly in Firefox 3. Since then he worked on logging, the
+# command-line client, refactoring and splitting systems, the pricing
+# page, Node.js support, the add-ons program, Starcraft nights and
+# [starving-samurai-42](http://starving-samurai-42.tumblr.com/).
 
-Today he's focused on the Heroku public API, distributed architectures
-and getting to the master league.", bio_es: "Pedro's first task in Heroku was
-to make the online editor's cursor
-display properly in Firefox 3. Since then he worked on logging, the
-command-line client, refactoring and splitting systems, the pricing
-page, Node.js support, the add-ons program, Starcraft nights and
-[starving-samurai-42](http://starving-samurai-42.tumblr.com/).
+# Today he's focused on the Heroku public API, distributed architectures
+# and getting to the master league.", bio_es: "Pedro's first task in Heroku was
+# to make the online editor's cursor
+# display properly in Firefox 3. Since then he worked on logging, the
+# command-line client, refactoring and splitting systems, the pricing
+# page, Node.js support, the add-ons program, Starcraft nights and
+# [starving-samurai-42](http://starving-samurai-42.tumblr.com/).
 
-Today he's focused on the Heroku public API, distributed architectures
-and getting to the master league."
+# Today he's focused on the Heroku public API, distributed architectures
+# and getting to the master league."
 
 foca = Speaker.create first_name: "Nicolás", last_name: "Sanguinetti",
   twitter: "godfoca", github: "foca", company: "GitHub", country: "URUGUAY",
@@ -377,6 +377,10 @@ github: "10Pines",
 twitter: "HernanWilkinson",
 country: "ARGENTINA",
 company:"10pines"
+Speaker.create first_name: "Augusto", last_name: "Becciu", company: "Restorando", 
+twitter: "abecciu", github: "abecciu", country: "ARGENTINA", 
+bio_es: "Augusto wrote his first web apps in C until he discovered Perl and realized dynamic languages weren't that bad. Since then he's been working for early-stage startups doing all sorts of developments in Python, Java, Ruby and Erlang. He is a long time open source advocate and has contributed to several projects including Unicorn and Chef. He's also very interested in distributed systems and is maintainer of a popular leader election library written in Erlang.",
+bio_en: "Augusto wrote his first web apps in C until he discovered Perl and realized dynamic languages weren't that bad. Since then he's been working for early-stage startups doing all sorts of developments in Python, Java, Ruby and Erlang. He is a long time open source advocate and has contributed to several projects including Unicorn and Chef. He's also very interested in distributed systems and is maintainer of a popular leader election library written in Erlang."
 
 s = Speaker.create first_name: "Pablo", company: "Kleer", last_name: "Tortorella", twitter: "pablitux", github: "pablotortorella", 
 bio_es: "Pablo Tortorella works as Agile Coach and Trainer in Kleer, a company located in Argentina and Brasil. Kleer offers both open and in-company courses all over Latin America, as well as also offers coaching services, in order to help teams and organizations implementing agile practices, tools and methodologies.
