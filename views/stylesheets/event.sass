@@ -2,13 +2,91 @@
 @import "reset"
 @import "colors"
 
-#wrapper
-  #right
-    #tweets
-  #left
-    #photos
-    #announcements 
+body, html
+  height: 100%
+
+body
+  background: $red
+  color: $brown
+  font-family: 'Maven Pro', sans-serif
+
+  a
+    color: $yellow
+    text-decoration: none
+  #wrapper
+    height: 100%
+    #right
+      @include box-shadow(3px 0 12px rgba(0,0,0,0.5) inset)
+      background: $red url("../images/stripes.png")
+      float: right
+      font-size: 14px
+      height: 80%
+      padding: 2%
+      width: 26%
+
+      #tweets
+        height: 100%
+        ul.tweet_list
+          height: 100%
+          li
+            height: 14%
+
+        .tweet_time
+          padding: 5px
+          text-transform: uppercase
+          font-weight: bold
+          font-size: 11px
+          float: left
+          padding-left: 50px
+          a
+            color: $brown
+        .tweet_text
+          display: block
+          color: $yellow
+          clear: both
+          padding-left: 50px
+
+
+
+        img
+          @include box-shadow(1px 1px 0 rgba(255,255,255,0.2))
+          @include border-radius(2px)
+          border: 1px solid $brown
+          position: absolute
+
+    #left
+      background: $brown
+      height: 100%
+
+      #photos
+        background: green
+        float: left
+        height: 40%
+        display: block
+        overflow: hidden
+        width: 70%
+
+        div
+          float: left
+          display: block
+          width: 240px
+          height: 160px
+              
+          img
+            @include border-radius(3px)
+
+      #announcements 
+        background: yellow
+        height: 40%
+        float: left
+        width: 70%
+
   #sponsoring
+    background: #EC1C57 url("../images/event/citrusbyte.png") no-repeat center center
+    bottom: 0
+    height: 20%
+    position: fixed
+    width: 100%
 
 hr.clear
   border: 0 none
