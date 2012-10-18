@@ -78,6 +78,10 @@ class Public < Cuba
         end
       end
 
+      on "event" do 
+        res.write partial("pages/event")
+      end
+
       on default do
         @subscriber = Subscriber.new
         @proposal = Proposal.new
