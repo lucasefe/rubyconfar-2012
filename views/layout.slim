@@ -39,12 +39,17 @@ html
         h2 OCT 19/20
         h3 2012
         h4= t.venue
+
+        a.mapa href="http://goo.gl/maps/cSqDu" target="_blank" Mapa
+        
         #ruby_fun_day
           a href="/#{current_locale}/ruby-fun-day"
             h5 Ruby Fun Day
             #when
               h6 OCT
               p 17
+
+
 
         ul
           li#icon_twitter
@@ -71,10 +76,7 @@ html
             img.a src="/images/fist_1.png"
             img.b src="/images/fist_2.png"
 
-      //.tweet
       #in_the_loop
-        / p Keep me in the loop!
-        / == partial 'subscribers/form'
         a href="#registration"
           img#reg src="/images/register_now_sidebar_#{current_locale}.png"
 
