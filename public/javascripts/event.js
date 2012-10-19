@@ -14,7 +14,7 @@ function twitterFeed() {
   $("#tweets").tweet({
     avatar_size: 40,
     count: 5,
-    query: "#RubyConfAr",
+    query: "RubyConfAr",
     loading_text: "searching twitter...",
     refresh_interval: 5
   });
