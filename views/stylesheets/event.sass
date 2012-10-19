@@ -14,22 +14,29 @@ body
     color: $yellow
     text-decoration: none
   #wrapper
+    border-left: 1px solid $brown
+    border-right: 1px solid $brown
     height: 100%
+    margin: 0 auto
+    width: 960px
+
     #right
       @include box-shadow(3px 0 12px rgba(0,0,0,0.5) inset)
       background: $red url("../images/stripes.png")
       float: right
-      font-size: 14px
+      font-size: 13px
       height: 80%
-      padding: 2%
-      width: 26%
+      padding: 2% 1% 2% 2%
+      width: 27%
 
       #tweets
-        height: 100%
+        // height: 100%
         ul.tweet_list
-          height: 100%
+          // height: 100%
           li
-            height: 14%
+            // height: 14%
+            overflow: hidden
+            margin-bottom: 26px
 
         .tweet_time
           padding: 5px
@@ -59,7 +66,8 @@ body
       height: 100%
 
       #photos
-        background: green
+        @include box-shadow(0px 3px 9px rgba(0,0,0,0.5) inset)
+        background: $brown
         float: left
         height: 40%
         display: block
@@ -76,12 +84,14 @@ body
             @include border-radius(3px)
 
       #announcements 
-        background: yellow
-        height: 40%
+        @include box-shadow(0px 3px 9px rgba(0,0,0,0.5) inset)
+        background: $yellow
         float: left
+        height: 40%
         width: 70%
 
   #sponsoring
+    @include box-shadow(0px 3px 4px rgba(255,255,255,0.2) inset, 0 -1px 12px rgba(0,0,0,0.5))
     background: #EC1C57 url("../images/event/citrusbyte.png") no-repeat center center
     bottom: 0
     height: 20%
