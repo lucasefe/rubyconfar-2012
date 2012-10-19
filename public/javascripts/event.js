@@ -5,7 +5,7 @@ $(function(){
   $("#announcements").slides({
     generatePagination: false,
     effect: 'fade',
-    play: 3000
+    play: 4000
   });
 
 })
