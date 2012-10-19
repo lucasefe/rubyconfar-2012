@@ -16,11 +16,18 @@ function twitterFeed(container) {
 
 function flickrFeed(container) {
   var url = "http://api.flickr.com/services/feeds/groups_pool.gne?id=2068965@N25&format=json&jsoncallback=?"
-  $.getJSON(url, function(data){
-    $.each(data.items, function(i,item){
+  var i = 0; 
+
+  $.getJSON(url, function(data){  
+    $.each(data.items, function(i,item){  
+      if (i % 3 === 0) {
+        var current_container = createSubcontainer(container)
+      }
+
       $("<img/>").attr("src", item.media.m)
-        .appendTo(container)
-        .wrap("<div><a href='" + item.link + "'></a></div>");
+        .appendTo(current_container)
+        .wrap("<a href='" + item.link + "'></a>");
+      i++;
     });
   });
 }
@@ -29,4 +36,10 @@ function slideIt(container) {
   $(container).slides({
     generatePagination: false
   });
+}
+
+function createSubcontainer(container) {
+  c = $('<div class="slide"></div>')
+  c.appendTo(container);
+  return(c);
 }
