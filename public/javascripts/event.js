@@ -13,7 +13,7 @@ $(function(){
 function twitterFeed() { 
   $("#tweets").tweet({
     avatar_size: 40,
-    count: 7,
+    count: 5,
     query: "#RubyConfAr",
     loading_text: "searching twitter..."
   });
@@ -28,11 +28,11 @@ function flickrFeed() {
     var current_container = null;
 
     $.each(data.items, function(i, item){  
-      if (j % 3 === 0) {
+      if (j % 2 === 0) {
         current_container = createSubcontainer(container)
       }
-
-      $("<img/>").attr("src", item.media.m).appendTo(current_container).wrap("<a href='" + item.link + "'></a>");
+      var image_url = item.media.m.replace("_m", "");
+      $("<img/>").attr("src", image_url).appendTo(current_container).wrap("<a href='" + item.link + "'></a>");
 
       j++;
     });
