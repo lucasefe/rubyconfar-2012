@@ -15,7 +15,8 @@ function twitterFeed() {
     avatar_size: 40,
     count: 5,
     query: "#RubyConfAr",
-    loading_text: "searching twitter..."
+    loading_text: "searching twitter...",
+    refresh_interval: 5
   });
 }
 
