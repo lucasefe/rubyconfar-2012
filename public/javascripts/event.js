@@ -1,12 +1,17 @@
 $(function(){
-  flickrFeed("#photos .slides_container");
-  twitterFeed("#tweets");
-  slideIt("#photos .slides_container");
-  slideIt("#announcements");
+  flickrFeed();
+  twitterFeed();
+  
+  $("#announcements").slides({
+    generatePagination: false,
+    effect: 'fade',
+    play: 3000
+  });
+
 })
 
-function twitterFeed(container) {
-  $(container).tweet({
+function twitterFeed() { 
+  $("#tweets").tweet({
     avatar_size: 40,
     count: 7,
     query: "#RubyConfAr",
@@ -14,7 +19,8 @@ function twitterFeed(container) {
   });
 }
 
-function flickrFeed(container) {
+function flickrFeed() {
+  var container = "#photos .slides_container"
   var url = "http://api.flickr.com/services/feeds/groups_pool.gne?id=2068965@N25&format=json&jsoncallback=?"
   $.getJSON(url, function(data) {
 
@@ -30,12 +36,11 @@ function flickrFeed(container) {
 
       j++;
     });
-  });
-}
 
-function slideIt(container) {
-  $(container).slides({
-    generatePagination: false
+    $("#photos").slides({
+      generatePagination: false,
+      play: 5000
+    });
   });
 }
 
