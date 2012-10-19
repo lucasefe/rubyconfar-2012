@@ -16,18 +16,19 @@ function twitterFeed(container) {
 
 function flickrFeed(container) {
   var url = "http://api.flickr.com/services/feeds/groups_pool.gne?id=2068965@N25&format=json&jsoncallback=?"
-  var i = 0; 
+  $.getJSON(url, function(data) {
 
-  $.getJSON(url, function(data){  
-    $.each(data.items, function(i,item){  
-      if (i % 3 === 0) {
-        var current_container = createSubcontainer(container)
+    var j = 0; 
+    var current_container = null;
+
+    $.each(data.items, function(i, item){  
+      if (j % 3 === 0) {
+        current_container = createSubcontainer(container)
       }
 
-      $("<img/>").attr("src", item.media.m)
-        .appendTo(current_container)
-        .wrap("<a href='" + item.link + "'></a>");
-      i++;
+      $("<img/>").attr("src", item.media.m).appendTo(current_container).wrap("<a href='" + item.link + "'></a>");
+
+      j++;
     });
   });
 }
