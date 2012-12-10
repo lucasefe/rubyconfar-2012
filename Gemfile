@@ -10,7 +10,6 @@ gem 'cuba-contrib', '3.0.1', require: false
 gem 'cuba-sugar', '0.2.4', require: false
 gem 'cutest', '1.1.3', require: false
 gem 'foreman', '0.46.0', require: false
-gem 'heroku', '2.31.2', require: false
 gem 'launchy', '2.1.0', require: false
 gem 'malone', '1.0.0', require: false
 gem 'minitest', '2.12.1', require: false
